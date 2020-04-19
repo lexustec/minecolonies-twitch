@@ -69,85 +69,6 @@ configurations {
 
     apiImplementation.extendsFrom contained
 }
-
-
-apply plugin: 'net.minecraftforge.gradle'
-// Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
-apply plugin: 'eclipse'
-apply plugin: 'maven-publish'
-
-version = '1.0'
-group = 'com.yourname.modid' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'modid'
-
-sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
-
-minecraft {
-    // The mappings can be changed at any time, and must be in the following format.
-    // snapshot_YYYYMMDD   Snapshot are built nightly.
-    // stable_#            Stables are built at the discretion of the MCP team.
-    // Use non-default mappings at your own risk. they may not always work.
-    // Simply re-run your setup task after changing the mappings to update your workspace.
-    mappings channel: 'snapshot', version: "${config.mappings}"
-    // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
-    
-    // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
-
-    // Default run configurations.
-    // These can be tweaked, removed, or duplicated as needed.
-    runs {
-        client {
-            workingDirectory project.file('run')
-
-            // Recommended logging data for a userdev environment
-            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
-
-            // Recommended logging level for the console
-            property 'forge.logging.console.level', 'debug'
-
-            mods {
-                examplemod {
-                    source sourceSets.main
-                }
-            }
-        }
-
-        server {
-            workingDirectory project.file('run')
-
-            // Recommended logging data for a userdev environment
-            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
-
-            // Recommended logging level for the console
-            property 'forge.logging.console.level', 'debug'
-
-            mods {
-                examplemod {
-                    source sourceSets.main
-                }
-            }
-        }
-
-        data {
-            workingDirectory project.file('run')
-
-            // Recommended logging data for a userdev environment
-            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
-
-            // Recommended logging level for the console
-            property 'forge.logging.console.level', 'debug'
-
-            args '--mod', 'examplemod', '--all', '--output', file('src/generated/resources/')
-
-            mods {
-                examplemod {
-                    source sourceSets.main
-                }
-            }
-        }
-    }
-}
-
 dependencies {
     // Specify the version of Minecraft to use, If this is any group other then 'net.minecraft' it is assumed
     // that the dep is a ForgeGradle 'patcher' dependency. And it's patches will be applied.
@@ -179,26 +100,118 @@ dependencies {
     additionalMods "com.minecolonies:minecolonies:${config.minecolonies_version}"
     
 
+	testImplementation  'junit:junit:4.12'
+    testImplementation  "org.mockito:mockito-core:1.+"
+    testImplementation  group: 'org.powermock', name: 'powermock-module-junit4', version: '1.6.5'
+    testImplementation  group: 'org.powermock', name: 'powermock-api-mockito', version: '1.6.5'
+    testImplementation  group: 'org.powermock', name: 'powermock-module-junit4-rule-agent', version: '1.6.5'
 
-    // For more info...
-    // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
-    // http://www.gradle.org/docs/current/userguide/dependency_management.html
+    testImplementation  'org.assertj:assertj-core:3.9.0'
+
+    testImplementation  group: 'org.hamcrest', name: 'hamcrest-all', version: '1.3'
+
+    implementation 'com.intellij:annotations:+@jar'
+    apiImplementation "com.intellij:annotations:+@jar"
 
 }
 
+
+sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
+
+minecraft {
+    // The mappings can be changed at any time, and must be in the following format.
+    // snapshot_YYYYMMDD   Snapshot are built nightly.
+    // stable_#            Stables are built at the discretion of the MCP team.
+    // Use non-default mappings at your own risk. they may not always work.
+    // Simply re-run your setup task after changing the mappings to update your workspace.
+    mappings channel: 'snapshot', version: "${config.mappings}"
+    // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
+    
+    // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
+
+    // Default run configurations.
+    // These can be tweaked, removed, or duplicated as needed.
+    runs {
+        client {
+            workingDirectory project.file('runClient')
+
+            // Recommended logging data for a userdev environment
+            //property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+
+            // Recommended logging level for the console
+            property 'forge.logging.console.level', 'info'
+
+            mods {
+                minecolonies-twitch {
+                    source sourceSets.main
+                    source sourceSets.api
+                }
+            }
+        }
+
+        server {
+            workingDirectory project.file('runServer')
+
+            // Recommended logging data for a userdev environment
+            //property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+
+            // Recommended logging level for the console
+            property 'forge.logging.console.level', 'info'
+
+            mods {
+                minecolonies-twitch {
+                    source sourceSets.main
+                    source sourceSets.api
+                }
+            }
+        }
+
+        data {
+            workingDirectory project.file('runData')
+
+            property 'forge.logging.console.level', 'info'
+
+            args '--mod', 'minecolonies-twitch', '--all', '--output', file('src/main/generated/resources'), '--input', file('src/main/resources')
+
+            mods {
+                minecolonies-twitch {
+                    source sourceSets.main
+                    source sourceSets.api
+                }
+            }
+        }
+    }
+}
+
+task apiJar(type: Jar) {
+    from sourceSets.api.output
+    classifier 'api'
+}
+
+group = "ch.lexustec"
+version = config.minecraft_version.toString() + "-" + System.getenv().containsKey("Version") ? System.getenv("Version") : 'null'
+archivesBaseName = "minecolonies-twitch"
+
 // Example for how to get properties into the manifest for reading by the runtime..
 jar {
+    from sourceSets.api.output
+    from sourceSets.main.output
+
     manifest {
         attributes([
-            "Specification-Title": "examplemod",
-            "Specification-Vendor": "examplemodsareus",
-            "Specification-Version": "1", // We are version 1 of ourselves
-            "Implementation-Title": project.name,
-            "Implementation-Version": "${version}",
-            "Implementation-Vendor" :"examplemodsareus",
-            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+                'Maven-Artifact': "${project.group}:${project.archivesBaseName}:${project.version}:universal",
+                'Timestamp': System.currentTimeMillis(),
+                "Specification-Title": "minecolonies-twitch",
+                "Specification-Vendor": "lexustec",
+                "Specification-Version": "1", // We are version 1 of ourselves
+                "Implementation-Title": project.name,
+                "Implementation-Version": "${project.version}",
+                "Implementation-Vendor" :"lexustec",
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
+
+    classifier = 'universal'
 }
 
 // Example configuration to allow publishing using the maven-publish task
@@ -219,3 +232,54 @@ publishing {
         }
     }
 }
+
+javadoc {
+    source += sourceSets.api.allSource
+}
+
+idea {
+    module {
+        inheritOutputDirs = true
+    }
+}
+
+task setupDecompWorkspace {
+    afterEvaluate {
+        println "Setup"
+    }
+}
+
+task setupCIWorkspace {
+    afterEvaluate {
+        println "Setup"
+    }
+}
+
+task buildModsZip(type: Zip) {
+    group "build"
+
+    baseName "mods"
+
+    afterEvaluate {
+        from(configurations.additionalMods.files) {
+            include '*'
+        }
+
+        from (tasks.jar.outputs) {
+            include '*'
+        }
+    }
+}
+
+tasks.build.dependsOn buildModsZip
+
+afterEvaluate {
+    tasks.buildModsZip.dependsOn tasks.reobfJar
+}
+
+curseforge {
+    
+        logger.lifecycle("Cannot run the CurseUpload sequence. No API-Key or release type has been provided.")
+    
+}
+
