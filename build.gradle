@@ -142,7 +142,7 @@ minecraft {
             property 'forge.logging.console.level', 'info'
 
             mods {
-                minecolonies-twitch {
+                minecoloniestwitch {
                     source sourceSets.main
                     source sourceSets.api
                 }
@@ -159,7 +159,7 @@ minecraft {
             property 'forge.logging.console.level', 'info'
 
             mods {
-                minecolonies-twitch {
+                minecoloniestwitch {
                     source sourceSets.main
                     source sourceSets.api
                 }
@@ -174,7 +174,7 @@ minecraft {
             args '--mod', 'minecolonies-twitch', '--all', '--output', file('src/main/generated/resources'), '--input', file('src/main/resources')
 
             mods {
-                minecolonies-twitch {
+                minecoloniestwitch {
                     source sourceSets.main
                     source sourceSets.api
                 }
@@ -190,7 +190,7 @@ task apiJar(type: Jar) {
 
 group = "ch.lexustec"
 version = config.minecraft_version.toString() + "-" + System.getenv().containsKey("Version") ? System.getenv("Version") : 'null'
-archivesBaseName = "minecolonies-twitch"
+archivesBaseName = "minecoloniestwitch"
 
 // Example for how to get properties into the manifest for reading by the runtime..
 jar {
@@ -201,7 +201,7 @@ jar {
         attributes([
                 'Maven-Artifact': "${project.group}:${project.archivesBaseName}:${project.version}:universal",
                 'Timestamp': System.currentTimeMillis(),
-                "Specification-Title": "minecolonies-twitch",
+                "Specification-Title": "minecoloniestwitch",
                 "Specification-Vendor": "lexustec",
                 "Specification-Version": "1", // We are version 1 of ourselves
                 "Implementation-Title": project.name,
