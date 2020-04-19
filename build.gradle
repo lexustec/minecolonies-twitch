@@ -280,6 +280,6 @@ afterEvaluate {
 curseforge {
     
         logger.lifecycle("Cannot run the CurseUpload sequence. No API-Key or release type has been provided.")
-    
+
 }
 

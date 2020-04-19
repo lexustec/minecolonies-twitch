@@ -1,11 +1,10 @@
-package ch.lexustec.minecoloniestwitch;
+package ch.lexustec.coremod;
+
+import ch.lexustec.api.util.constant.Constants;
+import ch.lexustec.coremod.EventHandler.EventHandler;
+import ch.lexustec.coremod.EventHandler.FMLEventHandler;
 
 import com.ldtteam.structurize.util.LanguageHandler;
-import com.minecolonies.api.configuration.Configuration;
-import com.minecolonies.api.util.constant.Constants;
-import com.minecolonies.coremod.proxy.ClientProxy;
-import com.minecolonies.coremod.proxy.IProxy;
-import com.minecolonies.coremod.proxy.ServerProxy;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.renderer.texture.AtlasTexture;
@@ -31,7 +30,7 @@ import org.apache.logging.log4j.Logger;
 import java.util.stream.Collectors;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod("MineColoniesTwitch")
+@Mod(Constants.MOD_ID)
 public class MineColoniesTwitch
 {
     // Directly reference a log4j logger.
@@ -39,33 +38,21 @@ public class MineColoniesTwitch
     /**
      * The config instance.
      */
-    private static Configuration config;
+    //private static Configuration config;
 
     /**
      * The proxy.
      */
-    public static final IProxy proxy = DistExecutor.runForDist(() -> ClientProxy::new, () -> ServerProxy::new);
+    //public static final IProxy proxy = DistExecutor.runForDist(() -> ClientProxy::new, () -> ServerProxy::new);
 
     public MineColoniesTwitch() {
         LanguageHandler.loadLangPath("assets/minecoloniestwitch/lang/%s.json"); // hotfix config comments, it's ugly bcs it's gonna be replaced
-        config = new Configuration();
+        //config = new Configuration();
 
+        Mod.EventBusSubscriber.Bus.FORGE.bus().get().register(EventHandler.class);
+        Mod.EventBusSubscriber.Bus.FORGE.bus().get().register(FMLEventHandler.class);
+        Mod.EventBusSubscriber.Bus.MOD.bus().get().register(this.getClass());
 
-
-
-
-
-        // Register the setup method for modloading
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        // Register the enqueueIMC method for modloading
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
-        // Register the processIMC method for modloading
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
-        // Register the doClientStuff method for modloading
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
-
-        // Register ourselves for server and other game events we are interested in
-        MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void setup(final FMLCommonSetupEvent event)
@@ -84,7 +71,7 @@ public class MineColoniesTwitch
     }
 
     @OnlyIn(Dist.CLIENT)
-    @SubscribeEvent
+
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
         LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
@@ -126,9 +113,9 @@ public class MineColoniesTwitch
      *
      * @return the config handler.
      */
-    public static Configuration getConfig()
-    {
-        return config;
-    }
+    //public static Configuration getConfig()
+    //{
+    //    return config;
+    //}
 
 }

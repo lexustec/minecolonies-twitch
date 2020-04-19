@@ -1,791 +1,56 @@
-[19Apr2020 02:03:11.970] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20200122.131323, --fml.mcVersion, 1.15.2, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 31.1.16, --version, MOD_DEV, --assetIndex, 1.15, --assetsDir, C:\Users\Thomas\.gradle\caches\forge_gradle\assets, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
-[19Apr2020 02:03:11.974] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 5.0.0-milestone.4+67+b1a340b starting: java version 1.8.0_242 by AdoptOpenJDK
-[19Apr2020 02:03:12.111] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
-[19Apr2020 02:03:12.864] [main/INFO] [STDERR/]: [org.antlr.v4.runtime.ConsoleErrorListener:syntaxError:38]: line 36:0 token recognition error at: 'S'
-[19Apr2020 02:03:12.865] [main/INFO] [STDERR/]: [org.antlr.v4.runtime.ConsoleErrorListener:syntaxError:38]: line 36:1 token recognition error at: 'pa'
-[19Apr2020 02:03:12.865] [main/INFO] [STDERR/]: [org.antlr.v4.runtime.ConsoleErrorListener:syntaxError:38]: line 36:3 token recognition error at: 'w'
-[19Apr2020 02:03:12.865] [main/INFO] [STDERR/]: [org.antlr.v4.runtime.ConsoleErrorListener:syntaxError:38]: line 36:4 token recognition error at: 'n'
-[19Apr2020 02:03:12.866] [main/INFO] [STDERR/]: [org.antlr.v4.runtime.ConsoleErrorListener:syntaxError:38]: line 36:5 token recognition error at: 'e'
-[19Apr2020 02:03:12.866] [main/INFO] [STDERR/]: [org.antlr.v4.runtime.ConsoleErrorListener:syntaxError:38]: line 36:6 token recognition error at: 'r'
-[19Apr2020 02:03:12.867] [main/INFO] [STDERR/]: [org.antlr.v4.runtime.ConsoleErrorListener:syntaxError:38]: line 36:8 token recognition error at: 'N'
-[19Apr2020 02:03:12.867] [main/INFO] [STDERR/]: [org.antlr.v4.runtime.ConsoleErrorListener:syntaxError:38]: line 36:9 token recognition error at: 'B'
-[19Apr2020 02:03:12.867] [main/INFO] [STDERR/]: [org.antlr.v4.runtime.ConsoleErrorListener:syntaxError:38]: line 36:10 token recognition error at: 'T'
-[19Apr2020 02:03:13.025] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\Thomas\.gradle\caches\forge_gradle\assets, --assetIndex, 1.15, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
-[19Apr2020 02:03:13.876] [pool-2-thread-1/ERROR] [net.minecraftforge.fml.loading.moddiscovery.ExplodedDirectoryLocator/SCAN]: Exception scanning C:\Users\Thomas\gyverCloud\Projekte_Aktiv\Java\minecolonies-twitch\build\resources\api
-java.nio.file.NoSuchFileException: C:\Users\Thomas\gyverCloud\Projekte_Aktiv\Java\minecolonies-twitch\build\resources\api
-	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79) ~[?:1.8.0_242]
-	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97) ~[?:1.8.0_242]
-	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102) ~[?:1.8.0_242]
-	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53) ~[?:1.8.0_242]
-	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38) ~[?:1.8.0_242]
-	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:193) ~[?:1.8.0_242]
-	at java.nio.file.Files.readAttributes(Files.java:1737) ~[?:1.8.0_242]
-	at java.nio.file.FileTreeWalker.getAttributes(FileTreeWalker.java:219) ~[?:1.8.0_242]
-	at java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:276) ~[?:1.8.0_242]
-	at java.nio.file.FileTreeWalker.walk(FileTreeWalker.java:322) ~[?:1.8.0_242]
-	at java.nio.file.FileTreeIterator.<init>(FileTreeIterator.java:72) ~[?:1.8.0_242]
-	at java.nio.file.Files.find(Files.java:3687) ~[?:1.8.0_242]
-	at net.minecraftforge.fml.loading.moddiscovery.ExplodedDirectoryLocator.scanIndividualPath(ExplodedDirectoryLocator.java:96) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-launcher.jar:?]
-	at net.minecraftforge.fml.loading.moddiscovery.ExplodedDirectoryLocator.lambda$scanFile$3(ExplodedDirectoryLocator.java:90) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-launcher.jar:?]
-	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:1.8.0_242]
-	at net.minecraftforge.fml.loading.moddiscovery.ExplodedDirectoryLocator.scanFile(ExplodedDirectoryLocator.java:90) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-launcher.jar:?]
-	at net.minecraftforge.fml.loading.moddiscovery.ModFile.scanFile(ModFile.java:153) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-launcher.jar:?]
-	at net.minecraftforge.fml.loading.moddiscovery.Scanner.scan(Scanner.java:46) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-launcher.jar:?]
-	at net.minecraftforge.fml.loading.moddiscovery.ModFile.compileContent(ModFile.java:149) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-launcher.jar:?]
-	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604) [?:1.8.0_242]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_242]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_242]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_242]
-[19Apr2020 02:03:13.885] [pool-2-thread-1/ERROR] [net.minecraftforge.fml.loading.moddiscovery.ExplodedDirectoryLocator/SCAN]: Exception scanning C:\Users\Thomas\gyverCloud\Projekte_Aktiv\Java\minecolonies-twitch\build\classes\java\api
-java.nio.file.NoSuchFileException: C:\Users\Thomas\gyverCloud\Projekte_Aktiv\Java\minecolonies-twitch\build\classes\java\api
-	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79) ~[?:1.8.0_242]
-	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97) ~[?:1.8.0_242]
-	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102) ~[?:1.8.0_242]
-	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53) ~[?:1.8.0_242]
-	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38) ~[?:1.8.0_242]
-	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:193) ~[?:1.8.0_242]
-	at java.nio.file.Files.readAttributes(Files.java:1737) ~[?:1.8.0_242]
-	at java.nio.file.FileTreeWalker.getAttributes(FileTreeWalker.java:219) ~[?:1.8.0_242]
-	at java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:276) ~[?:1.8.0_242]
-	at java.nio.file.FileTreeWalker.walk(FileTreeWalker.java:322) ~[?:1.8.0_242]
-	at java.nio.file.FileTreeIterator.<init>(FileTreeIterator.java:72) ~[?:1.8.0_242]
-	at java.nio.file.Files.find(Files.java:3687) ~[?:1.8.0_242]
-	at net.minecraftforge.fml.loading.moddiscovery.ExplodedDirectoryLocator.scanIndividualPath(ExplodedDirectoryLocator.java:96) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-launcher.jar:?]
-	at net.minecraftforge.fml.loading.moddiscovery.ExplodedDirectoryLocator.lambda$scanFile$3(ExplodedDirectoryLocator.java:90) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-launcher.jar:?]
-	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:1.8.0_242]
-	at net.minecraftforge.fml.loading.moddiscovery.ExplodedDirectoryLocator.scanFile(ExplodedDirectoryLocator.java:90) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-launcher.jar:?]
-	at net.minecraftforge.fml.loading.moddiscovery.ModFile.scanFile(ModFile.java:153) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-launcher.jar:?]
-	at net.minecraftforge.fml.loading.moddiscovery.Scanner.scan(Scanner.java:46) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-launcher.jar:?]
-	at net.minecraftforge.fml.loading.moddiscovery.ModFile.compileContent(ModFile.java:149) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-launcher.jar:?]
-	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604) [?:1.8.0_242]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_242]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_242]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_242]
-[19Apr2020 02:03:14.530] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[19Apr2020 02:03:23.051] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.2.2 build 10
-[19Apr2020 02:03:24.314] [modloading-worker-2/WARN] [structurize/]: Structurize starting up
-[19Apr2020 02:03:24.318] [modloading-worker-13/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 31.1.16, for MC 1.15.2 with MCP 20200122.131323
-[19Apr2020 02:03:24.318] [modloading-worker-13/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v31.1.16 Initialized
-[19Apr2020 02:03:24.934] [Render thread/INFO] [com.example.examplemod.ExampleMod/]: HELLO from Register Block
-[19Apr2020 02:03:24.961] [Render thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity minecolonies:citizen
-[19Apr2020 02:03:24.965] [Render thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity minecolonies:fishhook
-[19Apr2020 02:03:24.969] [Render thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity minecolonies:mercenary
-[19Apr2020 02:03:24.972] [Render thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity minecolonies:barbarian
-[19Apr2020 02:03:24.973] [Render thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity minecolonies:archerbarbarian
-[19Apr2020 02:03:24.974] [Render thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity minecolonies:chiefbarbarian
-[19Apr2020 02:03:24.976] [Render thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity minecolonies:pirate
-[19Apr2020 02:03:24.977] [Render thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity minecolonies:archerpirate
-[19Apr2020 02:03:24.978] [Render thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity minecolonies:chiefpirate
-[19Apr2020 02:03:24.979] [Render thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity minecolonies:sittingentity
-[19Apr2020 02:03:24.980] [Render thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity minecolonies:mcminecart
-[19Apr2020 02:03:28.040] [Render thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
-[19Apr2020 02:03:28.108] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
-[19Apr2020 02:03:28.128] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file C:\Users\Thomas\gyverCloud\Projekte_Aktiv\Java\minecolonies-twitch\runClient\config\forge-client.toml is not correct. Correcting
-[19Apr2020 02:03:28.129] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key client.experimentalForgeLightPipelineEnabled was corrected from false to null
-[19Apr2020 02:03:28.135] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file C:\Users\Thomas\gyverCloud\Projekte_Aktiv\Java\minecolonies-twitch\runClient\config\structurize-common.toml is not correct. Correcting
-[19Apr2020 02:03:28.136] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay was corrected from null to SimpleCommentedConfig:{}
-[19Apr2020 02:03:28.136] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.ignoreSchematicsFromJar was corrected from null to false
-[19Apr2020 02:03:28.136] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.allowPlayerSchematics was corrected from null to true
-[19Apr2020 02:03:28.137] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.maxOperationsPerTick was corrected from null to 1000
-[19Apr2020 02:03:28.137] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.maxCachedChanges was corrected from null to 10
-[19Apr2020 02:03:28.137] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.maxCachedSchematics was corrected from null to 100
-[19Apr2020 02:03:28.137] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.maxBlocksChecked was corrected from null to 1000
-[19Apr2020 02:03:28.141] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file C:\Users\Thomas\gyverCloud\Projekte_Aktiv\Java\minecolonies-twitch\runClient\config\minecolonies-common.toml is not correct. Correcting
-[19Apr2020 02:03:28.141] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay was corrected from null to SimpleCommentedConfig:{}
-[19Apr2020 02:03:28.142] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.initialcitizenamount was corrected from null to 4
-[19Apr2020 02:03:28.142] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.builderplaceconstructiontape was corrected from null to true
-[19Apr2020 02:03:28.142] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.playergetsguidebookonfirstjoin was corrected from null to true
-[19Apr2020 02:03:28.142] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.allowinfinitesupplychests was corrected from null to false
-[19Apr2020 02:03:28.142] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.allowinfinitecolonies was corrected from null to false
-[19Apr2020 02:03:28.142] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.allowotherdimcolonies was corrected from null to false
-[19Apr2020 02:03:28.142] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.citizenrespawninterval was corrected from null to 60
-[19Apr2020 02:03:28.142] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.maxcitizenpercolony was corrected from null to 75
-[19Apr2020 02:03:28.142] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.builderinfiniteresources was corrected from null to false
-[19Apr2020 02:03:28.143] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.limittoonewarehousepercolony was corrected from null to true
-[19Apr2020 02:03:28.143] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.builderbuildblockdelay was corrected from null to 15
-[19Apr2020 02:03:28.143] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.blockminingdelaymodifier was corrected from null to 500
-[19Apr2020 02:03:28.143] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.maxblockscheckedbybuilder was corrected from null to 1000
-[19Apr2020 02:03:28.143] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.chatfrequency was corrected from null to 30
-[19Apr2020 02:03:28.143] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.enableindevelopmentfeatures was corrected from null to false
-[19Apr2020 02:03:28.143] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.alwaysrendernametag was corrected from null to true
-[19Apr2020 02:03:28.143] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.growthmodifier was corrected from null to 1.0
-[19Apr2020 02:03:28.143] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.workersalwaysworkinrain was corrected from null to false
-[19Apr2020 02:03:28.143] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.sendenteringleavingmessages was corrected from null to true
-[19Apr2020 02:03:28.144] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.allowplayerschematics was corrected from null to false
-[19Apr2020 02:03:28.144] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.allowglobalnamechanges was corrected from null to 1
-[19Apr2020 02:03:28.144] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.holidayfeatures was corrected from null to true
-[19Apr2020 02:03:28.144] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.updaterate was corrected from null to 1
-[19Apr2020 02:03:28.144] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.dirtfromcompost was corrected from null to 1
-[19Apr2020 02:03:28.144] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.luckyblockchance was corrected from null to 1
-[19Apr2020 02:03:28.144] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.fixorphanedchunks was corrected from null to false
-[19Apr2020 02:03:28.144] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.restrictbuilderunderground was corrected from null to true
-[19Apr2020 02:03:28.145] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.fisherspongechance was corrected from null to 0.1
-[19Apr2020 02:03:28.145] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.minthleveltoteleport was corrected from null to 3
-[19Apr2020 02:03:28.145] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.suggestbuildtoolplacement was corrected from null to true
-[19Apr2020 02:03:28.145] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.foodmodifier was corrected from null to 1.0
-[19Apr2020 02:03:28.145] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.disablecitizenvoices was corrected from null to false
-[19Apr2020 02:03:28.145] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.diseasemodifier was corrected from null to 5
-[19Apr2020 02:03:28.146] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key gameplay.generatesupplyloot was corrected from null to true
-[19Apr2020 02:03:28.148] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key commands was corrected from null to SimpleCommentedConfig:{}
-[19Apr2020 02:03:28.148] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key commands.teleportbuffer was corrected from null to 120
-[19Apr2020 02:03:28.148] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key commands.oplevelforserver was corrected from null to 3
-[19Apr2020 02:03:28.148] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key commands.autodeletecoloniesinhours was corrected from null to 0
-[19Apr2020 02:03:28.148] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key commands.autodestroycolonyblocks was corrected from null to true
-[19Apr2020 02:03:28.148] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key commands.canplayerusertpcommand was corrected from null to true
-[19Apr2020 02:03:28.148] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key commands.canplayerusecolonytpcommand was corrected from null to false
-[19Apr2020 02:03:28.148] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key commands.canplayeruseallytownhallteleport was corrected from null to true
-[19Apr2020 02:03:28.148] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key commands.canplayerusehometpcommand was corrected from null to true
-[19Apr2020 02:03:28.149] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key commands.canplayeruseshowcolonyinfocommand was corrected from null to true
-[19Apr2020 02:03:28.149] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key commands.canplayerusekillcitizenscommand was corrected from null to true
-[19Apr2020 02:03:28.149] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key commands.canplayeruseaddofficercommand was corrected from null to true
-[19Apr2020 02:03:28.149] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key commands.canplayerusedeletecolonycommand was corrected from null to true
-[19Apr2020 02:03:28.149] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key commands.numberofattemptsforsafetp was corrected from null to 4
-[19Apr2020 02:03:28.151] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key claims was corrected from null to SimpleCommentedConfig:{}
-[19Apr2020 02:03:28.151] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key claims.workingrangetownhallchunks was corrected from null to 20
-[19Apr2020 02:03:28.151] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key claims.mintownhallpadding was corrected from null to 10
-[19Apr2020 02:03:28.151] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key claims.townhallpaddingchunk was corrected from null to 5
-[19Apr2020 02:03:28.151] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key claims.restrictcolonyplacement was corrected from null to false
-[19Apr2020 02:03:28.152] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key claims.enabledynamiccolonysizes was corrected from null to true
-[19Apr2020 02:03:28.152] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key claims.maxdistancefromworldspawn was corrected from null to 8000
-[19Apr2020 02:03:28.152] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key claims.mindistancefromworldspawn was corrected from null to 512
-[19Apr2020 02:03:28.152] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key claims.protectvillages was corrected from null to false
-[19Apr2020 02:03:28.152] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key claims.officersreceiveadvancements was corrected from null to true
-[19Apr2020 02:03:28.154] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key combat was corrected from null to SimpleCommentedConfig:{}
-[19Apr2020 02:03:28.154] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key combat.dobarbariansspawn was corrected from null to true
-[19Apr2020 02:03:28.154] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key combat.barbarianhordedifficulty was corrected from null to 5
-[19Apr2020 02:03:28.154] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key combat.spawnbarbariansize was corrected from null to 5
-[19Apr2020 02:03:28.154] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key combat.maxBarbarianSize was corrected from null to 20
-[19Apr2020 02:03:28.154] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key combat.dobarbariansbreakthroughwalls was corrected from null to true
-[19Apr2020 02:03:28.154] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key combat.averagenumberofnightsbetweenraids was corrected from null to 5
-[19Apr2020 02:03:28.155] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key combat.minimumnumberofnightsbetweenraids was corrected from null to 3
-[19Apr2020 02:03:28.155] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key combat.mobattackcitizens was corrected from null to true
-[19Apr2020 02:03:28.155] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key combat.shouldraiderbreakdoors was corrected from null to true
-[19Apr2020 02:03:28.155] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key combat.citizencallforhelp was corrected from null to true
-[19Apr2020 02:03:28.155] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key combat.rangerenchants was corrected from null to true
-[19Apr2020 02:03:28.155] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key combat.rangerdamagemult was corrected from null to 1.0
-[19Apr2020 02:03:28.155] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key combat.knightdamagemult was corrected from null to 1.0
-[19Apr2020 02:03:28.155] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key combat.guardhealthmult was corrected from null to 1.0
-[19Apr2020 02:03:28.155] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key combat.pvp_mode was corrected from null to false
-[19Apr2020 02:03:28.155] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key combat.daysuntilpirateshipsdespawn was corrected from null to 3
-[19Apr2020 02:03:28.155] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key combat.maxyforbarbarians was corrected from null to 200
-[19Apr2020 02:03:28.158] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key permissions was corrected from null to SimpleCommentedConfig:{}
-[19Apr2020 02:03:28.158] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key permissions.enablecolonyprotection was corrected from null to true
-[19Apr2020 02:03:28.158] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key permissions.turnoffexplosionsincolonies was corrected from null to true
-[19Apr2020 02:03:28.158] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key permissions.specialpermgroup was corrected from null to [_Raycoms_]
-[19Apr2020 02:03:28.158] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key permissions.freetointeractblocks was corrected from null to [dirt, 0 0 0]
-[19Apr2020 02:03:28.158] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key permissions.secondsBetweenPermissionMessages was corrected from null to 30
-[19Apr2020 02:03:28.160] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility was corrected from null to SimpleCommentedConfig:{}
-[19Apr2020 02:03:28.161] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.extraOres was corrected from null to [minestuck:ore_cruxite, minestuck:ore_uranium]
-[19Apr2020 02:03:28.161] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.guardresourcelocations was corrected from null to [minecraft:slime, tconstruct:blueslime]
-[19Apr2020 02:03:28.161] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.configliststudyitems was corrected from null to [minecraft:paper;400;100]
-[19Apr2020 02:03:28.161] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.listOfCompostableItems was corrected from null to [minecraft:rotten_flesh, minecraft:brown_mushroom, minecraft:red_mushroom, minecraft:feather, minecraft:pumpkin, minecraft:carved_pumpkin, minecraft:grass, minecraft:tall_grass, minecraft:fern, minecraft:large_fern, minecraft:kelp, minecraft:seagrass, minecraft:cactus, minecraft:sugar_cane, minecraft:vine, minecraft:cocoa_beans, minecraft:lily_pad, minecraft:sea_pickle, minecraft:wheat, minecraft:brown_mushroom_block, minecraft:red_mushroom_block, minecraft:mushroom_stem, minecraft:cake, minecraft:rabbit_foot, minecraft:fermented_spider_eye, saplings, flowers, leaves]
-[19Apr2020 02:03:28.161] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.luckyblocks was corrected from null to [minecraft:stone, minecraft:cobblestone]
-[19Apr2020 02:03:28.161] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.luckyores was corrected from null to [minecraft:coal_ore!64, minecraft:iron_ore!32, minecraft:gold_ore!16, minecraft:redstone_ore!8, minecraft:lapis_ore!4, minecraft:diamond_ore!2, minecraft:emerald_ore!1]
-[19Apr2020 02:03:28.161] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.crusherproduction was corrected from null to [minecraft:cobblestone!minecraft:gravel, minecraft:gravel!minecraft:sand, minecraft:sand!minecraft:clay]
-[19Apr2020 02:03:28.162] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.siftermeshes was corrected from null to [minecraft:string,0, minecraft:flint,0.1, minecraft:iron_ingot,0.1, minecraft:diamond,0.1]
-[19Apr2020 02:03:28.162] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.siftableblocks was corrected from null to [minecraft:dirt, minecraft:sand, minecraft:gravel, minecraft:soul_sand]
-[19Apr2020 02:03:28.162] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.sifterdrops was corrected from null to [0,0,minecraft:wheat_seeds,25, 0,0,minecraft:oak_sapling,1, 0,0,minecraft:birch_sapling,1, 0,0,minecraft:spruce_sapling,1, 0,0,minecraft:jungle_sapling,1, 0,1,minecraft:wheat_seeds,50, 0,1,minecraft:oak_sapling,5, 0,1,minecraft:birch_sapling,5, 0,1,minecraft:spruce_sapling,5, 0,1,minecraft:jungle_sapling,5, 0,1,minecraft:carrot:0,1, 0,1,minecraft:potato:0,1, 0,2,minecraft:wheat_seeds,50, 0,2,minecraft:oak_sapling,10, 0,2,minecraft:birch_sapling,10, 0,2,minecraft:spruce_sapling,10, 0,2,minecraft:jungle_sapling,10, 0,2,minecraft:pumpkin_seeds:0,1, 0,2,minecraft:melon_seeds:0,1, 0,2,minecraft:beetroot_seeds:0,1, 0,2,minecraft:carrot,1, 0,2,minecraft:potato,1, 0,2,minecraft:dark_oak_sapling,1, 0,2,minecraft:acacia_sapling,1, 0,3,minecraft:wheat_seeds,25, 0,3,minecraft:oak_sapling,10, 0,3,minecraft:birch_sapling,10, 0,3,minecraft:spruce_sapling,10, 0,3,minecraft:jungle_sapling,10, 0,3,minecraft:pumpkin_seeds:0,5, 0,3,minecraft:melon_seeds:0,5, 0,3,minecraft:beetroot_seeds:0,5, 0,3,minecraft:carrot:0,5, 0,3,minecraft:potato:0,5, 0,3,minecraft:dark_oak_sapling,5, 0,3,minecraft:acacia_sapling,5, 1,0,minecraft:cactus,2.5, 1,0,minecraft:sugar_cane,2.5, 1,1,minecraft:cactus,5, 1,1,minecraft:sugar_cane,5, 1,1,minecraft:gold_nugget,5, 1,2,minecraft:cactus,10, 1,2,minecraft:sugar_cane,10, 1,2,minecraft:cocoa_beans,10, 1,2,minecraft:gold_nugget,10, 1,3,minecraft:cactus,15, 1,3,minecraft:sugar_cane,15, 1,3,minecraft:cocoa_beans,15, 1,3,minecraft:gold_nugget,15, 2,0,minecraft:iron_nugget,5, 2,0,minecraft:flint,5, 2,0,minecraft:coal,5, 2,1,minecraft:redstone,10, 2,1,minecraft:iron_nugget,10, 2,1,minecraft:flint,10, 2,1,minecraft:coal,10, 2,2,minecraft:redstone,15, 2,2,minecraft:iron_nugget,15, 2,2,minecraft:coal,15, 2,2,minecraft:lapis_lazuli,5, 2,2,minecraft:iron_ingot,1, 2,2,minecraft:gold_ingot,1, 2,2,minecraft:emerald,1, 2,2,minecraft:diamond,1, 2,3,minecraft:redstone,20, 2,3,minecraft:coal,20, 2,3,minecraft:lapis_lazuli,10, 2,3,minecraft:iron_ingot,2.5, 2,3,minecraft:gold_ingot,2.5, 2,3,minecraft:emerald,2.5, 2,3,minecraft:diamond,2.5, 3,0,minecraft:nether_wart,5, 3,0,minecraft:quartz,5, 3,1,minecraft:nether_wart,10, 3,1,minecraft:quartz,10, 3,1,minecraft:glowstone_dust,5, 3,2,minecraft:nether_wart,10, 3,2,minecraft:quartz,10, 3,2,minecraft:glowstone_dust,10, 3,2,minecraft:blaze_powder,1, 3,2,minecraft:magma_cream,1, 3,3,minecraft:nether_wart,15, 3,3,minecraft:quartz,15, 3,3,minecraft:glowstone_dust,15, 3,3,minecraft:blaze_powder,5, 3,3,minecraft:magma_cream,5, 3,3,minecraft:player_head,5]
-[19Apr2020 02:03:28.163] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.listofplantables was corrected from null to [minecraft:sunflower, minecraft:lilac, minecraft:rose_bush, minecraft:peony, minecraft:tall_grass, minecraft:large_fern, minecraft:fern, minecraft:sugar_cane, minecraft:cactus, small_flowers]
-[19Apr2020 02:03:28.163] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.enchantments was corrected from null to [1,minecraft:aqua_affinity,1,50, 1,minecraft:bane_of_arthropods,1,50, 1,minecraft:blast_protection,1,50, 1,minecraft:depth_strider,1,50, 1,minecraft:feather_falling,1,50, 1,minecraft:fire_aspect,1,50, 1,minecraft:fire_protection,1,50, 1,minecraft:flame,1,50, 1,minecraft:frost_walker,1,50, 1,minecraft:knockback,1,50, 1,minecraft:looting,1,50, 1,minecraft:power,1,50, 1,minecraft:projectile_protection,1,50, 1,minecraft:protection,1,50, 1,minecraft:punch,1,50, 1,minecraft:respiration,1,50, 1,minecraft:sharpness,1,50, 1,minecraft:smite,1,50, 1,minecraft:sweeping,1,50, 1,minecraft:unbreaking,1,50, 2,minecraft:aqua_affinity,2,25, 2,minecraft:bane_of_arthropods,2,25, 2,minecraft:blast_protection,2,25, 2,minecraft:depth_strider,2,25, 2,minecraft:feather_falling,2,25, 2,minecraft:fire_aspect,2,25, 2,minecraft:fire_protection,2,25, 2,minecraft:flame,2,25, 2,minecraft:frost_walker,2,25, 2,minecraft:knockback,2,25, 2,minecraft:looting,2,25, 2,minecraft:power,2,25, 2,minecraft:projectile_protection,2,25, 2,minecraft:protection,2,25, 2,minecraft:punch,2,25, 2,minecraft:respiration,2,25, 2,minecraft:sharpness,2,25, 2,minecraft:smite,2,25, 2,minecraft:sweeping,2,25, 2,minecraft:unbreaking,2,25, 3,minecraft:aqua_affinity,3,15, 3,minecraft:bane_of_arthropods,3,15, 3,minecraft:blast_protection,3,15, 3,minecraft:depth_strider,3,15, 3,minecraft:feather_falling,3,15, 3,minecraft:fire_aspect,3,15, 3,minecraft:fire_protection,3,15, 3,minecraft:flame,3,15, 3,minecraft:frost_walker,3,15, 3,minecraft:knockback,3,15, 3,minecraft:looting,3,15, 3,minecraft:power,3,15, 3,minecraft:projectile_protection,3,15, 3,minecraft:protection,3,15, 3,minecraft:punch,3,15, 3,minecraft:respiration,3,15, 3,minecraft:sharpness,3,15, 3,minecraft:smite,3,15, 3,minecraft:sweeping,3,15, 3,minecraft:unbreaking,3,15, 4,minecraft:aqua_affinity,4,5, 4,minecraft:bane_of_arthropods,4,5, 4,minecraft:blast_protection,4,5, 4,minecraft:depth_strider,4,5, 4,minecraft:feather_falling,4,5, 4,minecraft:fire_aspect,4,5, 4,minecraft:fire_protection,4,5, 4,minecraft:flame,4,5, 4,minecraft:frost_walker,4,5, 4,minecraft:infinity,1,5, 4,minecraft:knockback,4,5, 4,minecraft:looting,4,5, 4,minecraft:power,4,5, 4,minecraft:projectile_protection,4,5, 4,minecraft:protection,4,5, 4,minecraft:punch,4,5, 4,minecraft:respiration,4,5, 4,minecraft:sharpness,4,5, 4,minecraft:smite,4,5, 4,minecraft:sweeping,4,5, 4,minecraft:unbreaking,4,5, 5,minecraft:aqua_affinity,5,1, 5,minecraft:bane_of_arthropods,5,1, 5,minecraft:blast_protection,5,1, 5,minecraft:depth_strider,5,1, 5,minecraft:feather_falling,5,1, 5,minecraft:fire_aspect,5,1, 5,minecraft:fire_protection,5,1, 5,minecraft:flame,5,1, 5,minecraft:frost_walker,5,1, 5,minecraft:infinity,1,1, 5,minecraft:knockback,5,1, 5,minecraft:looting,5,1, 5,minecraft:mending,1,1, 5,minecraft:power,5,1, 5,minecraft:projectile_protection,5,1, 5,minecraft:protection,5,1, 5,minecraft:punch,5,1, 5,minecraft:respiration,5,1, 5,minecraft:sharpness,5,1, 5,minecraft:smite,5,1, 5,minecraft:sweeping,5,1, 5,minecraft:unbreaking,5,1]
-[19Apr2020 02:03:28.163] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.enchanterexperiencemultiplier was corrected from null to 2.0
-[19Apr2020 02:03:28.163] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.dynamictreeharvestsize was corrected from null to 5
-[19Apr2020 02:03:28.163] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.diseases was corrected from null to [Influenza,100,minecraft:carrot,minecraft:potato, Measles,10,minecraft:dandelion,minecraft:kelp,minecraft:poppy, Smallpox,1,minecraft:honeycomb,minecraft:golden_apple]
-[19Apr2020 02:03:28.168] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key pathfinding was corrected from null to SimpleCommentedConfig:{}
-[19Apr2020 02:03:28.168] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key pathfinding.minimumrailstopath was corrected from null to 5
-[19Apr2020 02:03:28.168] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key pathfinding.pathfindingdebugdraw was corrected from null to false
-[19Apr2020 02:03:28.168] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key pathfinding.pathfindingdebugverbosity was corrected from null to 0
-[19Apr2020 02:03:28.169] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key pathfinding.pathfindingmaxthreadcount was corrected from null to 2
-[19Apr2020 02:03:28.169] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key pathfinding.pathfindingmaxnodes was corrected from null to 5000
-[19Apr2020 02:03:28.172] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key requestSystem was corrected from null to SimpleCommentedConfig:{}
-[19Apr2020 02:03:28.172] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key requestSystem.enabledebuglogging was corrected from null to false
-[19Apr2020 02:03:28.172] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key requestSystem.maximalretries was corrected from null to 3
-[19Apr2020 02:03:28.172] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key requestSystem.delaybetweenretries was corrected from null to 1200
-[19Apr2020 02:03:28.173] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key requestSystem.maximalbuildingstogather was corrected from null to 6
-[19Apr2020 02:03:28.173] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key requestSystem.minimalbuildingstogather was corrected from null to 3
-[19Apr2020 02:03:28.173] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key requestSystem.creativeresolve was corrected from null to false
-[19Apr2020 02:03:28.173] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key requestSystem.canplayeruseresetcommand was corrected from null to false
-[19Apr2020 02:03:28.176] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research was corrected from null to SimpleCommentedConfig:{}
-[19Apr2020 02:03:28.176] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.tactictraining was corrected from null to [minecraft:iron_block*3]
-[19Apr2020 02:03:28.176] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.improvedswords was corrected from null to [minecraft:iron_block*6]
-[19Apr2020 02:03:28.177] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.squiretraining was corrected from null to [minecraft:shield*5]
-[19Apr2020 02:03:28.177] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.knighttraining was corrected from null to [minecraft:shield*10]
-[19Apr2020 02:03:28.177] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.captaintraining was corrected from null to [minecraft:shield*25]
-[19Apr2020 02:03:28.177] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.captainoftheguard was corrected from null to [minecraft:shield*64]
-[19Apr2020 02:03:28.177] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.improvedbows was corrected from null to [minecraft:iron_block*6]
-[19Apr2020 02:03:28.177] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.tickshot was corrected from null to [minecraft:bow*5]
-[19Apr2020 02:03:28.177] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.multishot was corrected from null to [minecraft:bow*9]
-[19Apr2020 02:03:28.177] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.rapidshot was corrected from null to [minecraft:bow*18]
-[19Apr2020 02:03:28.177] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.masterbowman was corrected from null to [minecraft:bow*27]
-[19Apr2020 02:03:28.177] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.avoidance was corrected from null to [minecraft:iron_block*3]
-[19Apr2020 02:03:28.178] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.parry was corrected from null to [minecraft:iron_ingot*16]
-[19Apr2020 02:03:28.178] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.repost was corrected from null to [minecraft:iron_ingot*32]
-[19Apr2020 02:03:28.178] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.duelist was corrected from null to [minecraft:iron_ingot*64]
-[19Apr2020 02:03:28.178] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.provost was corrected from null to [minecraft:diamond*16]
-[19Apr2020 02:03:28.178] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.masterswordsman was corrected from null to [minecraft:diamond*64]
-[19Apr2020 02:03:28.178] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.dodge was corrected from null to [minecraft:leather*16]
-[19Apr2020 02:03:28.178] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.improveddodge was corrected from null to [minecraft:leather*32]
-[19Apr2020 02:03:28.178] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.evasion was corrected from null to [minecraft:leather*64]
-[19Apr2020 02:03:28.178] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.improvedevasion was corrected from null to [minecraft:diamond*16]
-[19Apr2020 02:03:28.178] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.agilearcher was corrected from null to [minecraft:diamond*64]
-[19Apr2020 02:03:28.178] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.improvedleather was corrected from null to [minecraft:leather*32]
-[19Apr2020 02:03:28.178] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.boiledleather was corrected from null to [minecraft:leather*64]
-[19Apr2020 02:03:28.178] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.ironskin was corrected from null to [minecraft:iron_ingot*16]
-[19Apr2020 02:03:28.178] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.ironarmour was corrected from null to [minecraft:iron_ingot*32]
-[19Apr2020 02:03:28.178] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.steelarmour was corrected from null to [minecraft:iron_ingot*64]
-[19Apr2020 02:03:28.179] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.diamondskin was corrected from null to [minecraft:diamond*64]
-[19Apr2020 02:03:28.179] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.regeneration was corrected from null to [minecraft:emerald*1]
-[19Apr2020 02:03:28.179] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.feint was corrected from null to [minecraft:emerald*8]
-[19Apr2020 02:03:28.179] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.fear was corrected from null to [minecraft:emerald*16]
-[19Apr2020 02:03:28.179] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.retreat was corrected from null to [minecraft:emerald*32]
-[19Apr2020 02:03:28.179] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.fullretreat was corrected from null to [minecraft:emerald*64]
-[19Apr2020 02:03:28.179] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.avoid was corrected from null to [minecraft:emerald*8]
-[19Apr2020 02:03:28.179] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.evade was corrected from null to [minecraft:emerald*16]
-[19Apr2020 02:03:28.179] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.flee was corrected from null to [minecraft:emerald*32]
-[19Apr2020 02:03:28.179] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.hotfoot was corrected from null to [minecraft:emerald*64]
-[19Apr2020 02:03:28.179] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.accuracy was corrected from null to [minecraft:iron_ingot*16]
-[19Apr2020 02:03:28.179] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.quickdraw was corrected from null to [minecraft:iron_block*2]
-[19Apr2020 02:03:28.179] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.powerattack was corrected from null to [minecraft:iron_block*4]
-[19Apr2020 02:03:28.179] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.cleave was corrected from null to [minecraft:iron_block*8]
-[19Apr2020 02:03:28.179] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.mightycleave was corrected from null to [minecraft:iron_block*16]
-[19Apr2020 02:03:28.179] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.whirlwind was corrected from null to [minecraft:iron_block*32]
-[19Apr2020 02:03:28.180] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.preciseshot was corrected from null to [minecraft:flint*16]
-[19Apr2020 02:03:28.180] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.penetratingshot was corrected from null to [minecraft:flint*32]
-[19Apr2020 02:03:28.180] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.piercingshot was corrected from null to [minecraft:flint*64]
-[19Apr2020 02:03:28.180] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.woundingshot was corrected from null to [minecraft:flint*128]
-[19Apr2020 02:03:28.180] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.deadlyaim was corrected from null to [minecraft:flint*256]
-[19Apr2020 02:03:28.180] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.higherlearning was corrected from null to [minecraft:book*3]
-[19Apr2020 02:03:28.180] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.morebooks was corrected from null to [minecraft:book*6]
-[19Apr2020 02:03:28.180] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.bookworm was corrected from null to [minecraft:bookshelf*6]
-[19Apr2020 02:03:28.180] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.bachelor was corrected from null to [minecraft:bookshelf*12]
-[19Apr2020 02:03:28.181] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.master was corrected from null to [minecraft:bookshelf*32]
-[19Apr2020 02:03:28.181] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.phd was corrected from null to [minecraft:bookshelf*64]
-[19Apr2020 02:03:28.181] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.nurture was corrected from null to [minecraft:cooked_chicken*32]
-[19Apr2020 02:03:28.181] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.hormones was corrected from null to [minecraft:cooked_chicken*64]
-[19Apr2020 02:03:28.181] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.puberty was corrected from null to [minecraft:cooked_chicken*128]
-[19Apr2020 02:03:28.181] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.growth was corrected from null to [minecraft:cooked_chicken*256]
-[19Apr2020 02:03:28.181] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.beanstalk was corrected from null to [minecraft:cooked_chicken*512]
-[19Apr2020 02:03:28.181] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.keen was corrected from null to [minecraft:book*3]
-[19Apr2020 02:03:28.181] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.outpost was corrected from null to [minecraft:cooked_beef*64]
-[19Apr2020 02:03:28.181] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.hamlet was corrected from null to [minecraft:cooked_beef*128]
-[19Apr2020 02:03:28.181] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.village was corrected from null to [minecraft:cooked_beef*256]
-[19Apr2020 02:03:28.182] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.city was corrected from null to [minecraft:cooked_beef*512]
-[19Apr2020 02:03:28.182] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.diligent was corrected from null to [minecraft:book*6]
-[19Apr2020 02:03:28.182] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.studious was corrected from null to [minecraft:book*12]
-[19Apr2020 02:03:28.182] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.scholarly was corrected from null to [minecraft:book*24]
-[19Apr2020 02:03:28.182] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.reflective was corrected from null to [minecraft:book*48]
-[19Apr2020 02:03:28.182] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.academic was corrected from null to [minecraft:book*128]
-[19Apr2020 02:03:28.182] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.rails was corrected from null to [minecraft:rail*64]
-[19Apr2020 02:03:28.182] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.nimble was corrected from null to [minecraft:rabbit_foot*1]
-[19Apr2020 02:03:28.182] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.agile was corrected from null to [minecraft:rabbit_foot*10]
-[19Apr2020 02:03:28.183] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.swift was corrected from null to [minecraft:rabbit_foot*32]
-[19Apr2020 02:03:28.183] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.athlete was corrected from null to [minecraft:rabbit_foot*64]
-[19Apr2020 02:03:28.183] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.stamina was corrected from null to [minecraft:carrot*1]
-[19Apr2020 02:03:28.183] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.resistance was corrected from null to [minecraft:golden_apple*1]
-[19Apr2020 02:03:28.183] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.resilience was corrected from null to [minecraft:golden_apple*8]
-[19Apr2020 02:03:28.183] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.vitality was corrected from null to [minecraft:golden_apple*16]
-[19Apr2020 02:03:28.183] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.fortitude was corrected from null to [minecraft:golden_apple*32]
-[19Apr2020 02:03:28.183] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.indefatigability was corrected from null to [minecraft:golden_apple*64]
-[19Apr2020 02:03:28.183] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.bandaid was corrected from null to [minecraft:golden_carrot*1]
-[19Apr2020 02:03:28.183] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.healingcream was corrected from null to [minecraft:golden_carrot*8]
-[19Apr2020 02:03:28.184] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.bandages was corrected from null to [minecraft:golden_carrot*16]
-[19Apr2020 02:03:28.184] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.compress was corrected from null to [minecraft:golden_carrot*32]
-[19Apr2020 02:03:28.184] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.cast was corrected from null to [minecraft:golden_carrot*64]
-[19Apr2020 02:03:28.184] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.gourmand was corrected from null to [minecraft:cookie*32]
-[19Apr2020 02:03:28.184] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.gorger was corrected from null to [minecraft:cookie*64]
-[19Apr2020 02:03:28.184] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.stuffer was corrected from null to [minecraft:cookie*128]
-[19Apr2020 02:03:28.184] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.epicure was corrected from null to [minecraft:cookie*256]
-[19Apr2020 02:03:28.184] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.glutton was corrected from null to [minecraft:cookie*512]
-[19Apr2020 02:03:28.184] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.circus was corrected from null to [minecraft:cake*1]
-[19Apr2020 02:03:28.184] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.festival was corrected from null to [minecraft:cake*9]
-[19Apr2020 02:03:28.184] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.spectacle was corrected from null to [minecraft:cake*18]
-[19Apr2020 02:03:28.184] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.opera was corrected from null to [minecraft:cake*27]
-[19Apr2020 02:03:28.184] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.theater was corrected from null to [minecraft:enchanted_golden_apple*16]
-[19Apr2020 02:03:28.185] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.firstaid was corrected from null to [minecraft:hay_block*8]
-[19Apr2020 02:03:28.185] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.firstaid2 was corrected from null to [minecraft:hay_block*16]
-[19Apr2020 02:03:28.185] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.livesaver was corrected from null to [minecraft:hay_block*32]
-[19Apr2020 02:03:28.185] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.livesaver2 was corrected from null to [minecraft:hay_block*64]
-[19Apr2020 02:03:28.185] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.guardianangel was corrected from null to [minecraft:hay_block*128]
-[19Apr2020 02:03:28.185] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.guardianangel2 was corrected from null to [minecraft:hay_block*256]
-[19Apr2020 02:03:28.185] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.veinminer was corrected from null to [minecraft:iron_ore*32]
-[19Apr2020 02:03:28.185] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.goodveins was corrected from null to [minecraft:iron_ore*64]
-[19Apr2020 02:03:28.185] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.richveins was corrected from null to [minecraft:gold_ore*32]
-[19Apr2020 02:03:28.186] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.amazingveins was corrected from null to [minecraft:gold_ore*64]
-[19Apr2020 02:03:28.186] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.motherlode was corrected from null to [minecraft:diamond_ore*64]
-[19Apr2020 02:03:28.186] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.ability was corrected from null to [minecraft:iron_ingot*64]
-[19Apr2020 02:03:28.186] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.skills was corrected from null to [minecraft:iron_ingot*128]
-[19Apr2020 02:03:28.186] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.tools was corrected from null to [minecraft:iron_ingot*256]
-[19Apr2020 02:03:28.186] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.seemsautomatic was corrected from null to [minecraft:iron_ingot*512]
-[19Apr2020 02:03:28.186] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.madness was corrected from null to [minecraft:iron_ingot*1024]
-[19Apr2020 02:03:28.186] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.hittingiron was corrected from null to [minecraft:anvil*1]
-[19Apr2020 02:03:28.186] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.stonecake was corrected from null to [minecraft:chiseled_stone_bricks*64]
-[19Apr2020 02:03:28.186] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.hardened was corrected from null to [minecraft:diamond*16]
-[19Apr2020 02:03:28.186] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.reinforced was corrected from null to [minecraft:diamond*32]
-[19Apr2020 02:03:28.186] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.steelbracing was corrected from null to [minecraft:diamond*64]
-[19Apr2020 02:03:28.186] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.diamondcoated was corrected from null to [minecraft:diamond*128]
-[19Apr2020 02:03:28.186] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.memoryaid was corrected from null to [minecraft:paper*32]
-[19Apr2020 02:03:28.186] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.cheatsheet was corrected from null to [minecraft:paper*64]
-[19Apr2020 02:03:28.186] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.recipebook was corrected from null to [minecraft:paper*128]
-[19Apr2020 02:03:28.187] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.rtm was corrected from null to [minecraft:paper*256]
-[19Apr2020 02:03:28.187] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.rainman was corrected from null to [minecraft:salmon_bucket*27]
-[19Apr2020 02:03:28.187] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.woodwork was corrected from null to [minecraft:oak_planks*64]
-[19Apr2020 02:03:28.187] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.sieving was corrected from null to [minecraft:string*64]
-[19Apr2020 02:03:28.187] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.space was corrected from null to [minecolonies:blockminecoloniesrack*16]
-[19Apr2020 02:03:28.187] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.capacity was corrected from null to [minecolonies:blockminecoloniesrack*32]
-[19Apr2020 02:03:28.187] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.fullstock was corrected from null to [minecolonies:blockminecoloniesrack*64]
-[19Apr2020 02:03:28.187] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.theflintstones was corrected from null to [minecraft:stone_bricks*64]
-[19Apr2020 02:03:28.187] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.rockingroll was corrected from null to [minecraft:stone*64]
-[19Apr2020 02:03:28.187] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.hot was corrected from null to [minecraft:lava_bucket*4]
-[19Apr2020 02:03:28.187] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.isthisredstone was corrected from null to [minecraft:redstone*128]
-[19Apr2020 02:03:28.187] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.redstonepowered was corrected from null to [minecraft:redstone*256]
-[19Apr2020 02:03:28.187] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.heavymachinery was corrected from null to [minecraft:redstone*512]
-[19Apr2020 02:03:28.188] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.whatisthisspeed was corrected from null to [minecraft:redstone*1024]
-[19Apr2020 02:03:28.188] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.lightning was corrected from null to [minecraft:redstone*2048]
-[19Apr2020 02:03:28.188] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.biodegradable was corrected from null to [minecraft:bone_meal*64]
-[19Apr2020 02:03:28.188] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.flowerpower was corrected from null to [minecolonies:compost*64]
-[19Apr2020 02:03:28.188] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.bonemeal was corrected from null to [minecraft:wheat_seeds*64]
-[19Apr2020 02:03:28.188] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.dung was corrected from null to [minecraft:wheat_seeds*128]
-[19Apr2020 02:03:28.188] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.compost was corrected from null to [minecraft:wheat_seeds*256]
-[19Apr2020 02:03:28.188] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.fertilizer was corrected from null to [minecraft:wheat_seeds*512]
-[19Apr2020 02:03:28.188] [Server-Worker-5/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key research.magiccompost was corrected from null to [minecraft:wheat_seeds*2048]
-[19Apr2020 02:03:28.195] [modloading-worker-11/INFO] [com.example.examplemod.ExampleMod/]: HELLO FROM PREINIT
-[19Apr2020 02:03:28.195] [modloading-worker-2/WARN] [structurize/]: FMLCommonSetupEvent
-[19Apr2020 02:03:28.195] [modloading-worker-11/INFO] [com.example.examplemod.ExampleMod/]: DIRT BLOCK >> minecraft:dirt
-[19Apr2020 02:03:28.275] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
-[19Apr2020 02:03:28.708] [modloading-worker-4/INFO] [com.example.examplemod.ExampleMod/]: Got game settings net.minecraft.client.GameSettings@6665f98f
-[19Apr2020 02:03:28.962] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 31.1.16 Target: 31.1.46
-[19Apr2020 02:03:28.962] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [examplemod] Starting version check at http://myurl.me/
-[19Apr2020 02:03:29.126] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
-java.io.IOException: Server returned HTTP response code: 400 for URL: http://myurl.me/
+[20Apr2020 00:35:36.941] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20200122.131323, --fml.mcVersion, 1.15.2, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 31.1.16, --version, MOD_DEV, --assetIndex, 1.15, --assetsDir, C:\Users\Thomas\.gradle\caches\forge_gradle\assets, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[20Apr2020 00:35:36.945] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 5.0.0-milestone.4+67+b1a340b starting: java version 1.8.0_242 by AdoptOpenJDK
+[20Apr2020 00:35:37.086] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[20Apr2020 00:35:37.828] [main/INFO] [STDERR/]: [org.antlr.v4.runtime.ConsoleErrorListener:syntaxError:38]: line 36:0 token recognition error at: 'S'
+[20Apr2020 00:35:37.829] [main/INFO] [STDERR/]: [org.antlr.v4.runtime.ConsoleErrorListener:syntaxError:38]: line 36:1 token recognition error at: 'pa'
+[20Apr2020 00:35:37.829] [main/INFO] [STDERR/]: [org.antlr.v4.runtime.ConsoleErrorListener:syntaxError:38]: line 36:3 token recognition error at: 'w'
+[20Apr2020 00:35:37.830] [main/INFO] [STDERR/]: [org.antlr.v4.runtime.ConsoleErrorListener:syntaxError:38]: line 36:4 token recognition error at: 'n'
+[20Apr2020 00:35:37.830] [main/INFO] [STDERR/]: [org.antlr.v4.runtime.ConsoleErrorListener:syntaxError:38]: line 36:5 token recognition error at: 'e'
+[20Apr2020 00:35:37.830] [main/INFO] [STDERR/]: [org.antlr.v4.runtime.ConsoleErrorListener:syntaxError:38]: line 36:6 token recognition error at: 'r'
+[20Apr2020 00:35:37.831] [main/INFO] [STDERR/]: [org.antlr.v4.runtime.ConsoleErrorListener:syntaxError:38]: line 36:8 token recognition error at: 'N'
+[20Apr2020 00:35:37.831] [main/INFO] [STDERR/]: [org.antlr.v4.runtime.ConsoleErrorListener:syntaxError:38]: line 36:9 token recognition error at: 'B'
+[20Apr2020 00:35:37.831] [main/INFO] [STDERR/]: [org.antlr.v4.runtime.ConsoleErrorListener:syntaxError:38]: line 36:10 token recognition error at: 'T'
+[20Apr2020 00:35:38.046] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\Thomas\.gradle\caches\forge_gradle\assets, --assetIndex, 1.15, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[20Apr2020 00:35:40.091] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[20Apr2020 00:35:49.947] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.2.2 build 10
+[20Apr2020 00:35:50.898] [modloading-worker-4/WARN] [structurize/]: Structurize starting up
+[20Apr2020 00:35:50.903] [modloading-worker-9/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 31.1.16, for MC 1.15.2 with MCP 20200122.131323
+[20Apr2020 00:35:50.903] [modloading-worker-9/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v31.1.16 Initialized
+[20Apr2020 00:35:50.909] [modloading-worker-2/ERROR] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Failed to create mod instance. ModID: minecoloniestwitch, class ch.lexustec.coremod.MineColoniesTwitch
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[?:1.8.0_242]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:113) ~[?:1.8.0_242]
+	at com.ldtteam.structurize.util.LanguageHandler$LanguageCache.load(LanguageHandler.java:236) ~[?:0.10.301-ALPHA]
+	at com.ldtteam.structurize.util.LanguageHandler$LanguageCache.access$400(LanguageHandler.java:207) ~[?:0.10.301-ALPHA]
+	at com.ldtteam.structurize.util.LanguageHandler.loadLangPath(LanguageHandler.java:203) ~[?:0.10.301-ALPHA]
+	at ch.lexustec.coremod.MineColoniesTwitch.<init>(MineColoniesTwitch.java:49) ~[?:?]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_242]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_242]
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_242]
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_242]
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950) ~[?:1.8.0_242]
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945) ~[?:1.8.0_242]
-	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_242]
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944) ~[?:1.8.0_242]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514) ~[?:1.8.0_242]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[?:1.8.0_242]
-	at net.minecraftforge.fml.VersionChecker$1.openUrlStream(VersionChecker.java:189) ~[?:?]
-	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:206) ~[?:?]
-	at java.lang.Iterable.forEach(Iterable.java:75) [?:1.8.0_242]
-	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:157) [?:?]
-Caused by: java.io.IOException: Server returned HTTP response code: 400 for URL: http://myurl.me/
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900) ~[?:1.8.0_242]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[?:1.8.0_242]
-	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[?:1.8.0_242]
-	at net.minecraftforge.fml.VersionChecker$1.openUrlStream(VersionChecker.java:173) ~[?:?]
-	... 3 more
-[19Apr2020 02:03:38.893] [Server-Worker-2/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to resolve texture reference: #missing in 
-[19Apr2020 02:03:39.901] [Server-Worker-2/WARN] [net.minecraft.client.renderer.texture.AtlasTexture/]: Texture minecolonies:blocks/tallgrass with size 265x265 limits mip level from 4 to 0
-[19Apr2020 02:03:41.006] [modloading-worker-4/INFO] [com.example.examplemod.ExampleMod/]: Hello world from the MDK
-[19Apr2020 02:03:41.006] [modloading-worker-4/INFO] [com.example.examplemod.ExampleMod/]: Got IMC [Hello world]
-[19Apr2020 02:03:41.007] [modloading-worker-4/WARN] [structurize/]: FMLLoadCompleteEvent
-[19Apr2020 02:03:41.007] [modloading-worker-9/WARN] [minecolonies/]: FMLLoadCompleteEvent
-[19Apr2020 02:03:41.019] [modloading-worker-9/WARN] [minecolonies.requestsystem/]: Updated logging config. RS Debug logging enabled: false
-[19Apr2020 02:03:41.019] [modloading-worker-9/WARN] [minecolonies/]: Register mappings
-[19Apr2020 02:03:41.678] [Render thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
-[19Apr2020 02:03:41.679] [Render thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
-[19Apr2020 02:03:41.795] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x128x0 jei:textures/atlas/gui.png-atlas
-[19Apr2020 02:03:41.796] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 2048x1024x4 minecraft:textures/atlas/blocks.png-atlas
-[19Apr2020 02:03:41.822] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x4 minecraft:textures/atlas/signs.png-atlas
-[19Apr2020 02:03:41.822] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[19Apr2020 02:03:41.822] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[19Apr2020 02:03:41.823] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[19Apr2020 02:03:41.824] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[19Apr2020 02:03:41.824] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[19Apr2020 02:03:42.966] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[19Apr2020 02:03:42.968] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[19Apr2020 02:03:42.969] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[19Apr2020 02:03:43.882] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
-[19Apr2020 02:04:01.009] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[19Apr2020 02:04:01.010] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[19Apr2020 02:04:01.010] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[19Apr2020 02:04:01.011] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[19Apr2020 02:04:01.011] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[19Apr2020 02:04:01.108] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Starting integrated minecraft server version 1.15.2
-[19Apr2020 02:04:01.108] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Generating keypair
-[19Apr2020 02:04:01.199] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file .\saves\New World\serverconfig\forge-server.toml is not correct. Correcting
-[19Apr2020 02:04:01.200] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server was corrected from null to SimpleCommentedConfig:{}
-[19Apr2020 02:04:01.200] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringEntities was corrected from null to false
-[19Apr2020 02:04:01.200] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringTileEntities was corrected from null to false
-[19Apr2020 02:04:01.200] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.fullBoundingBoxLadders was corrected from null to false
-[19Apr2020 02:04:01.200] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.zombieBaseSummonChance was corrected from null to 0.1
-[19Apr2020 02:04:01.200] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.zombieBabyChance was corrected from null to 0.05
-[19Apr2020 02:04:01.200] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.logCascadingWorldGeneration was corrected from null to true
-[19Apr2020 02:04:01.200] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.fixVanillaCascading was corrected from null to false
-[19Apr2020 02:04:01.200] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.dimensionUnloadQueueDelay was corrected from null to 0
-[19Apr2020 02:04:01.200] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.clumpingThreshold was corrected from null to 64
-[19Apr2020 02:04:01.200] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.treatEmptyTagsAsAir was corrected from null to false
-[19Apr2020 02:04:01.204] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file .\saves\New World\serverconfig\minecolonies-server.toml is not correct. Correcting
-[19Apr2020 02:04:01.204] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key names was corrected from null to SimpleCommentedConfig:{}
-[19Apr2020 02:04:01.204] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key names.usemiddleinitial was corrected from null to true
-[19Apr2020 02:04:01.204] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key names.malefirstnames was corrected from null to [Aaron, Adam, Adrian, Aidan, Aiden, Alain, Alex, Alexander, Andrew, Anthony, Asher, Austin, Benjamin, Brayden, Bryson, Caden, Caleb, Callum, Camden, Cameron, Carson, Carter, Charles, Charlie, Chase, Christian, Christopher, Cole, Colton, Connor, Cooper, Curtis, Cyrille, Damian, Daniel, David, Declan, Diego, Diogo, Dominic, Duarte, Dylan, Easton, Eli, Elias, Elijah, Elliot, Ethan, Evan, Ezra, Félix, Gabriel, Gavin, George, Grayson, Guewen, Harrison, Henrik, Henry, Houston, Hudson, Hugo, Hunter, Ian, Isaac, Isaiah, Jack, Jackson, Jacob, James, Jason, Jayce, Jayden, Jeremiah, Jim, Joel, John, Jonathan, Jordan, Joseph, Joshua, Josiah, Julian, Kai, Karsen, Kevin, Kian, Landon, Leo, Levi, Liam, Lincoln, Logan, Luís, Lucas, Luke, Mark, Mason, Mateo, Matthew, Max, Michael, Miles, Muhammad, Nathan, Nathanael, Nicholas, Noah, Nolan, Oliver, Oscar, Owen, Parker, Paul, Peter, Philibert, Rénald, Ray, Richard, Robert, Rory, Roxan, Ryan, Samuel, Sebastian, Steven, Thaddee, Thomas, Tiago, Tristan, Tyler, William, Wyatt, Xavier, Zachary, Zane, Abraham, Allen, Ambrose, Arthur, Avery, Barnaby, Bartholomew, Benedict, Bernard, Cuthbert, Edmund, Edward, Francis, Fulke, Geoffrey, Gerard, Gilbert, Giles, Gregory, Hugh, Humphrey, Jerome, Lancelot, Lawrence, Leonard, Martin, Mathias, Nathaniel, Oswyn, Philip, Piers, Ralph, Reynold, Roger, Rowland, Simon, Solomon, Stephen, Tobias, Walter, William]
-[19Apr2020 02:04:01.204] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key names.femalefirstnames was corrected from null to [Aaliyah, Abigail, Adalyn, Addison, Adeline, Alaina, Alexandra, Alice, Allison, Alyssa, Amelia, Anastasia, Anna, Annabelle, Aria, Arianna, Aubrey, Audrey, Aurora, Ava, Bailey, Barbara, Bella, Betty, Brooklyn, Callie, Camilla, Caroline, Charlotte, Chloe, Claire, Cora, Daniela, Diana, Dorothy, Eleanor, Elena, Eliana, Elizabeth, Ella, Ellie, Emilia, Emilienne, Emily, Emma, Eva, Evelyn, Everly, Filipa, Frédérique, Gabriella, Gianna, Grace, Hailey, Hannah, Harper, Haylie, Hazel, Helen, Isabella, Isabelle, Jade, Jasmine, Jennifer, Jocelyn, Jordyn, Julia, Juliana, Julienne, Karen, Katia, Kaylee, Keira, Kennedy, Kinsley, Kylie, Layla, Leah, Lena, Lila, Liliana, Lillian, Lily, Linda, Lisa, London, Lorena, Luana, Lucy, Luna, Mélanie, Mackenzie, Madelyn, Madison, Maisy, Makayla, Margaret, Maria, Marine, Mary, Maya, Melanie, Mia, Mila, Nancy, Natalie, Natasha, Niamh, Nora, Odile, Olivia, Paisley, Paloma, Paola, Patricia, Penelope, Peyton, Prudence, Reagan, Riley, Sadie, Samantha, Sarah, Savannah, Scarlett, Skyler, Sophia, Sophie, Stella, Susan, Vérane, Vera, Victoria, Violet, Vivian, Zoe, Agnes, Amy, Anne, Avis, Beatrice, Blanche, Bridget, Catherine, Cecily, Charity, Christina, Clemence, Constance, Denise, Edith, Elinor, Ellen, Florence, Fortune, Frances, Frideswide, Gillian, Isabel, Jane, Janet, Joan, Josian, Joyce, Judith, Katherine, Lettice, Mabel, Margery, Marion, Martha, Maud, Mildred, Millicent, Parnell, Philippa, Rachel, Rebecca, Rose, Ruth, Susanna, Sybil, Thomasin, Ursula, Wilmot, Winifred]
-[19Apr2020 02:04:01.205] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key names.lastnames was corrected from null to [Brown, Clark, Fletcher, Harris, Johnson, Jones, Mardle, Miller, Robinson, Smith, Taylor, Wallgreen, White, Williams, Wilson, Abell, Ackworth, Adams, Addicock, Alban, Aldebourne, Alfray, Alicock, Allard, Allington, Amberden, Amcotts, Amondsham, Andrews, Annesley, Ansty, Archer, Ardall, Ardern, Argentein, Arnold, Asger, Ashby, Ashcombe, Ashenhurst, Ashton, Askew, Asplin, Astley, Atherton, Atkinson, Atlee, Attilburgh, Audeley, Audlington, Ayde, Ayleward, Aylmer, Aynesworth, Babham, Babington, Badby, Baker, Balam, Baldwin, Ballard, Ballett, Bammard, Barber, Bardolf, Barefoot, Barker, Barnes, Barre, Barrentine, Barrett, Barstaple, Bartelot, Barton, Basset, Bathurst, Battersby, Battle, Baynton, Beauchamp, Cheddar, Chelsey, Chernock, Chester, Chetwood, Cheverell, Cheyne, Chichester, Chilton, Chowne, Chudderley, Church, Churmond, Clavell, Claybrook, Clement, Clerk, Clifford, Clifton, Clitherow, Clopton, Cobb, Cobham, Cobley, Cockayne, Cod, Coddington, Coffin, Coggshall, Colby, Colkins, Collard, Colmer, Colt, Colthurst, Complin, Compton, Conquest, Cooke, Coorthopp, Coppinger, Corbett, Corby, Cossington, Cosworth, Cotton, Courtenay, Covert, Cowill, Cox, Crane, Cranford, Crawley, Cressy, Crickett, Cripps, Crisp, Cristemas, Crocker, Crugg, Cuddon, Culpepper, Cunningham, Curzon, Dagworth, Gardiner, Gare, Garnis, Garrard, Garret, Gascoigne, Gasper, Gavell, Gedding, Gerville, Geste, Gibbs, Gifford, Gill, Ginter, Gisborne, Gittens, Glennon, Glover, Gobberd, Goddam, Godfrey, Gold, Golding, Goldwell, Gomershall, Gomfrey, Gonson, Good, Goodenouth, Gooder, Goodluck, Goodnestone, Goodrick, Goodrington, Goodwin, Goring, Gorney, Gorst, Gosebourne, Grafton, Gray, Greene, Greenway, Grenefeld, Greville, Grey, Grimbald, Grobbam, Grofhurst, Groston, Grove, Guildford, Hackman, Haddock, Haddon, Hadresham, Hakebourne, Hale, Hall, Halley, Hambard, Hammer, Hammond, Hampden]
-[19Apr2020 02:04:01.479] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Found new data pack vanilla, loading it automatically
-[19Apr2020 02:04:01.479] [Server thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, main, forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar, jei-1.15.2-6.0.0.2_mapped_snapshot_20200124-1.15.1.jar, minecolonies-0.11.847-ALPHA-universal_mapped_snapshot_20200124-1.15.1.jar, structurize-0.10.297-ALPHA_mapped_snapshot_20200124-1.15.1.jar
-[19Apr2020 02:04:02.250] [Server thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 6 recipes
-[19Apr2020 02:04:03.595] [Server thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 873 advancements
-[19Apr2020 02:04:06.494] [Server thread/WARN] [structurize/]: FMLServerStartedEvent
-[19Apr2020 02:04:06.503] [Server thread/INFO] [structurize/]: Load huts or decorations from jar
-[19Apr2020 02:04:11.888] [Server thread/WARN] [structurize/]: Unable to load huts or decorations from jar.
-java.nio.file.FileSystemNotFoundException: null
-	at com.sun.nio.zipfs.ZipFileSystemProvider.getFileSystem(ZipFileSystemProvider.java:171) ~[zipfs.jar:1.8.0_242]
-	at com.sun.nio.zipfs.ZipFileSystemProvider.getPath(ZipFileSystemProvider.java:157) ~[zipfs.jar:1.8.0_242]
-	at java.nio.file.Paths.get(Paths.java:143) ~[?:1.8.0_242]
-	at com.ldtteam.structurize.management.Structures.loadStyleMapsJar(Structures.java:250) [?:0.10.297-ALPHA]
-	at com.ldtteam.structurize.management.Structures.loadStyleMaps(Structures.java:145) [?:0.10.297-ALPHA]
-	at com.ldtteam.structurize.management.Structures.init(Structures.java:122) [?:0.10.297-ALPHA]
-	at com.ldtteam.structurize.event.EventSubscriber.onServerStarting(EventSubscriber.java:58) [?:0.10.297-ALPHA]
-	at net.minecraftforge.eventbus.ASMEventHandler_11_EventSubscriber_onServerStarting_Load.invoke(.dynamic) [?:?]
-	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:80) [eventbus-2.0.0-milestone.1-service.jar:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) [eventbus-2.0.0-milestone.1-service.jar:?]
-	at net.minecraft.server.MinecraftServer.loadWorlds(MinecraftServer.java:418) [?:?]
-	at net.minecraft.server.integrated.IntegratedServer.loadAllWorlds(IntegratedServer.java:78) [?:?]
-	at net.minecraft.server.integrated.IntegratedServer.init(IntegratedServer.java:99) [?:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:635) [?:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_242]
-[19Apr2020 02:04:11.894] [Server thread/INFO] [structurize/]: Load huts or decorations from jar
-[19Apr2020 02:04:11.897] [Server thread/WARN] [structurize/]: Unable to load huts or decorations from jar.
-java.nio.file.FileSystemNotFoundException: null
-	at com.sun.nio.zipfs.ZipFileSystemProvider.getFileSystem(ZipFileSystemProvider.java:171) ~[zipfs.jar:1.8.0_242]
-	at com.sun.nio.zipfs.ZipFileSystemProvider.getPath(ZipFileSystemProvider.java:157) ~[zipfs.jar:1.8.0_242]
-	at java.nio.file.Paths.get(Paths.java:143) ~[?:1.8.0_242]
-	at com.ldtteam.structurize.management.Structures.loadStyleMapsJar(Structures.java:250) [?:0.10.297-ALPHA]
-	at com.ldtteam.structurize.management.Structures.loadStyleMaps(Structures.java:145) [?:0.10.297-ALPHA]
-	at com.ldtteam.structurize.management.Structures.init(Structures.java:122) [?:0.10.297-ALPHA]
-	at com.ldtteam.structurize.event.EventSubscriber.onServerStarting(EventSubscriber.java:58) [?:0.10.297-ALPHA]
-	at net.minecraftforge.eventbus.ASMEventHandler_11_EventSubscriber_onServerStarting_Load.invoke(.dynamic) [?:?]
-	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:80) [eventbus-2.0.0-milestone.1-service.jar:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) [eventbus-2.0.0-milestone.1-service.jar:?]
-	at net.minecraft.server.MinecraftServer.loadWorlds(MinecraftServer.java:418) [?:?]
-	at net.minecraft.server.integrated.IntegratedServer.loadAllWorlds(IntegratedServer.java:78) [?:?]
-	at net.minecraft.server.integrated.IntegratedServer.init(IntegratedServer.java:99) [?:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:635) [?:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_242]
-[19Apr2020 02:04:11.898] [Server thread/INFO] [structurize/]: Load additional huts or decorations from .\structurize/schematics
-[19Apr2020 02:04:11.899] [Server thread/INFO] [structurize/]: Load cached schematic from .\structurize/cache
-[19Apr2020 02:04:11.901] [Server thread/INFO] [structurize/]: Load cached schematic from .\structurize/cache
-[19Apr2020 02:04:11.902] [Server thread/WARN] [minecolonies/]: World load
-[19Apr2020 02:04:11.904] [Server thread/INFO] [minecolonies/]: New Server UUID c072a513-f88b-42cd-bef0-6b3db2ae9246
-[19Apr2020 02:04:11.906] [Server thread/WARN] [minecolonies/]: World load
-[19Apr2020 02:04:11.938] [Server thread/WARN] [minecolonies/]: World load
-[19Apr2020 02:04:11.938] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[19Apr2020 02:04:12.018] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[19Apr2020 02:04:12.486] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[19Apr2020 02:04:12.987] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 1%
-[19Apr2020 02:04:13.454] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 4%
-[19Apr2020 02:04:13.970] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 6%
-[19Apr2020 02:04:14.473] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 9%
-[19Apr2020 02:04:14.972] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 13%
-[19Apr2020 02:04:15.472] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 17%
-[19Apr2020 02:04:15.972] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 21%
-[19Apr2020 02:04:16.472] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 23%
-[19Apr2020 02:04:17.000] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 27%
-[19Apr2020 02:04:17.473] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 31%
-[19Apr2020 02:04:17.957] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 33%
-[19Apr2020 02:04:18.458] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 38%
-[19Apr2020 02:04:18.959] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 42%
-[19Apr2020 02:04:19.460] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 46%
-[19Apr2020 02:04:19.976] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 49%
-[19Apr2020 02:04:20.461] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 54%
-[19Apr2020 02:04:20.961] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 56%
-[19Apr2020 02:04:21.462] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 61%
-[19Apr2020 02:04:21.979] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 65%
-[19Apr2020 02:04:22.462] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 70%
-[19Apr2020 02:04:23.047] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 74%
-[19Apr2020 02:04:23.463] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 78%
-[19Apr2020 02:04:23.998] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 82%
-[19Apr2020 02:04:24.498] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 86%
-[19Apr2020 02:04:24.965] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 91%
-[19Apr2020 02:04:25.482] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 95%
-[19Apr2020 02:04:25.891] [Server thread/INFO] [com.example.examplemod.ExampleMod/]: HELLO from server starting
-[19Apr2020 02:04:25.899] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 13946 ms
-[19Apr2020 02:04:25.972] [Server thread/INFO] [minecolonies/]: Finished discovering saplings
-[19Apr2020 02:04:25.988] [Server thread/INFO] [minecolonies/]: Finished discovering Ores
-[19Apr2020 02:04:25.988] [Server thread/INFO] [minecolonies/]: Finished discovering oreBlocks
-[19Apr2020 02:04:25.997] [Server thread/INFO] [minecolonies/]: Finished discovering compostables
-[19Apr2020 02:04:26.003] [Server thread/INFO] [minecolonies/]: Finished discovering compostables
-[19Apr2020 02:04:26.003] [Server thread/INFO] [minecolonies/]: Finished discovering lucky oreBlocks
-[19Apr2020 02:04:26.004] [Server thread/INFO] [minecolonies/]: Finished discovering diseases
-[19Apr2020 02:04:26.005] [Server thread/INFO] [minecolonies/]: Finished initiating sifter config
-[19Apr2020 02:04:26.008] [Server thread/INFO] [minecolonies/]: Finished discovering food
-[19Apr2020 02:04:26.011] [Server thread/INFO] [minecolonies/]: Finished discovering fuel
-[19Apr2020 02:04:26.252] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[19Apr2020 02:04:26.253] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[19Apr2020 02:04:26.256] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Changing view distance to 11, from 10
-[19Apr2020 02:04:28.073] [Netty Local Client IO #0/INFO] [net.minecraftforge.fml.network.NetworkHooks/]: Connected to a modded server.
-[19Apr2020 02:04:28.127] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: Dev[local:E:922b2f0d] logged in with entity id 67 at (57.5, 79.0, 99.5)
-[19Apr2020 02:04:28.160] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[19Apr2020 02:04:28.223] [Server thread/INFO] [structurize/]: New Server UUID 08f1209a-8460-4f92-a1e5-c9b0d44562a7
-[19Apr2020 02:04:28.269] [Render thread/WARN] [minecolonies/]: World load
-[19Apr2020 02:04:28.683] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[19Apr2020 02:04:28.697] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
-[19Apr2020 02:04:28.824] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Starting JEI...
-[19Apr2020 02:04:29.036] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building ingredient list...
-[19Apr2020 02:04:29.041] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building ingredient list took 4.940 ms
-[19Apr2020 02:04:29.041] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building ingredient filter...
-[19Apr2020 02:04:29.678] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building ingredient filter took 636.9 ms
-[19Apr2020 02:04:29.678] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building bookmarks...
-[19Apr2020 02:04:29.679] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building bookmarks took 1.032 ms
-[19Apr2020 02:04:29.679] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building recipe registry...
-[19Apr2020 02:04:29.737] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building recipe registry took 57.97 ms
-[19Apr2020 02:04:29.746] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building runtime...
-[19Apr2020 02:04:29.802] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building runtime took 55.14 ms
-[19Apr2020 02:04:29.821] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Starting JEI took 996.8 ms
-[19Apr2020 02:04:29.954] [Render thread/INFO] [structurize/]: Load huts or decorations from jar
-[19Apr2020 02:04:36.465] [Render thread/WARN] [structurize/]: Unable to load huts or decorations from jar.
-java.nio.file.FileSystemNotFoundException: null
-	at com.sun.nio.zipfs.ZipFileSystemProvider.getFileSystem(ZipFileSystemProvider.java:171) ~[zipfs.jar:1.8.0_242]
-	at com.sun.nio.zipfs.ZipFileSystemProvider.getPath(ZipFileSystemProvider.java:157) ~[zipfs.jar:1.8.0_242]
-	at java.nio.file.Paths.get(Paths.java:143) ~[?:1.8.0_242]
-	at com.ldtteam.structurize.management.Structures.loadStyleMapsJar(Structures.java:250) ~[structurize-0.10.297-ALPHA_mapped_snapshot_20200124-1.15.1.jar:0.10.297-ALPHA]
-	at com.ldtteam.structurize.management.Structures.loadStyleMaps(Structures.java:145) ~[structurize-0.10.297-ALPHA_mapped_snapshot_20200124-1.15.1.jar:0.10.297-ALPHA]
-	at com.ldtteam.structurize.management.Structures.init(Structures.java:122) ~[structurize-0.10.297-ALPHA_mapped_snapshot_20200124-1.15.1.jar:0.10.297-ALPHA]
-	at com.ldtteam.structurize.network.messages.StructurizeStylesMessage.onExecute(StructurizeStylesMessage.java:80) ~[structurize-0.10.297-ALPHA_mapped_snapshot_20200124-1.15.1.jar:0.10.297-ALPHA]
-	at com.ldtteam.structurize.network.NetworkChannel.lambda$null$3(NetworkChannel.java:96) ~[structurize-0.10.297-ALPHA_mapped_snapshot_20200124-1.15.1.jar:0.10.297-ALPHA]
-	at net.minecraftforge.fml.network.NetworkEvent$Context.enqueueWork(NetworkEvent.java:215) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at com.ldtteam.structurize.network.NetworkChannel.lambda$registerMessage$4(NetworkChannel.java:96) ~[structurize-0.10.297-ALPHA_mapped_snapshot_20200124-1.15.1.jar:0.10.297-ALPHA]
-	at net.minecraftforge.fml.network.simple.IndexedMessageCodec.lambda$tryDecode$3(IndexedMessageCodec.java:128) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at java.util.Optional.ifPresent(Optional.java:159) ~[?:1.8.0_242]
-	at net.minecraftforge.fml.network.simple.IndexedMessageCodec.tryDecode(IndexedMessageCodec.java:128) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraftforge.fml.network.simple.IndexedMessageCodec.consume(IndexedMessageCodec.java:162) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraftforge.fml.network.simple.SimpleChannel.networkEventListener(SimpleChannel.java:80) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.0.0-milestone.1-service.jar:?]
-	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.0.0-milestone.1-service.jar:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.0.0-milestone.1-service.jar:?]
-	at net.minecraftforge.fml.network.NetworkInstance.dispatch(NetworkInstance.java:84) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraftforge.fml.network.NetworkHooks.lambda$onCustomPayload$1(NetworkHooks.java:78) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at java.util.Optional.map(Optional.java:215) ~[?:1.8.0_242]
-	at net.minecraftforge.fml.network.NetworkHooks.onCustomPayload(NetworkHooks.java:78) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.client.network.play.ClientPlayNetHandler.handleCustomPayload(ClientPlayNetHandler.java:2002) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.network.play.server.SCustomPayloadPlayPacket.processPacket(SCustomPayloadPlayPacket.java:65) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.network.play.server.SCustomPayloadPlayPacket.processPacket(SCustomPayloadPlayPacket.java:11) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.network.PacketThreadUtil.lambda$checkThreadAndEnqueue$0(PacketThreadUtil.java:19) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.util.concurrent.ThreadTaskExecutor.run(ThreadTaskExecutor.java:140) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.util.concurrent.RecursiveEventLoop.run(RecursiveEventLoop.java:22) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.util.concurrent.ThreadTaskExecutor.driveOne(ThreadTaskExecutor.java:110) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.util.concurrent.ThreadTaskExecutor.drainTasks(ThreadTaskExecutor.java:97) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:930) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:554) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.client.main.Main.main(Main.java:177) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_242]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_242]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_242]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_242]
-	at net.minecraftforge.userdev.FMLUserdevClientLaunchProvider.lambda$launchService$0(FMLUserdevClientLaunchProvider.java:55) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-5.0.0-milestone.4.jar:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-5.0.0-milestone.4.jar:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-5.0.0-milestone.4.jar:?]
-	at cpw.mods.modlauncher.Launcher.run(Launcher.java:81) [modlauncher-5.0.0-milestone.4.jar:?]
-	at cpw.mods.modlauncher.Launcher.main(Launcher.java:65) [modlauncher-5.0.0-milestone.4.jar:?]
-	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:102) [forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-[19Apr2020 02:04:36.486] [Render thread/INFO] [structurize/]: Load huts or decorations from jar
-[19Apr2020 02:04:36.491] [Render thread/WARN] [structurize/]: Unable to load huts or decorations from jar.
-java.nio.file.FileSystemNotFoundException: null
-	at com.sun.nio.zipfs.ZipFileSystemProvider.getFileSystem(ZipFileSystemProvider.java:171) ~[zipfs.jar:1.8.0_242]
-	at com.sun.nio.zipfs.ZipFileSystemProvider.getPath(ZipFileSystemProvider.java:157) ~[zipfs.jar:1.8.0_242]
-	at java.nio.file.Paths.get(Paths.java:143) ~[?:1.8.0_242]
-	at com.ldtteam.structurize.management.Structures.loadStyleMapsJar(Structures.java:250) ~[structurize-0.10.297-ALPHA_mapped_snapshot_20200124-1.15.1.jar:0.10.297-ALPHA]
-	at com.ldtteam.structurize.management.Structures.loadStyleMaps(Structures.java:145) ~[structurize-0.10.297-ALPHA_mapped_snapshot_20200124-1.15.1.jar:0.10.297-ALPHA]
-	at com.ldtteam.structurize.management.Structures.init(Structures.java:122) ~[structurize-0.10.297-ALPHA_mapped_snapshot_20200124-1.15.1.jar:0.10.297-ALPHA]
-	at com.ldtteam.structurize.network.messages.StructurizeStylesMessage.onExecute(StructurizeStylesMessage.java:80) ~[structurize-0.10.297-ALPHA_mapped_snapshot_20200124-1.15.1.jar:0.10.297-ALPHA]
-	at com.ldtteam.structurize.network.NetworkChannel.lambda$null$3(NetworkChannel.java:96) ~[structurize-0.10.297-ALPHA_mapped_snapshot_20200124-1.15.1.jar:0.10.297-ALPHA]
-	at net.minecraftforge.fml.network.NetworkEvent$Context.enqueueWork(NetworkEvent.java:215) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at com.ldtteam.structurize.network.NetworkChannel.lambda$registerMessage$4(NetworkChannel.java:96) ~[structurize-0.10.297-ALPHA_mapped_snapshot_20200124-1.15.1.jar:0.10.297-ALPHA]
-	at net.minecraftforge.fml.network.simple.IndexedMessageCodec.lambda$tryDecode$3(IndexedMessageCodec.java:128) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at java.util.Optional.ifPresent(Optional.java:159) ~[?:1.8.0_242]
-	at net.minecraftforge.fml.network.simple.IndexedMessageCodec.tryDecode(IndexedMessageCodec.java:128) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraftforge.fml.network.simple.IndexedMessageCodec.consume(IndexedMessageCodec.java:162) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraftforge.fml.network.simple.SimpleChannel.networkEventListener(SimpleChannel.java:80) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.0.0-milestone.1-service.jar:?]
-	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.0.0-milestone.1-service.jar:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.0.0-milestone.1-service.jar:?]
-	at net.minecraftforge.fml.network.NetworkInstance.dispatch(NetworkInstance.java:84) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraftforge.fml.network.NetworkHooks.lambda$onCustomPayload$1(NetworkHooks.java:78) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at java.util.Optional.map(Optional.java:215) ~[?:1.8.0_242]
-	at net.minecraftforge.fml.network.NetworkHooks.onCustomPayload(NetworkHooks.java:78) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.client.network.play.ClientPlayNetHandler.handleCustomPayload(ClientPlayNetHandler.java:2002) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.network.play.server.SCustomPayloadPlayPacket.processPacket(SCustomPayloadPlayPacket.java:65) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.network.play.server.SCustomPayloadPlayPacket.processPacket(SCustomPayloadPlayPacket.java:11) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.network.PacketThreadUtil.lambda$checkThreadAndEnqueue$0(PacketThreadUtil.java:19) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.util.concurrent.ThreadTaskExecutor.run(ThreadTaskExecutor.java:140) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.util.concurrent.RecursiveEventLoop.run(RecursiveEventLoop.java:22) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.util.concurrent.ThreadTaskExecutor.driveOne(ThreadTaskExecutor.java:110) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.util.concurrent.ThreadTaskExecutor.drainTasks(ThreadTaskExecutor.java:97) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:930) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:554) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.client.main.Main.main(Main.java:177) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_242]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_242]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_242]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_242]
-	at net.minecraftforge.userdev.FMLUserdevClientLaunchProvider.lambda$launchService$0(FMLUserdevClientLaunchProvider.java:55) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-5.0.0-milestone.4.jar:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-5.0.0-milestone.4.jar:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-5.0.0-milestone.4.jar:?]
-	at cpw.mods.modlauncher.Launcher.run(Launcher.java:81) [modlauncher-5.0.0-milestone.4.jar:?]
-	at cpw.mods.modlauncher.Launcher.main(Launcher.java:65) [modlauncher-5.0.0-milestone.4.jar:?]
-	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:102) [forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-[19Apr2020 02:04:36.492] [Render thread/INFO] [structurize/]: Load additional huts or decorations from .\structurize/schematics
-[19Apr2020 02:04:36.493] [Render thread/INFO] [structurize/]: Load cached schematic from .\structurize/cache
-[19Apr2020 02:04:36.493] [Render thread/INFO] [structurize/]: Load cached schematic from .\structurize/cache
-[19Apr2020 02:04:36.525] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 0 advancements
-[19Apr2020 02:04:37.088] [Server-Worker-12/WARN] [com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService/]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@661d054[id=380df991-f603-344c-a090-369bad2a924a,name=Dev,properties={},legacy=false]
-com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:79) ~[authlib-1.5.25.jar:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:180) ~[authlib-1.5.25.jar:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:60) ~[authlib-1.5.25.jar:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:57) ~[authlib-1.5.25.jar:?]
-	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3716) ~[guava-21.0.jar:?]
-	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2424) ~[guava-21.0.jar:?]
-	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298) ~[guava-21.0.jar:?]
-	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211) ~[guava-21.0.jar:?]
-	at com.google.common.cache.LocalCache.get(LocalCache.java:4154) ~[guava-21.0.jar:?]
-	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4158) ~[guava-21.0.jar:?]
-	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147) ~[guava-21.0.jar:?]
-	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153) ~[guava-21.0.jar:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:170) ~[authlib-1.5.25.jar:?]
-	at net.minecraft.client.Minecraft.getProfileProperties(Minecraft.java:1990) ~[?:?]
-	at net.minecraft.client.resources.SkinManager.lambda$loadProfileTextures$4(SkinManager.java:96) ~[?:?]
-	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1402) [?:1.8.0_242]
+	at java.lang.Class.newInstance(Class.java:442) ~[?:1.8.0_242]
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:131) ~[?:31.1]
+	at java.util.function.Consumer.lambda$andThen$0(Consumer.java:65) ~[?:1.8.0_242]
+	at java.util.function.Consumer.lambda$andThen$0(Consumer.java:65) ~[?:1.8.0_242]
+	at net.minecraftforge.fml.ModContainer.transitionState(ModContainer.java:112) ~[?:?]
+	at net.minecraftforge.fml.ModList.lambda$null$10(ModList.java:134) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) [?:1.8.0_242]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382) [?:1.8.0_242]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482) [?:1.8.0_242]
+	at java.util.stream.ForEachOps$ForEachTask.compute(ForEachOps.java:290) [?:1.8.0_242]
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731) [?:1.8.0_242]
 	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) [?:1.8.0_242]
 	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) [?:1.8.0_242]
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) [?:1.8.0_242]
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157) [?:1.8.0_242]
-[19Apr2020 02:04:47.464] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[19Apr2020 02:04:47.468] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
-[19Apr2020 02:04:49.306] [Render thread/INFO] [minecolonies/]: Removed all colony views
-[19Apr2020 02:04:49.323] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Dev lost connection: Disconnected
-[19Apr2020 02:04:49.324] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[19Apr2020 02:04:49.330] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Stopping singleplayer server as player logged out
-[19Apr2020 02:04:49.367] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[19Apr2020 02:04:49.368] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[19Apr2020 02:04:49.368] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[19Apr2020 02:04:49.368] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
-[19Apr2020 02:04:49.640] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
-[19Apr2020 02:04:49.669] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
-[19Apr2020 02:05:13.713] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[19Apr2020 02:05:13.714] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[19Apr2020 02:05:13.715] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[19Apr2020 02:05:13.716] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[19Apr2020 02:05:13.716] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[19Apr2020 02:05:13.718] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Starting integrated minecraft server version 1.15.2
-[19Apr2020 02:05:13.718] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Generating keypair
-[19Apr2020 02:05:13.785] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file .\saves\New World creative opts\serverconfig\forge-server.toml is not correct. Correcting
-[19Apr2020 02:05:13.786] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server was corrected from null to SimpleCommentedConfig:{}
-[19Apr2020 02:05:13.786] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringEntities was corrected from null to false
-[19Apr2020 02:05:13.786] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringTileEntities was corrected from null to false
-[19Apr2020 02:05:13.786] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.fullBoundingBoxLadders was corrected from null to false
-[19Apr2020 02:05:13.786] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.zombieBaseSummonChance was corrected from null to 0.1
-[19Apr2020 02:05:13.786] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.zombieBabyChance was corrected from null to 0.05
-[19Apr2020 02:05:13.787] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.logCascadingWorldGeneration was corrected from null to true
-[19Apr2020 02:05:13.787] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.fixVanillaCascading was corrected from null to false
-[19Apr2020 02:05:13.787] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.dimensionUnloadQueueDelay was corrected from null to 0
-[19Apr2020 02:05:13.787] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.clumpingThreshold was corrected from null to 64
-[19Apr2020 02:05:13.787] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.treatEmptyTagsAsAir was corrected from null to false
-[19Apr2020 02:05:13.790] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file .\saves\New World creative opts\serverconfig\minecolonies-server.toml is not correct. Correcting
-[19Apr2020 02:05:13.790] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key names was corrected from null to SimpleCommentedConfig:{}
-[19Apr2020 02:05:13.790] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key names.usemiddleinitial was corrected from null to true
-[19Apr2020 02:05:13.791] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key names.malefirstnames was corrected from null to [Aaron, Adam, Adrian, Aidan, Aiden, Alain, Alex, Alexander, Andrew, Anthony, Asher, Austin, Benjamin, Brayden, Bryson, Caden, Caleb, Callum, Camden, Cameron, Carson, Carter, Charles, Charlie, Chase, Christian, Christopher, Cole, Colton, Connor, Cooper, Curtis, Cyrille, Damian, Daniel, David, Declan, Diego, Diogo, Dominic, Duarte, Dylan, Easton, Eli, Elias, Elijah, Elliot, Ethan, Evan, Ezra, Félix, Gabriel, Gavin, George, Grayson, Guewen, Harrison, Henrik, Henry, Houston, Hudson, Hugo, Hunter, Ian, Isaac, Isaiah, Jack, Jackson, Jacob, James, Jason, Jayce, Jayden, Jeremiah, Jim, Joel, John, Jonathan, Jordan, Joseph, Joshua, Josiah, Julian, Kai, Karsen, Kevin, Kian, Landon, Leo, Levi, Liam, Lincoln, Logan, Luís, Lucas, Luke, Mark, Mason, Mateo, Matthew, Max, Michael, Miles, Muhammad, Nathan, Nathanael, Nicholas, Noah, Nolan, Oliver, Oscar, Owen, Parker, Paul, Peter, Philibert, Rénald, Ray, Richard, Robert, Rory, Roxan, Ryan, Samuel, Sebastian, Steven, Thaddee, Thomas, Tiago, Tristan, Tyler, William, Wyatt, Xavier, Zachary, Zane, Abraham, Allen, Ambrose, Arthur, Avery, Barnaby, Bartholomew, Benedict, Bernard, Cuthbert, Edmund, Edward, Francis, Fulke, Geoffrey, Gerard, Gilbert, Giles, Gregory, Hugh, Humphrey, Jerome, Lancelot, Lawrence, Leonard, Martin, Mathias, Nathaniel, Oswyn, Philip, Piers, Ralph, Reynold, Roger, Rowland, Simon, Solomon, Stephen, Tobias, Walter, William]
-[19Apr2020 02:05:13.791] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key names.femalefirstnames was corrected from null to [Aaliyah, Abigail, Adalyn, Addison, Adeline, Alaina, Alexandra, Alice, Allison, Alyssa, Amelia, Anastasia, Anna, Annabelle, Aria, Arianna, Aubrey, Audrey, Aurora, Ava, Bailey, Barbara, Bella, Betty, Brooklyn, Callie, Camilla, Caroline, Charlotte, Chloe, Claire, Cora, Daniela, Diana, Dorothy, Eleanor, Elena, Eliana, Elizabeth, Ella, Ellie, Emilia, Emilienne, Emily, Emma, Eva, Evelyn, Everly, Filipa, Frédérique, Gabriella, Gianna, Grace, Hailey, Hannah, Harper, Haylie, Hazel, Helen, Isabella, Isabelle, Jade, Jasmine, Jennifer, Jocelyn, Jordyn, Julia, Juliana, Julienne, Karen, Katia, Kaylee, Keira, Kennedy, Kinsley, Kylie, Layla, Leah, Lena, Lila, Liliana, Lillian, Lily, Linda, Lisa, London, Lorena, Luana, Lucy, Luna, Mélanie, Mackenzie, Madelyn, Madison, Maisy, Makayla, Margaret, Maria, Marine, Mary, Maya, Melanie, Mia, Mila, Nancy, Natalie, Natasha, Niamh, Nora, Odile, Olivia, Paisley, Paloma, Paola, Patricia, Penelope, Peyton, Prudence, Reagan, Riley, Sadie, Samantha, Sarah, Savannah, Scarlett, Skyler, Sophia, Sophie, Stella, Susan, Vérane, Vera, Victoria, Violet, Vivian, Zoe, Agnes, Amy, Anne, Avis, Beatrice, Blanche, Bridget, Catherine, Cecily, Charity, Christina, Clemence, Constance, Denise, Edith, Elinor, Ellen, Florence, Fortune, Frances, Frideswide, Gillian, Isabel, Jane, Janet, Joan, Josian, Joyce, Judith, Katherine, Lettice, Mabel, Margery, Marion, Martha, Maud, Mildred, Millicent, Parnell, Philippa, Rachel, Rebecca, Rose, Ruth, Susanna, Sybil, Thomasin, Ursula, Wilmot, Winifred]
-[19Apr2020 02:05:13.791] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key names.lastnames was corrected from null to [Brown, Clark, Fletcher, Harris, Johnson, Jones, Mardle, Miller, Robinson, Smith, Taylor, Wallgreen, White, Williams, Wilson, Abell, Ackworth, Adams, Addicock, Alban, Aldebourne, Alfray, Alicock, Allard, Allington, Amberden, Amcotts, Amondsham, Andrews, Annesley, Ansty, Archer, Ardall, Ardern, Argentein, Arnold, Asger, Ashby, Ashcombe, Ashenhurst, Ashton, Askew, Asplin, Astley, Atherton, Atkinson, Atlee, Attilburgh, Audeley, Audlington, Ayde, Ayleward, Aylmer, Aynesworth, Babham, Babington, Badby, Baker, Balam, Baldwin, Ballard, Ballett, Bammard, Barber, Bardolf, Barefoot, Barker, Barnes, Barre, Barrentine, Barrett, Barstaple, Bartelot, Barton, Basset, Bathurst, Battersby, Battle, Baynton, Beauchamp, Cheddar, Chelsey, Chernock, Chester, Chetwood, Cheverell, Cheyne, Chichester, Chilton, Chowne, Chudderley, Church, Churmond, Clavell, Claybrook, Clement, Clerk, Clifford, Clifton, Clitherow, Clopton, Cobb, Cobham, Cobley, Cockayne, Cod, Coddington, Coffin, Coggshall, Colby, Colkins, Collard, Colmer, Colt, Colthurst, Complin, Compton, Conquest, Cooke, Coorthopp, Coppinger, Corbett, Corby, Cossington, Cosworth, Cotton, Courtenay, Covert, Cowill, Cox, Crane, Cranford, Crawley, Cressy, Crickett, Cripps, Crisp, Cristemas, Crocker, Crugg, Cuddon, Culpepper, Cunningham, Curzon, Dagworth, Gardiner, Gare, Garnis, Garrard, Garret, Gascoigne, Gasper, Gavell, Gedding, Gerville, Geste, Gibbs, Gifford, Gill, Ginter, Gisborne, Gittens, Glennon, Glover, Gobberd, Goddam, Godfrey, Gold, Golding, Goldwell, Gomershall, Gomfrey, Gonson, Good, Goodenouth, Gooder, Goodluck, Goodnestone, Goodrick, Goodrington, Goodwin, Goring, Gorney, Gorst, Gosebourne, Grafton, Gray, Greene, Greenway, Grenefeld, Greville, Grey, Grimbald, Grobbam, Grofhurst, Groston, Grove, Guildford, Hackman, Haddock, Haddon, Hadresham, Hakebourne, Hale, Hall, Halley, Hambard, Hammer, Hammond, Hampden]
-[19Apr2020 02:05:13.940] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Found new data pack vanilla, loading it automatically
-[19Apr2020 02:05:13.940] [Server thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, main, forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar, jei-1.15.2-6.0.0.2_mapped_snapshot_20200124-1.15.1.jar, minecolonies-0.11.847-ALPHA-universal_mapped_snapshot_20200124-1.15.1.jar, structurize-0.10.297-ALPHA_mapped_snapshot_20200124-1.15.1.jar
-[19Apr2020 02:05:14.650] [Server thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 6 recipes
-[19Apr2020 02:05:15.202] [Server thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 873 advancements
-[19Apr2020 02:05:15.560] [Server thread/WARN] [minecolonies/]: World load
-[19Apr2020 02:05:15.561] [Server thread/INFO] [minecolonies/]: Server UUID c072a513-f88b-42cd-bef0-6b3db2ae9246
-[19Apr2020 02:05:15.561] [Server thread/WARN] [minecolonies/]: World load
-[19Apr2020 02:05:15.564] [Server thread/WARN] [minecolonies/]: World load
-[19Apr2020 02:05:15.564] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[19Apr2020 02:05:15.598] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[19Apr2020 02:05:16.083] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 1%
-[19Apr2020 02:05:16.567] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 5%
-[19Apr2020 02:05:17.067] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 9%
-[19Apr2020 02:05:17.568] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 11%
-[19Apr2020 02:05:18.068] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 16%
-[19Apr2020 02:05:18.585] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 21%
-[19Apr2020 02:05:19.086] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 25%
-[19Apr2020 02:05:19.585] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 28%
-[19Apr2020 02:05:20.070] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 32%
-[19Apr2020 02:05:20.570] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 36%
-[19Apr2020 02:05:21.088] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 40%
-[19Apr2020 02:05:21.571] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 44%
-[19Apr2020 02:05:22.075] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 48%
-[19Apr2020 02:05:22.573] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 52%
-[19Apr2020 02:05:23.119] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 56%
-[19Apr2020 02:05:23.594] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 59%
-[19Apr2020 02:05:24.094] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 61%
-[19Apr2020 02:05:24.598] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 65%
-[19Apr2020 02:05:25.127] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 71%
-[19Apr2020 02:05:25.592] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 74%
-[19Apr2020 02:05:26.093] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 78%
-[19Apr2020 02:05:26.593] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 82%
-[19Apr2020 02:05:27.096] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 86%
-[19Apr2020 02:05:27.568] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 90%
-[19Apr2020 02:05:28.077] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 94%
-[19Apr2020 02:05:28.576] [Server thread/INFO] [com.example.examplemod.ExampleMod/]: HELLO from server starting
-[19Apr2020 02:05:28.579] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 99%
-[19Apr2020 02:05:28.579] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 13013 ms
-[19Apr2020 02:05:28.650] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[19Apr2020 02:05:28.651] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[19Apr2020 02:05:28.651] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Changing view distance to 11, from 10
-[19Apr2020 02:05:29.106] [Netty Local Client IO #1/INFO] [net.minecraftforge.fml.network.NetworkHooks/]: Connected to a modded server.
-[19Apr2020 02:05:29.110] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: Dev[local:E:33d6cb69] logged in with entity id 349 at (66.5, 83.0, 89.5)
-[19Apr2020 02:05:29.118] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[19Apr2020 02:05:29.119] [Render thread/WARN] [minecolonies/]: World load
-[19Apr2020 02:05:29.328] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[19Apr2020 02:05:29.334] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World creative opts'/minecraft:overworld
-[19Apr2020 02:05:29.387] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Starting JEI...
-[19Apr2020 02:05:29.433] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building ingredient list...
-[19Apr2020 02:05:29.435] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building ingredient list took 1.907 ms
-[19Apr2020 02:05:29.435] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building ingredient filter...
-[19Apr2020 02:05:29.700] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building ingredient filter took 264.1 ms
-[19Apr2020 02:05:29.700] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building bookmarks...
-[19Apr2020 02:05:29.700] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building bookmarks took 45.60 μs
-[19Apr2020 02:05:29.700] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building recipe registry...
-[19Apr2020 02:05:29.723] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building recipe registry took 23.05 ms
-[19Apr2020 02:05:29.723] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building runtime...
-[19Apr2020 02:05:29.724] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building runtime took 1.269 ms
-[19Apr2020 02:05:29.729] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Starting JEI took 341.4 ms
-[19Apr2020 02:05:29.798] [Render thread/INFO] [structurize/]: Load huts or decorations from jar
-[19Apr2020 02:05:35.671] [Render thread/WARN] [structurize/]: Unable to load huts or decorations from jar.
-java.nio.file.FileSystemNotFoundException: null
-	at com.sun.nio.zipfs.ZipFileSystemProvider.getFileSystem(ZipFileSystemProvider.java:171) ~[zipfs.jar:1.8.0_242]
-	at com.sun.nio.zipfs.ZipFileSystemProvider.getPath(ZipFileSystemProvider.java:157) ~[zipfs.jar:1.8.0_242]
-	at java.nio.file.Paths.get(Paths.java:143) ~[?:1.8.0_242]
-	at com.ldtteam.structurize.management.Structures.loadStyleMapsJar(Structures.java:250) ~[structurize-0.10.297-ALPHA_mapped_snapshot_20200124-1.15.1.jar:0.10.297-ALPHA]
-	at com.ldtteam.structurize.management.Structures.loadStyleMaps(Structures.java:145) ~[structurize-0.10.297-ALPHA_mapped_snapshot_20200124-1.15.1.jar:0.10.297-ALPHA]
-	at com.ldtteam.structurize.management.Structures.init(Structures.java:122) ~[structurize-0.10.297-ALPHA_mapped_snapshot_20200124-1.15.1.jar:0.10.297-ALPHA]
-	at com.ldtteam.structurize.network.messages.StructurizeStylesMessage.onExecute(StructurizeStylesMessage.java:80) ~[structurize-0.10.297-ALPHA_mapped_snapshot_20200124-1.15.1.jar:0.10.297-ALPHA]
-	at com.ldtteam.structurize.network.NetworkChannel.lambda$null$3(NetworkChannel.java:96) ~[structurize-0.10.297-ALPHA_mapped_snapshot_20200124-1.15.1.jar:0.10.297-ALPHA]
-	at net.minecraftforge.fml.network.NetworkEvent$Context.enqueueWork(NetworkEvent.java:215) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at com.ldtteam.structurize.network.NetworkChannel.lambda$registerMessage$4(NetworkChannel.java:96) ~[structurize-0.10.297-ALPHA_mapped_snapshot_20200124-1.15.1.jar:0.10.297-ALPHA]
-	at net.minecraftforge.fml.network.simple.IndexedMessageCodec.lambda$tryDecode$3(IndexedMessageCodec.java:128) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at java.util.Optional.ifPresent(Optional.java:159) ~[?:1.8.0_242]
-	at net.minecraftforge.fml.network.simple.IndexedMessageCodec.tryDecode(IndexedMessageCodec.java:128) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraftforge.fml.network.simple.IndexedMessageCodec.consume(IndexedMessageCodec.java:162) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraftforge.fml.network.simple.SimpleChannel.networkEventListener(SimpleChannel.java:80) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.0.0-milestone.1-service.jar:?]
-	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.0.0-milestone.1-service.jar:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.0.0-milestone.1-service.jar:?]
-	at net.minecraftforge.fml.network.NetworkInstance.dispatch(NetworkInstance.java:84) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraftforge.fml.network.NetworkHooks.lambda$onCustomPayload$1(NetworkHooks.java:78) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at java.util.Optional.map(Optional.java:215) ~[?:1.8.0_242]
-	at net.minecraftforge.fml.network.NetworkHooks.onCustomPayload(NetworkHooks.java:78) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.client.network.play.ClientPlayNetHandler.handleCustomPayload(ClientPlayNetHandler.java:2002) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.network.play.server.SCustomPayloadPlayPacket.processPacket(SCustomPayloadPlayPacket.java:65) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.network.play.server.SCustomPayloadPlayPacket.processPacket(SCustomPayloadPlayPacket.java:11) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.network.PacketThreadUtil.lambda$checkThreadAndEnqueue$0(PacketThreadUtil.java:19) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.util.concurrent.ThreadTaskExecutor.run(ThreadTaskExecutor.java:140) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.util.concurrent.RecursiveEventLoop.run(RecursiveEventLoop.java:22) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.util.concurrent.ThreadTaskExecutor.driveOne(ThreadTaskExecutor.java:110) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.util.concurrent.ThreadTaskExecutor.drainTasks(ThreadTaskExecutor.java:97) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:930) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:554) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.client.main.Main.main(Main.java:177) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
+[20Apr2020 00:35:51.158] [Render thread/FATAL] [net.minecraftforge.fml.ModLoader/LOADING]: Failed to complete lifecycle event CONSTRUCT, 1 errors found
+[20Apr2020 00:35:51.158] [Render thread/FATAL] [net.minecraftforge.eventbus.EventBus/EVENTBUS]: EventBus 0 shutting down - future events will not be posted.
+java.lang.Exception: stacktrace
+	at net.minecraftforge.eventbus.EventBus.shutdown(EventBus.java:278) ~[eventbus-2.0.0-milestone.1-service.jar:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$createRunnableWithCatch$5(ClientModLoader.java:115) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
+	at net.minecraftforge.fml.client.ClientModLoader.begin(ClientModLoader.java:97) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:393) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:141) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_242]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_242]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_242]
@@ -797,168 +62,51 @@ java.nio.file.FileSystemNotFoundException: null
 	at cpw.mods.modlauncher.Launcher.run(Launcher.java:81) [modlauncher-5.0.0-milestone.4.jar:?]
 	at cpw.mods.modlauncher.Launcher.main(Launcher.java:65) [modlauncher-5.0.0-milestone.4.jar:?]
 	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:102) [forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-[19Apr2020 02:05:35.676] [Render thread/INFO] [structurize/]: Load huts or decorations from jar
-[19Apr2020 02:05:35.679] [Render thread/WARN] [structurize/]: Unable to load huts or decorations from jar.
-java.nio.file.FileSystemNotFoundException: null
-	at com.sun.nio.zipfs.ZipFileSystemProvider.getFileSystem(ZipFileSystemProvider.java:171) ~[zipfs.jar:1.8.0_242]
-	at com.sun.nio.zipfs.ZipFileSystemProvider.getPath(ZipFileSystemProvider.java:157) ~[zipfs.jar:1.8.0_242]
-	at java.nio.file.Paths.get(Paths.java:143) ~[?:1.8.0_242]
-	at com.ldtteam.structurize.management.Structures.loadStyleMapsJar(Structures.java:250) ~[structurize-0.10.297-ALPHA_mapped_snapshot_20200124-1.15.1.jar:0.10.297-ALPHA]
-	at com.ldtteam.structurize.management.Structures.loadStyleMaps(Structures.java:145) ~[structurize-0.10.297-ALPHA_mapped_snapshot_20200124-1.15.1.jar:0.10.297-ALPHA]
-	at com.ldtteam.structurize.management.Structures.init(Structures.java:122) ~[structurize-0.10.297-ALPHA_mapped_snapshot_20200124-1.15.1.jar:0.10.297-ALPHA]
-	at com.ldtteam.structurize.network.messages.StructurizeStylesMessage.onExecute(StructurizeStylesMessage.java:80) ~[structurize-0.10.297-ALPHA_mapped_snapshot_20200124-1.15.1.jar:0.10.297-ALPHA]
-	at com.ldtteam.structurize.network.NetworkChannel.lambda$null$3(NetworkChannel.java:96) ~[structurize-0.10.297-ALPHA_mapped_snapshot_20200124-1.15.1.jar:0.10.297-ALPHA]
-	at net.minecraftforge.fml.network.NetworkEvent$Context.enqueueWork(NetworkEvent.java:215) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at com.ldtteam.structurize.network.NetworkChannel.lambda$registerMessage$4(NetworkChannel.java:96) ~[structurize-0.10.297-ALPHA_mapped_snapshot_20200124-1.15.1.jar:0.10.297-ALPHA]
-	at net.minecraftforge.fml.network.simple.IndexedMessageCodec.lambda$tryDecode$3(IndexedMessageCodec.java:128) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at java.util.Optional.ifPresent(Optional.java:159) ~[?:1.8.0_242]
-	at net.minecraftforge.fml.network.simple.IndexedMessageCodec.tryDecode(IndexedMessageCodec.java:128) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraftforge.fml.network.simple.IndexedMessageCodec.consume(IndexedMessageCodec.java:162) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraftforge.fml.network.simple.SimpleChannel.networkEventListener(SimpleChannel.java:80) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.0.0-milestone.1-service.jar:?]
-	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.0.0-milestone.1-service.jar:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.0.0-milestone.1-service.jar:?]
-	at net.minecraftforge.fml.network.NetworkInstance.dispatch(NetworkInstance.java:84) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraftforge.fml.network.NetworkHooks.lambda$onCustomPayload$1(NetworkHooks.java:78) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at java.util.Optional.map(Optional.java:215) ~[?:1.8.0_242]
-	at net.minecraftforge.fml.network.NetworkHooks.onCustomPayload(NetworkHooks.java:78) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.client.network.play.ClientPlayNetHandler.handleCustomPayload(ClientPlayNetHandler.java:2002) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.network.play.server.SCustomPayloadPlayPacket.processPacket(SCustomPayloadPlayPacket.java:65) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.network.play.server.SCustomPayloadPlayPacket.processPacket(SCustomPayloadPlayPacket.java:11) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.network.PacketThreadUtil.lambda$checkThreadAndEnqueue$0(PacketThreadUtil.java:19) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.util.concurrent.ThreadTaskExecutor.run(ThreadTaskExecutor.java:140) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.util.concurrent.RecursiveEventLoop.run(RecursiveEventLoop.java:22) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.util.concurrent.ThreadTaskExecutor.driveOne(ThreadTaskExecutor.java:110) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.util.concurrent.ThreadTaskExecutor.drainTasks(ThreadTaskExecutor.java:97) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:930) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:554) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraft.client.main.Main.main(Main.java:177) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_242]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_242]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_242]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_242]
-	at net.minecraftforge.userdev.FMLUserdevClientLaunchProvider.lambda$launchService$0(FMLUserdevClientLaunchProvider.java:55) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-5.0.0-milestone.4.jar:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-5.0.0-milestone.4.jar:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-5.0.0-milestone.4.jar:?]
-	at cpw.mods.modlauncher.Launcher.run(Launcher.java:81) [modlauncher-5.0.0-milestone.4.jar:?]
-	at cpw.mods.modlauncher.Launcher.main(Launcher.java:65) [modlauncher-5.0.0-milestone.4.jar:?]
-	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:102) [forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-[19Apr2020 02:05:35.680] [Render thread/INFO] [structurize/]: Load additional huts or decorations from .\structurize/schematics
-[19Apr2020 02:05:35.680] [Render thread/INFO] [structurize/]: Load cached schematic from .\structurize/cache
-[19Apr2020 02:05:35.680] [Render thread/INFO] [structurize/]: Load cached schematic from .\structurize/cache
-[19Apr2020 02:05:35.699] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 0 advancements
-[19Apr2020 02:05:52.313] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
-[19Apr2020 02:05:52.330] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Set own game mode to Creative Mode
-[19Apr2020 02:06:29.278] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[19Apr2020 02:06:29.284] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World creative opts'/minecraft:overworld
-[19Apr2020 02:10:25.484] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Spectator Mode]
-[19Apr2020 02:10:25.493] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Set own game mode to Spectator Mode
-[19Apr2020 02:11:19.785] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
-[19Apr2020 02:11:19.797] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Set own game mode to Creative Mode
-[19Apr2020 02:11:38.728] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[19Apr2020 02:11:38.735] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World creative opts'/minecraft:overworld
-[19Apr2020 02:11:39.737] [Render thread/INFO] [structurize/]: isCorrectMD5: md5:748EE5B3F6CB836D7E5641767DD115DD other:748EE5B3F6CB836D7E5641767DD115DD
-[19Apr2020 02:11:43.493] [Render thread/INFO] [structurize/]: isCorrectMD5: md5:12F108902B80A22B440A7CB7D9C0B291 other:12F108902B80A22B440A7CB7D9C0B291
-[19Apr2020 02:11:47.762] [Render thread/INFO] [structurize/]: isCorrectMD5: md5:0F9B80D0A50F44ACE3956C3812EACE11 other:0F9B80D0A50F44ACE3956C3812EACE11
-[19Apr2020 02:12:15.157] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev has made the advancement [Start Your Colony]
-[19Apr2020 02:12:15.164] [Server thread/WARN] [minecolonies/]: Colony at place is null! dim:0 pos:BlockPos{x=46, y=73, z=78}
-[19Apr2020 02:12:15.164] [Server thread/ERROR] [minecolonies/]: BuildTool: building is null!
-java.lang.Exception: null
-	at com.minecolonies.coremod.network.messages.BuildToolPlaceMessage.setupBuilding(BuildToolPlaceMessage.java:338) ~[minecolonies-0.11.847-ALPHA-universal_mapped_snapshot_20200124-1.15.1.jar:0.11.847-ALPHA]
-	at com.minecolonies.coremod.network.messages.BuildToolPlaceMessage.handleHut(BuildToolPlaceMessage.java:262) ~[minecolonies-0.11.847-ALPHA-universal_mapped_snapshot_20200124-1.15.1.jar:0.11.847-ALPHA]
-	at com.minecolonies.coremod.network.messages.BuildToolPlaceMessage.onExecute(BuildToolPlaceMessage.java:180) ~[minecolonies-0.11.847-ALPHA-universal_mapped_snapshot_20200124-1.15.1.jar:0.11.847-ALPHA]
-	at com.minecolonies.coremod.network.NetworkChannel.lambda$null$3(NetworkChannel.java:187) ~[minecolonies-0.11.847-ALPHA-universal_mapped_snapshot_20200124-1.15.1.jar:0.11.847-ALPHA]
-	at net.minecraftforge.fml.network.NetworkEvent$Context.enqueueWork(NetworkEvent.java:215) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at com.minecolonies.coremod.network.NetworkChannel.lambda$registerMessage$4(NetworkChannel.java:187) ~[minecolonies-0.11.847-ALPHA-universal_mapped_snapshot_20200124-1.15.1.jar:0.11.847-ALPHA]
-	at net.minecraftforge.fml.network.simple.IndexedMessageCodec.lambda$tryDecode$3(IndexedMessageCodec.java:128) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at java.util.Optional.ifPresent(Optional.java:159) ~[?:1.8.0_242]
-	at net.minecraftforge.fml.network.simple.IndexedMessageCodec.tryDecode(IndexedMessageCodec.java:128) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraftforge.fml.network.simple.IndexedMessageCodec.consume(IndexedMessageCodec.java:162) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraftforge.fml.network.simple.SimpleChannel.networkEventListener(SimpleChannel.java:80) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
-	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.0.0-milestone.1-service.jar:?]
-	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.0.0-milestone.1-service.jar:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.0.0-milestone.1-service.jar:?]
-	at net.minecraftforge.fml.network.NetworkInstance.dispatch(NetworkInstance.java:84) ~[?:?]
-	at net.minecraftforge.fml.network.NetworkHooks.lambda$onCustomPayload$1(NetworkHooks.java:78) ~[?:?]
-	at java.util.Optional.map(Optional.java:215) ~[?:1.8.0_242]
-	at net.minecraftforge.fml.network.NetworkHooks.onCustomPayload(NetworkHooks.java:78) ~[?:?]
-	at net.minecraft.network.play.ServerPlayNetHandler.processCustomPayload(ServerPlayNetHandler.java:1361) ~[?:?]
-	at net.minecraft.network.play.client.CCustomPayloadPacket.processPacket(CCustomPayloadPacket.java:48) ~[?:?]
-	at net.minecraft.network.play.client.CCustomPayloadPacket.processPacket(CCustomPayloadPacket.java:12) ~[?:?]
-	at net.minecraft.network.PacketThreadUtil.lambda$checkThreadAndEnqueue$0(PacketThreadUtil.java:19) ~[?:?]
-	at net.minecraft.util.concurrent.TickDelayedTask.run(TickDelayedTask.java:20) [?:?]
-	at net.minecraft.util.concurrent.ThreadTaskExecutor.run(ThreadTaskExecutor.java:140) [?:?]
-	at net.minecraft.util.concurrent.RecursiveEventLoop.run(RecursiveEventLoop.java:22) [?:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:756) [?:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:141) [?:?]
-	at net.minecraft.util.concurrent.ThreadTaskExecutor.driveOne(ThreadTaskExecutor.java:110) [?:?]
-	at net.minecraft.server.MinecraftServer.driveOneInternal(MinecraftServer.java:739) [?:?]
-	at net.minecraft.server.MinecraftServer.driveOne(MinecraftServer.java:733) [?:?]
-	at net.minecraft.util.concurrent.ThreadTaskExecutor.driveUntil(ThreadTaskExecutor.java:123) [?:?]
-	at net.minecraft.server.MinecraftServer.runScheduledTasks(MinecraftServer.java:719) [?:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:663) [?:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_242]
-[19Apr2020 02:12:15.171] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Dev has made the advancement [Start Your Colony]
-[19Apr2020 02:12:15.185] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 7 advancements
-[19Apr2020 02:13:15.579] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[19Apr2020 02:13:15.584] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World creative opts'/minecraft:overworld
-[19Apr2020 02:13:18.297] [Server thread/INFO] [minecolonies/]: New Colony Id: 1 by Dev
-[19Apr2020 02:13:18.303] [Server thread/INFO] [minecolonies/]: Colony 1 - new AbstractBuilding for class net.minecraft.block.BlockState at BlockPos{x=46, y=73, z=78}
-[19Apr2020 02:13:18.322] [Server thread/INFO] [minecolonies/]: WorkOrderBuild at location BlockPos{x=46, y=73, z=78} is using schematics/dwarven/townhall1 instead of schematics/dwarven/townhall1
-[19Apr2020 02:13:18.351] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT]  Word is out about a new colony. Soon the first settlers will join your newly founded colony, if there is enough space around the town hall. (Experienced magistrates can turn off these helpful messages in the Town Hall block.)
-[19Apr2020 02:13:28.692] [Render thread/INFO] [structurize/]: isCorrectMD5: md5:0F9B80D0A50F44ACE3956C3812EACE11 other:0F9B80D0A50F44ACE3956C3812EACE11
-[19Apr2020 02:13:28.707] [Render thread/INFO] [structurize/]: isCorrectMD5: md5:0F9B80D0A50F44ACE3956C3812EACE11 other:0F9B80D0A50F44ACE3956C3812EACE11
-[19Apr2020 02:13:28.728] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[19Apr2020 02:13:28.734] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World creative opts'/minecraft:overworld
-[19Apr2020 02:13:30.478] [Server thread/INFO] [minecolonies/]: WorkOrderBuild at location BlockPos{x=46, y=73, z=78} is using schematics/dwarven/townhall1 instead of schematics/dwarven/townhall1
-[19Apr2020 02:13:30.582] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Requiring a builder's hut of level 1 in order to build or upgrade this building.
-[19Apr2020 02:13:31.941] [Render thread/INFO] [structurize/]: isCorrectMD5: md5:0F9B80D0A50F44ACE3956C3812EACE11 other:0F9B80D0A50F44ACE3956C3812EACE11
-[19Apr2020 02:13:31.949] [Render thread/INFO] [structurize/]: isCorrectMD5: md5:0F9B80D0A50F44ACE3956C3812EACE11 other:0F9B80D0A50F44ACE3956C3812EACE11
-[19Apr2020 02:13:31.978] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[19Apr2020 02:13:31.983] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World creative opts'/minecraft:overworld
-[19Apr2020 02:14:12.668] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT]  The first settler arrived at your colony. You should place a builder's hut to start your settlement.
-[19Apr2020 02:14:18.128] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[19Apr2020 02:14:18.133] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World creative opts'/minecraft:overworld
-[19Apr2020 02:14:19.299] [Render thread/INFO] [structurize/]: isCorrectMD5: md5:12F108902B80A22B440A7CB7D9C0B291 other:12F108902B80A22B440A7CB7D9C0B291
-[19Apr2020 02:14:29.598] [Server thread/INFO] [minecolonies/]: Colony 1 - new AbstractBuilding for class net.minecraft.block.BlockState at BlockPos{x=61, y=73, z=80}
-[19Apr2020 02:14:29.599] [Server thread/INFO] [minecolonies/]: WorkOrderBuild at location BlockPos{x=61, y=73, z=80} is using schematics/dwarven/builder1 instead of schematics/dwarven/builder1
-[19Apr2020 02:14:29.608] [Server thread/INFO] [minecolonies/]: WorkOrderBuild at location BlockPos{x=61, y=73, z=80} is using schematics/dwarven/builder1 instead of schematics/dwarven/builder1
-[19Apr2020 02:14:29.619] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT]  Great job on the placement of the builders hut. However, thats not enough. You need to access it and click the build button! Soon your NPC will be creating new structures for the village.
-[19Apr2020 02:14:38.065] [Server thread/INFO] [minecolonies/]: Colony 1 - removed AbstractBuilding BlockPos{x=61, y=73, z=80} of type builder
-[19Apr2020 02:14:38.065] [Server thread/INFO] [minecolonies.requestsystem.1/]: Removing provider: StandardToken{id=59dc75f2-46d4-46d9-ab9f-8bd199ac782b}
-[19Apr2020 02:14:43.529] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[19Apr2020 02:14:43.535] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World creative opts'/minecraft:overworld
-[19Apr2020 02:14:44.566] [Render thread/INFO] [structurize/]: isCorrectMD5: md5:12F108902B80A22B440A7CB7D9C0B291 other:12F108902B80A22B440A7CB7D9C0B291
-[19Apr2020 02:14:50.396] [Server thread/INFO] [minecolonies/]: Colony 1 - new AbstractBuilding for class net.minecraft.block.BlockState at BlockPos{x=63, y=73, z=80}
-[19Apr2020 02:14:50.396] [Server thread/INFO] [minecolonies/]: WorkOrderBuild at location BlockPos{x=63, y=73, z=80} is using schematics/dwarven/builder1 instead of schematics/dwarven/builder1
-[19Apr2020 02:14:50.401] [Server thread/INFO] [minecolonies/]: WorkOrderBuild at location BlockPos{x=63, y=73, z=80} is using schematics/dwarven/builder1 instead of schematics/dwarven/builder1
-[19Apr2020 02:14:53.779] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[19Apr2020 02:14:53.784] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World creative opts'/minecraft:overworld
-[19Apr2020 02:14:53.797] [Render thread/INFO] [structurize/]: isCorrectMD5: md5:12F108902B80A22B440A7CB7D9C0B291 other:12F108902B80A22B440A7CB7D9C0B291
-[19Apr2020 02:14:53.805] [Render thread/INFO] [structurize/]: isCorrectMD5: md5:12F108902B80A22B440A7CB7D9C0B291 other:12F108902B80A22B440A7CB7D9C0B291
-[19Apr2020 02:14:54.946] [Server thread/INFO] [minecolonies/]: WorkOrderBuild at location BlockPos{x=63, y=73, z=80} is using schematics/dwarven/builder1 instead of schematics/dwarven/builder1
-[19Apr2020 02:14:55.000] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] There is no builder close enough to work at this building, assign a builder to it manually in the build screen or build it closer to the existing builders!
-[19Apr2020 02:15:31.140] [Render thread/INFO] [structurize/]: isCorrectMD5: md5:12F108902B80A22B440A7CB7D9C0B291 other:12F108902B80A22B440A7CB7D9C0B291
-[19Apr2020 02:15:31.148] [Render thread/INFO] [structurize/]: isCorrectMD5: md5:12F108902B80A22B440A7CB7D9C0B291 other:12F108902B80A22B440A7CB7D9C0B291
-[19Apr2020 02:15:31.179] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[19Apr2020 02:15:31.185] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World creative opts'/minecraft:overworld
-[19Apr2020 02:15:32.314] [Server thread/INFO] [minecolonies/]: WorkOrderBuild at location BlockPos{x=63, y=73, z=80} is using schematics/dwarven/builder1 instead of schematics/dwarven/builder1
-[19Apr2020 02:15:32.319] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev has made the advancement [Start your Builder]
-[19Apr2020 02:15:32.364] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Dev has made the advancement [Start your Builder]
-[19Apr2020 02:15:32.364] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Build Request Created!
-[19Apr2020 02:15:32.396] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 14 advancements
-[19Apr2020 02:15:39.204] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Builder Dominic B. Ayleward Started building builder1
-[19Apr2020 02:16:02.829] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[19Apr2020 02:16:02.834] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World creative opts'/minecraft:overworld
-[19Apr2020 02:16:04.448] [Render thread/INFO] [minecolonies/]: Removed all colony views
-[19Apr2020 02:16:04.485] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Dev lost connection: Disconnected
-[19Apr2020 02:16:04.485] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[19Apr2020 02:16:04.491] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Stopping singleplayer server as player logged out
-[19Apr2020 02:16:04.528] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[19Apr2020 02:16:04.529] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[19Apr2020 02:16:04.529] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[19Apr2020 02:16:04.529] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World creative opts'/minecraft:overworld
-[19Apr2020 02:16:04.825] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World creative opts): All chunks are saved
-[19Apr2020 02:16:04.873] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World creative opts): All chunks are saved
-[19Apr2020 02:16:06.484] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[20Apr2020 00:35:53.026] [Render thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
+[20Apr2020 00:35:53.100] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
+[20Apr2020 00:35:53.128] [Server-Worker-4/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file C:\Users\Thomas\gyverCloud\Projekte_Aktiv\Java\minecoloniestwitch\runClient\config\structurize-common.toml is not correct. Correcting
+[20Apr2020 00:35:53.136] [Server-Worker-4/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file C:\Users\Thomas\gyverCloud\Projekte_Aktiv\Java\minecoloniestwitch\runClient\config\minecolonies-common.toml is not correct. Correcting
+[20Apr2020 00:35:53.161] [Server-Worker-4/ERROR] [net.minecraftforge.fml.ModLoader/LOADING]: Skipping lifecycle event SETUP, 1 errors found.
+[20Apr2020 00:35:53.161] [Server-Worker-4/FATAL] [net.minecraftforge.fml.ModLoader/LOADING]: Failed to complete lifecycle event SETUP, 1 errors found
+[20Apr2020 00:35:53.161] [Server-Worker-4/FATAL] [net.minecraftforge.eventbus.EventBus/EVENTBUS]: EventBus 0 shutting down - future events will not be posted.
+java.lang.Exception: stacktrace
+	at net.minecraftforge.eventbus.EventBus.shutdown(EventBus.java:278) ~[eventbus-2.0.0-milestone.1-service.jar:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$createRunnableWithCatch$5(ClientModLoader.java:115) ~[?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.startModLoading(ClientModLoader.java:123) ~[?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$onreload$3(ClientModLoader.java:105) ~[?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$createRunnableWithCatch$5(ClientModLoader.java:113) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1640) [?:1.8.0_242]
+	at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1632) [?:1.8.0_242]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) [?:1.8.0_242]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) [?:1.8.0_242]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) [?:1.8.0_242]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157) [?:1.8.0_242]
+[20Apr2020 00:35:59.702] [Server-Worker-4/ERROR] [net.minecraftforge.fml.ModLoader/LOADING]: Skipping lifecycle event ENQUEUE_IMC, 1 errors found.
+[20Apr2020 00:35:59.703] [Server-Worker-4/FATAL] [net.minecraftforge.fml.ModLoader/LOADING]: Failed to complete lifecycle event ENQUEUE_IMC, 1 errors found
+[20Apr2020 00:35:59.703] [Server-Worker-4/FATAL] [net.minecraftforge.eventbus.EventBus/EVENTBUS]: EventBus 0 shutting down - future events will not be posted.
+java.lang.Exception: stacktrace
+	at net.minecraftforge.eventbus.EventBus.shutdown(EventBus.java:278) ~[eventbus-2.0.0-milestone.1-service.jar:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$createRunnableWithCatch$5(ClientModLoader.java:115) ~[?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.finishModLoading(ClientModLoader.java:137) ~[?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$onreload$4(ClientModLoader.java:107) ~[?:?]
+	at java.util.concurrent.CompletableFuture.uniRun(CompletableFuture.java:719) [?:1.8.0_242]
+	at java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:701) [?:1.8.0_242]
+	at java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:457) [?:1.8.0_242]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) [?:1.8.0_242]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) [?:1.8.0_242]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) [?:1.8.0_242]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157) [?:1.8.0_242]
+[20Apr2020 00:36:00.058] [Render thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
+[20Apr2020 00:36:00.059] [Render thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
+[20Apr2020 00:36:00.175] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x128x0 jei:textures/atlas/gui.png-atlas
+[20Apr2020 00:36:00.176] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[20Apr2020 00:36:00.204] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x4 minecraft:textures/atlas/signs.png-atlas
+[20Apr2020 00:36:00.205] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[20Apr2020 00:36:00.205] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[20Apr2020 00:36:00.206] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[20Apr2020 00:36:00.206] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[20Apr2020 00:36:00.207] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[20Apr2020 00:36:00.623] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[20Apr2020 00:36:00.624] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[20Apr2020 00:36:00.625] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[20Apr2020 00:36:29.388] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!

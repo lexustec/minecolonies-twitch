@@ -1,0 +1,164 @@
+[19Apr2020 22:46:55.636] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20200122.131323, --fml.mcVersion, 1.15.2, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 31.1.16, --version, MOD_DEV, --assetIndex, 1.15, --assetsDir, C:\Users\Thomas\.gradle\caches\forge_gradle\assets, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[19Apr2020 22:46:55.642] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 5.0.0-milestone.4+67+b1a340b starting: java version 1.8.0_242 by AdoptOpenJDK
+[19Apr2020 22:46:55.923] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[19Apr2020 22:46:57.228] [main/INFO] [STDERR/]: [org.antlr.v4.runtime.ConsoleErrorListener:syntaxError:38]: line 36:0 token recognition error at: 'S'
+[19Apr2020 22:46:57.229] [main/INFO] [STDERR/]: [org.antlr.v4.runtime.ConsoleErrorListener:syntaxError:38]: line 36:1 token recognition error at: 'pa'
+[19Apr2020 22:46:57.229] [main/INFO] [STDERR/]: [org.antlr.v4.runtime.ConsoleErrorListener:syntaxError:38]: line 36:3 token recognition error at: 'w'
+[19Apr2020 22:46:57.229] [main/INFO] [STDERR/]: [org.antlr.v4.runtime.ConsoleErrorListener:syntaxError:38]: line 36:4 token recognition error at: 'n'
+[19Apr2020 22:46:57.230] [main/INFO] [STDERR/]: [org.antlr.v4.runtime.ConsoleErrorListener:syntaxError:38]: line 36:5 token recognition error at: 'e'
+[19Apr2020 22:46:57.230] [main/INFO] [STDERR/]: [org.antlr.v4.runtime.ConsoleErrorListener:syntaxError:38]: line 36:6 token recognition error at: 'r'
+[19Apr2020 22:46:57.231] [main/INFO] [STDERR/]: [org.antlr.v4.runtime.ConsoleErrorListener:syntaxError:38]: line 36:8 token recognition error at: 'N'
+[19Apr2020 22:46:57.231] [main/INFO] [STDERR/]: [org.antlr.v4.runtime.ConsoleErrorListener:syntaxError:38]: line 36:9 token recognition error at: 'B'
+[19Apr2020 22:46:57.231] [main/INFO] [STDERR/]: [org.antlr.v4.runtime.ConsoleErrorListener:syntaxError:38]: line 36:10 token recognition error at: 'T'
+[19Apr2020 22:46:57.327] [pool-2-thread-1/ERROR] [net.minecraftforge.fml.loading.moddiscovery.ExplodedDirectoryLocator/SCAN]: Exception scanning C:\Users\Thomas\gyverCloud\Projekte_Aktiv\Java\minecoloniestwitch\build\resources\api
+java.nio.file.NoSuchFileException: C:\Users\Thomas\gyverCloud\Projekte_Aktiv\Java\minecoloniestwitch\build\resources\api
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79) ~[?:1.8.0_242]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97) ~[?:1.8.0_242]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102) ~[?:1.8.0_242]
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53) ~[?:1.8.0_242]
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38) ~[?:1.8.0_242]
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:193) ~[?:1.8.0_242]
+	at java.nio.file.Files.readAttributes(Files.java:1737) ~[?:1.8.0_242]
+	at java.nio.file.FileTreeWalker.getAttributes(FileTreeWalker.java:219) ~[?:1.8.0_242]
+	at java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:276) ~[?:1.8.0_242]
+	at java.nio.file.FileTreeWalker.walk(FileTreeWalker.java:322) ~[?:1.8.0_242]
+	at java.nio.file.FileTreeIterator.<init>(FileTreeIterator.java:72) ~[?:1.8.0_242]
+	at java.nio.file.Files.find(Files.java:3687) ~[?:1.8.0_242]
+	at net.minecraftforge.fml.loading.moddiscovery.ExplodedDirectoryLocator.scanIndividualPath(ExplodedDirectoryLocator.java:96) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-launcher.jar:?]
+	at net.minecraftforge.fml.loading.moddiscovery.ExplodedDirectoryLocator.lambda$scanFile$3(ExplodedDirectoryLocator.java:90) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-launcher.jar:?]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:1.8.0_242]
+	at net.minecraftforge.fml.loading.moddiscovery.ExplodedDirectoryLocator.scanFile(ExplodedDirectoryLocator.java:90) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-launcher.jar:?]
+	at net.minecraftforge.fml.loading.moddiscovery.ModFile.scanFile(ModFile.java:153) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-launcher.jar:?]
+	at net.minecraftforge.fml.loading.moddiscovery.Scanner.scan(Scanner.java:46) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-launcher.jar:?]
+	at net.minecraftforge.fml.loading.moddiscovery.ModFile.compileContent(ModFile.java:149) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-launcher.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604) [?:1.8.0_242]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_242]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_242]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_242]
+[19Apr2020 22:46:57.341] [pool-2-thread-1/ERROR] [net.minecraftforge.fml.loading.moddiscovery.ExplodedDirectoryLocator/SCAN]: Exception scanning C:\Users\Thomas\gyverCloud\Projekte_Aktiv\Java\minecoloniestwitch\build\classes\java\api
+java.nio.file.NoSuchFileException: C:\Users\Thomas\gyverCloud\Projekte_Aktiv\Java\minecoloniestwitch\build\classes\java\api
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79) ~[?:1.8.0_242]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97) ~[?:1.8.0_242]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102) ~[?:1.8.0_242]
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53) ~[?:1.8.0_242]
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38) ~[?:1.8.0_242]
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:193) ~[?:1.8.0_242]
+	at java.nio.file.Files.readAttributes(Files.java:1737) ~[?:1.8.0_242]
+	at java.nio.file.FileTreeWalker.getAttributes(FileTreeWalker.java:219) ~[?:1.8.0_242]
+	at java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:276) ~[?:1.8.0_242]
+	at java.nio.file.FileTreeWalker.walk(FileTreeWalker.java:322) ~[?:1.8.0_242]
+	at java.nio.file.FileTreeIterator.<init>(FileTreeIterator.java:72) ~[?:1.8.0_242]
+	at java.nio.file.Files.find(Files.java:3687) ~[?:1.8.0_242]
+	at net.minecraftforge.fml.loading.moddiscovery.ExplodedDirectoryLocator.scanIndividualPath(ExplodedDirectoryLocator.java:96) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-launcher.jar:?]
+	at net.minecraftforge.fml.loading.moddiscovery.ExplodedDirectoryLocator.lambda$scanFile$3(ExplodedDirectoryLocator.java:90) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-launcher.jar:?]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:1.8.0_242]
+	at net.minecraftforge.fml.loading.moddiscovery.ExplodedDirectoryLocator.scanFile(ExplodedDirectoryLocator.java:90) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-launcher.jar:?]
+	at net.minecraftforge.fml.loading.moddiscovery.ModFile.scanFile(ModFile.java:153) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-launcher.jar:?]
+	at net.minecraftforge.fml.loading.moddiscovery.Scanner.scan(Scanner.java:46) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-launcher.jar:?]
+	at net.minecraftforge.fml.loading.moddiscovery.ModFile.compileContent(ModFile.java:149) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-launcher.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604) [?:1.8.0_242]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_242]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_242]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_242]
+[19Apr2020 22:46:57.509] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\Thomas\.gradle\caches\forge_gradle\assets, --assetIndex, 1.15, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[19Apr2020 22:47:00.243] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[19Apr2020 22:47:14.995] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.2.2 build 10
+[19Apr2020 22:47:16.285] [Render thread/FATAL] [net.minecraftforge.fml.ModLoader/CORE]: Error during pre-loading phase
+net.minecraftforge.fml.ModLoadingException: Mod §eminecolonies§r requires §6structurize§r §o0.10.301-ALPHA or above§r
+§7Currently, §6structurize§r§7 is §o§nnot installed
+	at net.minecraftforge.fml.ModLoadingException.lambda$fromEarlyException$0(ModLoadingException.java:63) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[?:1.8.0_242]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382) ~[?:1.8.0_242]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482) ~[?:1.8.0_242]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[?:1.8.0_242]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:1.8.0_242]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:1.8.0_242]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_242]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:485) ~[?:1.8.0_242]
+	at java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:272) ~[?:1.8.0_242]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382) ~[?:1.8.0_242]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482) ~[?:1.8.0_242]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[?:1.8.0_242]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[?:1.8.0_242]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_242]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:566) ~[?:1.8.0_242]
+	at net.minecraftforge.fml.ModLoader.<init>(ModLoader.java:117) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
+	at net.minecraftforge.fml.ModLoader.get(ModLoader.java:146) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$begin$2(ClientModLoader.java:97) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$createRunnableWithCatch$5(ClientModLoader.java:113) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
+	at net.minecraftforge.fml.client.ClientModLoader.begin(ClientModLoader.java:97) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:393) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:141) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_242]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_242]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_242]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_242]
+	at net.minecraftforge.userdev.FMLUserdevClientLaunchProvider.lambda$launchService$0(FMLUserdevClientLaunchProvider.java:55) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-5.0.0-milestone.4.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-5.0.0-milestone.4.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-5.0.0-milestone.4.jar:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:81) [modlauncher-5.0.0-milestone.4.jar:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:65) [modlauncher-5.0.0-milestone.4.jar:?]
+	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:102) [forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
+[19Apr2020 22:47:16.301] [Render thread/FATAL] [net.minecraftforge.eventbus.EventBus/EVENTBUS]: EventBus 0 shutting down - future events will not be posted.
+java.lang.Exception: stacktrace
+	at net.minecraftforge.eventbus.EventBus.shutdown(EventBus.java:278) ~[eventbus-2.0.0-milestone.1-service.jar:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$createRunnableWithCatch$5(ClientModLoader.java:115) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
+	at net.minecraftforge.fml.client.ClientModLoader.begin(ClientModLoader.java:97) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:393) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:141) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_242]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_242]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_242]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_242]
+	at net.minecraftforge.userdev.FMLUserdevClientLaunchProvider.lambda$launchService$0(FMLUserdevClientLaunchProvider.java:55) ~[forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-5.0.0-milestone.4.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-5.0.0-milestone.4.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-5.0.0-milestone.4.jar:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:81) [modlauncher-5.0.0-milestone.4.jar:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:65) [modlauncher-5.0.0-milestone.4.jar:?]
+	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:102) [forge-1.15.2-31.1.16_mapped_snapshot_20200124-1.15.1-recomp.jar:?]
+[19Apr2020 22:47:18.239] [Render thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
+[19Apr2020 22:47:18.341] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
+[19Apr2020 22:47:18.380] [Server-Worker-7/ERROR] [net.minecraftforge.fml.ModLoader/LOADING]: Skipping lifecycle event SETUP, 1 errors found.
+[19Apr2020 22:47:18.381] [Server-Worker-7/FATAL] [net.minecraftforge.fml.ModLoader/LOADING]: Failed to complete lifecycle event SETUP, 1 errors found
+[19Apr2020 22:47:18.381] [Server-Worker-7/FATAL] [net.minecraftforge.eventbus.EventBus/EVENTBUS]: EventBus 0 shutting down - future events will not be posted.
+java.lang.Exception: stacktrace
+	at net.minecraftforge.eventbus.EventBus.shutdown(EventBus.java:278) ~[eventbus-2.0.0-milestone.1-service.jar:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$createRunnableWithCatch$5(ClientModLoader.java:115) ~[?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.startModLoading(ClientModLoader.java:123) ~[?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$onreload$3(ClientModLoader.java:105) ~[?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$createRunnableWithCatch$5(ClientModLoader.java:113) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1640) [?:1.8.0_242]
+	at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1632) [?:1.8.0_242]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) [?:1.8.0_242]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) [?:1.8.0_242]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) [?:1.8.0_242]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157) [?:1.8.0_242]
+[19Apr2020 22:47:26.975] [Server-Worker-1/ERROR] [net.minecraftforge.fml.ModLoader/LOADING]: Skipping lifecycle event ENQUEUE_IMC, 1 errors found.
+[19Apr2020 22:47:26.975] [Server-Worker-1/FATAL] [net.minecraftforge.fml.ModLoader/LOADING]: Failed to complete lifecycle event ENQUEUE_IMC, 1 errors found
+[19Apr2020 22:47:26.976] [Server-Worker-1/FATAL] [net.minecraftforge.eventbus.EventBus/EVENTBUS]: EventBus 0 shutting down - future events will not be posted.
+java.lang.Exception: stacktrace
+	at net.minecraftforge.eventbus.EventBus.shutdown(EventBus.java:278) ~[eventbus-2.0.0-milestone.1-service.jar:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$createRunnableWithCatch$5(ClientModLoader.java:115) ~[?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.finishModLoading(ClientModLoader.java:137) ~[?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$onreload$4(ClientModLoader.java:107) ~[?:?]
+	at java.util.concurrent.CompletableFuture.uniRun(CompletableFuture.java:719) [?:1.8.0_242]
+	at java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:701) [?:1.8.0_242]
+	at java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:457) [?:1.8.0_242]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) [?:1.8.0_242]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) [?:1.8.0_242]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) [?:1.8.0_242]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157) [?:1.8.0_242]
+[19Apr2020 22:47:27.185] [Render thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
+[19Apr2020 22:47:27.186] [Render thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
+[19Apr2020 22:47:27.303] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[19Apr2020 22:47:27.329] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x4 minecraft:textures/atlas/signs.png-atlas
+[19Apr2020 22:47:27.329] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[19Apr2020 22:47:27.329] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[19Apr2020 22:47:27.330] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[19Apr2020 22:47:27.330] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[19Apr2020 22:47:27.331] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[19Apr2020 22:47:27.835] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[19Apr2020 22:47:27.836] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[19Apr2020 22:47:27.837] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
