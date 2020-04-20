@@ -5,8 +5,11 @@ import ch.lexustec.coremod.EventHandler.EventHandler;
 import ch.lexustec.coremod.EventHandler.FMLEventHandler;
 
 import com.ldtteam.structurize.util.LanguageHandler;
+import ch.lexustec.api.blocks.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.texture.AtlasTexture;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
@@ -27,6 +30,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.Arrays;
 import java.util.stream.Collectors;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -46,8 +50,9 @@ public class MineColoniesTwitch
     //public static final IProxy proxy = DistExecutor.runForDist(() -> ClientProxy::new, () -> ServerProxy::new);
 
     public MineColoniesTwitch() {
-        LanguageHandler.loadLangPath("assets/minecoloniestwitch/lang/%s.json"); // hotfix config comments, it's ugly bcs it's gonna be replaced
+        //LanguageHandler.loadLangPath("assets/minecoloniestwitch/lang/%s.json"); // hotfix config comments, it's ugly bcs it's gonna be replaced
         //config = new Configuration();
+        //FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 
         Mod.EventBusSubscriber.Bus.FORGE.bus().get().register(EventHandler.class);
         Mod.EventBusSubscriber.Bus.FORGE.bus().get().register(FMLEventHandler.class);
@@ -71,10 +76,12 @@ public class MineColoniesTwitch
     }
 
     @OnlyIn(Dist.CLIENT)
-
-    private void doClientStuff(final FMLClientSetupEvent event) {
+    @SubscribeEvent
+    public static void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
         LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
+        Arrays.stream(ModBlocks.getHuts()).forEach(hut -> RenderTypeLookup.setRenderLayer(hut, renderType -> renderType.equals(RenderType.cutout()) || renderType.equals(RenderType.solid())));
+
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
@@ -99,14 +106,14 @@ public class MineColoniesTwitch
 
     // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
     // Event bus for receiving Registry Events)
-    @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
-    public static class RegistryEvents {
-        @SubscribeEvent
-        public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent) {
-            // register a new block here
-            LOGGER.info("HELLO from Register Block");
-        }
-    }
+    //@Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
+    //public static class RegistryEvents {
+    //    @SubscribeEvent
+    //    public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent) {
+    //        // register a new block here
+    //        LOGGER.info("HELLO from Register Block");
+    //    }
+    //}
 
     /**
      * Get the config handler.
