@@ -1,12 +1,12 @@
 package ch.lexustec.apiimp.initializer;
-
+import ch.lexustec.api.util.constant.Constants;
 import ch.lexustec.api.blocks.ModBlocks;
 import ch.lexustec.api.tileentities.MinecoloniesTwitchEntities;
 import ch.lexustec.api.tileentities.TileEntityTwitch;
 import com.minecolonies.api.tileentities.TileEntityColonyBuilding;
 import com.minecolonies.api.tileentities.TileEntityEnchanter;
 import com.minecolonies.api.util.Log;
-import com.minecolonies.api.util.constant.Constants;
+
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

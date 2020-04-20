@@ -1,5 +1,8 @@
 package ch.lexustec.coremod.EventHandler;
 
+import com.minecolonies.api.util.Log;
+import com.minecolonies.coremod.colony.ColonyManager;
+import net.minecraft.world.World;
 import net.minecraft.world.chunk.Chunk;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -11,6 +14,8 @@ import net.minecraftforge.event.world.ChunkEvent;
 import net.minecraftforge.event.world.WorldEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import org.jetbrains.annotations.NotNull;
+
+import static net.minecraftforge.eventbus.api.EventPriority.LOWEST;
 
 public class EventHandler
 {
@@ -78,6 +83,16 @@ public class EventHandler
 
     }
     /**
+     * Gets called when world loads. Calls
+     *
+     * @param event {@link net.minecraftforge.event.world.WorldEvent.Load}
+     */
+    @SubscribeEvent(priority = LOWEST)
+    public static void onWorldLoad(@NotNull final WorldEvent.Load event)
+    {
+        Log.getLogger().warn("World load");
+    }
+    /**
      * Gets called when world unloads.
      *
      * @param event {@link net.minecraftforge.event.world.WorldEvent.Unload}
@@ -85,7 +100,7 @@ public class EventHandler
     @SubscribeEvent
     public static void onWorldUnload(@NotNull final WorldEvent.Unload event)
     {
-
+        Log.getLogger().warn("World unload");
     }
 
 }

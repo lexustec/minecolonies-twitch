@@ -1,11 +1,11 @@
 package ch.lexustec.coremod;
-
+import ch.lexustec.api.blocks.ModBlocks;
 import ch.lexustec.api.util.constant.Constants;
 import ch.lexustec.coremod.EventHandler.EventHandler;
 import ch.lexustec.coremod.EventHandler.FMLEventHandler;
 
 import com.ldtteam.structurize.util.LanguageHandler;
-import ch.lexustec.api.blocks.ModBlocks;
+import com.minecolonies.api.configuration.Configuration;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.renderer.RenderType;
@@ -42,7 +42,7 @@ public class MineColoniesTwitch
     /**
      * The config instance.
      */
-    //private static Configuration config;
+    private static Configuration config;
 
     /**
      * The proxy.
@@ -51,7 +51,7 @@ public class MineColoniesTwitch
 
     public MineColoniesTwitch() {
         //LanguageHandler.loadLangPath("assets/minecoloniestwitch/lang/%s.json"); // hotfix config comments, it's ugly bcs it's gonna be replaced
-        //config = new Configuration();
+        config = new Configuration();
         //FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 
         Mod.EventBusSubscriber.Bus.FORGE.bus().get().register(EventHandler.class);
@@ -80,7 +80,7 @@ public class MineColoniesTwitch
     public static void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
         LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
-        Arrays.stream(ModBlocks.getHuts()).forEach(hut -> RenderTypeLookup.setRenderLayer(hut, renderType -> renderType.equals(RenderType.cutout()) || renderType.equals(RenderType.solid())));
+        Arrays.stream(ModBlocks.getHuts());
 
     }
 

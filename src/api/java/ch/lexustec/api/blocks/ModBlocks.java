@@ -1,5 +1,4 @@
 package ch.lexustec.api.blocks;
-
 import ch.lexustec.api.blocks.*;
 import com.minecolonies.api.blocks.AbstractBlockHut;
 import org.jetbrains.annotations.NotNull;

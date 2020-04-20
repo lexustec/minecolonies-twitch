@@ -1,11 +1,10 @@
 package ch.lexustec.apiimp.initializer;
 
-
+import ch.lexustec.api.util.constant.Constants;
 import ch.lexustec.api.blocks.ModBlocks;
 import ch.lexustec.coremod.blocks.huts.BlockHutTwitch;
 import com.minecolonies.api.creativetab.ModCreativeTabs;
 import com.minecolonies.api.util.Log;
-import com.minecolonies.api.util.constant.Constants;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
@@ -28,6 +27,7 @@ public final class ModBlocksInitializer
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event)
     {
+        Log.getLogger().info("WHAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa Registereeeeeee");
         ModBlocksInitializer.init(event.getRegistry());
     }
 
@@ -91,6 +91,7 @@ public final class ModBlocksInitializer
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event)
     {
+        Log.getLogger().info("WHAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa Registereeeeeee2222222");
         ModBlocksInitializer.registerBlockItem(event.getRegistry());
     }
 
