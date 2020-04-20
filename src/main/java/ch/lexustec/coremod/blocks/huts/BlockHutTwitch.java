@@ -1,7 +1,7 @@
 package ch.lexustec.coremod.blocks.huts;
 
 import com.minecolonies.api.blocks.AbstractBlockHut;
-import com.minecolonies.api.colony.buildings.ModBuildings;
+import ch.lexustec.api.colony.buildings.ModBuildings;
 import com.minecolonies.api.colony.buildings.registry.BuildingEntry;
 import com.minecolonies.api.util.Log;
 import org.jetbrains.annotations.NotNull;
@@ -23,6 +23,6 @@ public class BlockHutTwitch extends AbstractBlockHut<BlockHutTwitch>
     @Override
     public BuildingEntry getBuildingEntry()
     {
-        return ModBuildings.home;
+        return ModBuildings.twitchhut;
     }
 }

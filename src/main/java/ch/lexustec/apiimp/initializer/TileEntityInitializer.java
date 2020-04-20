@@ -3,8 +3,6 @@ import ch.lexustec.api.util.constant.Constants;
 import ch.lexustec.api.blocks.ModBlocks;
 import ch.lexustec.api.tileentities.MinecoloniesTwitchEntities;
 import ch.lexustec.api.tileentities.TileEntityTwitch;
-import com.minecolonies.api.tileentities.TileEntityColonyBuilding;
-import com.minecolonies.api.tileentities.TileEntityEnchanter;
 import com.minecolonies.api.util.Log;
 
 import net.minecraft.tileentity.TileEntityType;
@@ -20,7 +18,8 @@ public class TileEntityInitializer
     @SubscribeEvent
     public static void registerTileEntity(final RegistryEvent.Register<TileEntityType<?>> event)
     {
-        MinecoloniesTwitchEntities.TWITCHBUILDING = (TileEntityType<? extends TileEntityColonyBuilding>) TileEntityType.Builder.create(TileEntityTwitch::new,
+        Log.getLogger().info("beforeRegisterTileEntity");
+        MinecoloniesTwitchEntities.TWITCHBUILDING = (TileEntityType<? extends TileEntityTwitch>) TileEntityType.Builder.create(TileEntityTwitch::new,
           ModBlocks.blockHutTwitch).build(null).setRegistryName(Constants.MOD_ID, "twitchbuilding");
         Log.getLogger().info("registerTileEntity");
         event.getRegistry().registerAll(

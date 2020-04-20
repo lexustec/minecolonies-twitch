@@ -6,6 +6,7 @@ import ch.lexustec.coremod.EventHandler.FMLEventHandler;
 
 import com.ldtteam.structurize.util.LanguageHandler;
 import com.minecolonies.api.configuration.Configuration;
+import com.minecolonies.coremod.proxy.CommonProxy;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.renderer.RenderType;
@@ -57,6 +58,7 @@ public class MineColoniesTwitch
         Mod.EventBusSubscriber.Bus.FORGE.bus().get().register(EventHandler.class);
         Mod.EventBusSubscriber.Bus.FORGE.bus().get().register(FMLEventHandler.class);
         Mod.EventBusSubscriber.Bus.MOD.bus().get().register(this.getClass());
+        Mod.EventBusSubscriber.Bus.MOD.bus().get().register(CommonProxy.class);
 
     }
 
