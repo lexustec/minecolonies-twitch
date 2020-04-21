@@ -1,5 +1,5 @@
 {
-  "parent": "minecoloniestwitch:block/blockhuttwitch",
+  "parent": "minecoloniestwitch:block/blockhuttwitchhut",
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [45, 45, 0],

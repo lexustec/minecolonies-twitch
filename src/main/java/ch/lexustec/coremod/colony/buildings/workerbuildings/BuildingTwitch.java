@@ -30,7 +30,7 @@ public class BuildingTwitch extends AbstractBuilding
     /**
      * The string describing the hut.
      */
-    private static final String TWITCHHUT = "twitchhut";
+    private static final String TWITCHHUT = "blockhuttwitchhut";
 
     /**
      * Instantiates a new citizen hut.

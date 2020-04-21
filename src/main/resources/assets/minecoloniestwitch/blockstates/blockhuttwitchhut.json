@@ -1,19 +1,19 @@
 {
   "variants": {
     "facing=east": {
-      "model": "minecoloniestwitch:block/blockhuttwitch",
+      "model": "minecoloniestwitch:block/blockhuttwitchhut",
       "y": 180
     },
     "facing=south": {
-      "model": "minecoloniestwitch:block/blockhuttwitch",
+      "model": "minecoloniestwitch:block/blockhuttwitchhut",
       "y": 270
     },
     "facing=west": {
-      "model": "minecoloniestwitch:block/blockhuttwitch",
+      "model": "minecoloniestwitch:block/blockhuttwitchhut",
       "y": 0
     },
     "facing=north": {
-      "model": "minecoloniestwitch:block/blockhuttwitch",
+      "model": "minecoloniestwitch:block/blockhuttwitchhut",
       "y": 90
     }
   }
