@@ -5,6 +5,7 @@ import com.ldtteam.blockout.Log;
 import com.ldtteam.blockout.controls.Button;
 import com.ldtteam.blockout.views.ScrollingList;
 import ch.lexustec.api.util.constant.Constants;
+import com.ldtteam.structurize.management.Structures;
 import com.minecolonies.api.colony.buildings.IBuilding;
 import com.minecolonies.coremod.client.gui.AbstractWindowBuilding;
 import org.jetbrains.annotations.NotNull;
@@ -107,15 +108,7 @@ public class WindowHutTwitch extends AbstractWindowBuilding<BuildingTwitch.View>
     private void assignClicked()
     {
         Log.getLogger().info("assignBuilderLevel");
-        final IBuilding woot = building.getColony().getBuildingManager().getBuilding(building.getPosition());
-        if(woot != null)
-        {
-            if(woot.getBuildingLevel() != 1)
-            {
-            woot.setBuildingLevel(1);
-
-            }
-        }
+        Log.getLogger().info(Structures.getSections().toString());
         //if (building.getColony().isManualHousing())
         //{
         //    if (building.getBuildingLevel() == 0)

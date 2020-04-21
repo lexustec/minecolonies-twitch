@@ -1,5 +1,10 @@
 package ch.lexustec.coremod.blocks.huts;
 
+import ch.lexustec.api.util.constant.Constants;
+import com.ldtteam.structures.helpers.Structure;
+import com.ldtteam.structurize.management.StructureName;
+import com.ldtteam.structurize.management.Structures;
+import com.ldtteam.structurize.util.StructureLoadingUtils;
 import com.minecolonies.api.blocks.AbstractBlockHut;
 import ch.lexustec.api.colony.buildings.ModBuildings;
 import com.minecolonies.api.colony.buildings.registry.BuildingEntry;
@@ -12,12 +17,15 @@ public class BlockHutTwitch extends AbstractBlockHut<BlockHutTwitch>
     {
         super();
         Log.getLogger().info("BlockHutTwitch");
+        StructureName.HUTS.add("blockhuttwitchhut");
+
+
     }
     @NotNull
     @Override
     public String getName()
     {
-        return "blockhuttwitch";
+        return "blockhuttwitchhut";
     }
 
     @Override

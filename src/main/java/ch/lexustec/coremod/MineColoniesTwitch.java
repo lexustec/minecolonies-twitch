@@ -4,9 +4,12 @@ import ch.lexustec.api.util.constant.Constants;
 import ch.lexustec.coremod.EventHandler.EventHandler;
 import ch.lexustec.coremod.EventHandler.FMLEventHandler;
 
+import com.ldtteam.structurize.Network;
 import com.ldtteam.structurize.util.LanguageHandler;
+import com.ldtteam.structurize.util.StructureLoadingUtils;
 import com.minecolonies.api.configuration.Configuration;
 import ch.lexustec.coremod.proxy.CommonProxy;
+import com.minecolonies.api.util.Log;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.renderer.RenderType;
@@ -59,7 +62,7 @@ public class MineColoniesTwitch
         Mod.EventBusSubscriber.Bus.FORGE.bus().get().register(FMLEventHandler.class);
         Mod.EventBusSubscriber.Bus.MOD.bus().get().register(this.getClass());
         Mod.EventBusSubscriber.Bus.MOD.bus().get().register(CommonProxy.class);
-
+        //Mod.EventBusSubscriber.Bus.MOD.bus().get().register(this::onModInit);
     }
 
     private void setup(final FMLCommonSetupEvent event)
@@ -83,9 +86,17 @@ public class MineColoniesTwitch
         // do something that can only be done on the client
         LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
         Arrays.stream(ModBlocks.getHuts());
+        StructureLoadingUtils.originFolders.add(Constants.MOD_ID);
 
     }
 
+    @SubscribeEvent
+    public void onModInit(final FMLCommonSetupEvent event)
+    {
+        Log.getLogger().warn("FMLCommonSetupEvent");
+        Network.getNetwork().registerCommonMessages();
+        StructureLoadingUtils.originFolders.add(Constants.MOD_ID);
+    }
     private void enqueueIMC(final InterModEnqueueEvent event)
     {
         // some example code to dispatch IMC to another mod

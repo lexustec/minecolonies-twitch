@@ -15,6 +15,9 @@ out
 
 # gradle
 build
+runClient
+runData
+runServer
 .gradle
 
 # other
