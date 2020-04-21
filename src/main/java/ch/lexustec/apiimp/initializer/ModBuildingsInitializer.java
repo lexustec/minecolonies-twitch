@@ -28,7 +28,7 @@ public final class ModBuildingsInitializer
           .setBuildingBlock(ModBlocks.blockHutTwitch)
           .setBuildingProducer(BuildingTwitch::new)
           .setBuildingViewProducer(()->BuildingTwitch.View::new)
-          .setRegistryName(new ResourceLocation("minecolonies",ModBuildings.TWITCH_ID))
+          .setRegistryName(new ResourceLocation(Constants.MOD_ID,ModBuildings.TWITCH_ID))
           .createBuildingEntry();
 
         reg.register(ModBuildings.twitchhut);
