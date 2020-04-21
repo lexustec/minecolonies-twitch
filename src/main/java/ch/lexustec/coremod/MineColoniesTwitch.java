@@ -6,7 +6,7 @@ import ch.lexustec.coremod.EventHandler.FMLEventHandler;
 
 import com.ldtteam.structurize.util.LanguageHandler;
 import com.minecolonies.api.configuration.Configuration;
-import com.minecolonies.coremod.proxy.CommonProxy;
+import ch.lexustec.coremod.proxy.CommonProxy;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.renderer.RenderType;

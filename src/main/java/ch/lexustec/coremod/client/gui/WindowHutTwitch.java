@@ -1,17 +1,12 @@
 package ch.lexustec.coremod.client.gui;
 
 import ch.lexustec.coremod.colony.buildings.workerbuildings.BuildingTwitch;
-import com.ldtteam.blockout.Pane;
+import com.ldtteam.blockout.Log;
 import com.ldtteam.blockout.controls.Button;
-import com.ldtteam.blockout.controls.Label;
 import com.ldtteam.blockout.views.ScrollingList;
-import com.ldtteam.structurize.util.LanguageHandler;
-import com.minecolonies.api.colony.ICitizenDataView;
-import com.minecolonies.api.util.constant.Constants;
-import com.minecolonies.coremod.Network;
+import ch.lexustec.api.util.constant.Constants;
+import com.minecolonies.api.colony.buildings.IBuilding;
 import com.minecolonies.coremod.client.gui.AbstractWindowBuilding;
-import com.minecolonies.coremod.network.messages.AssignUnassignMessage;
-import net.minecraft.client.Minecraft;
 import org.jetbrains.annotations.NotNull;
 
 
@@ -42,7 +37,7 @@ public class WindowHutTwitch extends AbstractWindowBuilding<BuildingTwitch.View>
     /**
      * The building the view is relates to.
      */
-    private final        BuildingTwitch.View twitchview;
+    private final        BuildingTwitch.View building;
     /**
      * The list of citizen assigned to this hut.
      */
@@ -51,22 +46,23 @@ public class WindowHutTwitch extends AbstractWindowBuilding<BuildingTwitch.View>
     /**
      * Creates the Window object.
      *
-     * @param building View of the home building.
+     * @param b View of the home building.
      */
-    public WindowHutTwitch(final BuildingTwitch.View building)
+    public WindowHutTwitch(final BuildingTwitch.View b)
     {
-        super(building, Constants.MOD_ID + HOME_BUILDING_RESOURCE_SUFFIX);
+        super(b, Constants.MOD_ID + HOME_BUILDING_RESOURCE_SUFFIX);
 
-        super.registerButton(BUTTON_ASSIGN, this::assignClicked);
-        super.registerButton(BUTTON_REMOVE, this::removeClicked);
-        this.twitchview = building;
+        registerButton(BUTTON_ASSIGN, this::assignClicked);
+        Log.getLogger().info("Tile Entity " + b.getID() +" cust name "+ b.getCustomName() +" SchemName "+ b.getSchematicName());
+
+        this.building = b;
     }
 
     @Override
     public void onOpened()
     {
         super.onOpened();
-        final boolean isManualHousing = building.getColony().isManualHousing();
+        //final boolean isManualHousing = building.getColony().isManualHousing();
         //citizen = findPaneOfTypeByID(LIST_CITIZEN, ScrollingList.class);
         //citizen.setDataProvider(new ScrollingList.DataProvider()
         //{
@@ -110,6 +106,16 @@ public class WindowHutTwitch extends AbstractWindowBuilding<BuildingTwitch.View>
      */
     private void assignClicked()
     {
+        Log.getLogger().info("assignBuilderLevel");
+        final IBuilding woot = building.getColony().getBuildingManager().getBuilding(building.getPosition());
+        if(woot != null)
+        {
+            if(woot.getBuildingLevel() != 1)
+            {
+            woot.setBuildingLevel(1);
+
+            }
+        }
         //if (building.getColony().isManualHousing())
         //{
         //    if (building.getBuildingLevel() == 0)
@@ -145,13 +151,13 @@ public class WindowHutTwitch extends AbstractWindowBuilding<BuildingTwitch.View>
 
     /**
      * Returns the name of a building.
-     *
+     * com.minecoloniestwitch.coremod.gui.workerhuts.twitchHut
      * @return Name of a building.
      */
     @NotNull
     @Override
     public String getBuildingName()
     {
-        return "com.minecoloniestwitch.coremod.gui.workerhuts.twitchHut";
+        return "twitchHut";
     }
 }

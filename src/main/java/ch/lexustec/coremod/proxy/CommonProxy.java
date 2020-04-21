@@ -1,8 +1,9 @@
 package ch.lexustec.coremod.proxy;
 
 import ch.lexustec.api.util.constant.Constants;
+import com.ldtteam.blockout.Log;
 import com.minecolonies.api.colony.buildings.registry.BuildingEntry;
-import com.minecolonies.apiimp.initializer.ModBuildingsInitializer;
+import ch.lexustec.apiimp.initializer.ModBuildingsInitializer;
 import com.minecolonies.coremod.proxy.IProxy;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -27,6 +28,7 @@ public abstract class CommonProxy implements IProxy
     @SubscribeEvent
     public static void registerBuildingTypes(@NotNull final RegistryEvent.Register<BuildingEntry> event)
     {
+        Log.getLogger().info("RegisterBuildingType");
         ModBuildingsInitializer.init(event);
     }
 }
