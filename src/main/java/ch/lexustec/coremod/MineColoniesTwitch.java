@@ -1,44 +1,45 @@
 package ch.lexustec.coremod;
 import ch.lexustec.api.blocks.ModBlocks;
+import ch.lexustec.api.configuration.ConfigTwitch;
+import ch.lexustec.api.configuration.StreamerConfig;
 import ch.lexustec.api.util.constant.Constants;
 import ch.lexustec.coremod.EventHandler.EventHandler;
 import ch.lexustec.coremod.EventHandler.FMLEventHandler;
-import ch.lexustec.coremod.Network;
 
 import com.ldtteam.structurize.util.StructureLoadingUtils;
-import com.minecolonies.api.configuration.Configuration;
 import ch.lexustec.coremod.proxy.CommonProxy;
 import com.minecolonies.api.util.Log;
 
 import net.minecraft.block.Blocks;
+import net.minecraft.client.Minecraft;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.client.event.TextureStitchEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
-import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 
+import java.io.FilenameFilter;
+import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.stream.Collectors;
+import java.io.File;
+import java.util.List;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(Constants.MOD_ID)
 public class MineColoniesTwitch
 {
     // Directly reference a log4j logger.
-    private static final Logger LOGGER = LogManager.getLogger();
+    private static final Logger       LOGGER = LogManager.getLogger();
     /**
      * The config instance.
      */
-    private static Configuration config;
+    private static       ConfigTwitch config;
 
     /**
      * The proxy.
@@ -47,14 +48,16 @@ public class MineColoniesTwitch
 
     public MineColoniesTwitch() {
         //LanguageHandler.loadLangPath("assets/minecoloniestwitch/lang/%s.json"); // hotfix config comments, it's ugly bcs it's gonna be replaced
-        config = new Configuration();
+        config = new ConfigTwitch();
         //FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 
         Mod.EventBusSubscriber.Bus.FORGE.bus().get().register(EventHandler.class);
         Mod.EventBusSubscriber.Bus.FORGE.bus().get().register(FMLEventHandler.class);
-        Mod.EventBusSubscriber.Bus.MOD.bus().get().register(this.getClass());
+
         Mod.EventBusSubscriber.Bus.MOD.bus().get().register(CommonProxy.class);
         //Mod.EventBusSubscriber.Bus.MOD.bus().get().register(this::onModInit);
+        Mod.EventBusSubscriber.Bus.MOD.bus().get().register(this.getClass());
+
     }
 
     private void setup(final FMLCommonSetupEvent event)
@@ -76,11 +79,11 @@ public class MineColoniesTwitch
     @SubscribeEvent
     public static void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
-        Network.getNetwork().registerCommonMessages();
+        ch.lexustec.coremod.Network.getNetwork().registerCommonMessages();
         LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
         Arrays.stream(ModBlocks.getHuts());
         StructureLoadingUtils.originFolders.add(Constants.MOD_ID);
-
+        getStreamers();
     }
     /**
      * Event handler for forge pre init event.
@@ -90,7 +93,9 @@ public class MineColoniesTwitch
     @SubscribeEvent
     public static void preInit(@NotNull final FMLCommonSetupEvent event)
     {
-        Log.getLogger().info("preInit");
+        LOGGER.info("preInit minecolonies TWITCH");
+        // Config
+
 
 
     }
@@ -98,24 +103,13 @@ public class MineColoniesTwitch
     @SubscribeEvent
     public void onModInit(final FMLCommonSetupEvent event)
     {
-        Log.getLogger().warn("FMLCommonSetupEvent");
+        LOGGER.warn("FMLCommonSetupEvent");
 
         StructureLoadingUtils.originFolders.add(Constants.MOD_ID);
 
-    }
-    private void enqueueIMC(final InterModEnqueueEvent event)
-    {
-        // some example code to dispatch IMC to another mod
-        InterModComms.sendTo("examplemod", "helloworld", () -> { LOGGER.info("Hello world from the MDK"); return "Hello world";});
+
     }
 
-    private void processIMC(final InterModProcessEvent event)
-    {
-        // some example code to receive and process InterModComms from other mods
-        LOGGER.info("Got IMC {}", event.getIMCStream().
-                map(m->m.getMessageSupplier().get()).
-                collect(Collectors.toList()));
-    }
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(FMLServerStartingEvent event) {
@@ -144,4 +138,45 @@ public class MineColoniesTwitch
     //    return config;
     //}
 
+    /**
+     * gets all StreamerPackages
+     */
+    public static void getStreamers()
+    {
+        //List<String> directories = new ArrayList<>();
+        try {
+
+            File file = new File(Minecraft.getInstance().gameDir + "/" + Constants.MOD_ID + "/streamer");
+            String[] directories = file.list(new FilenameFilter() {
+                @Override
+                public boolean accept(File current, String name) {
+                    return new File(current, name).isDirectory();
+                }
+            });
+            LOGGER.info("File List" + Arrays.toString(directories));
+           File[] file2 = new File(Minecraft.getInstance().gameDir + "/" + Constants.MOD_ID + "/streamer").listFiles(File::isDirectory);
+            LOGGER.info("File List2" + Arrays.toString(file2));
+
+            for (String check: directories)
+            {
+                File f = new File(Minecraft.getInstance().gameDir + "/" + Constants.MOD_ID + "/streamer/" + check + "/" + check +".xml");
+                if(f.exists())
+                {
+                    LOGGER.info("Datapack "+ check + " seems valid");
+                    
+                }
+                else
+                {
+                    LOGGER.info("Dunno wyd this aint no good -> " + check);
+                }
+            }
+
+
+
+
+        }catch (Exception e)
+        {
+            LOGGER.warn(e.getMessage());
+        }
+    }
 }

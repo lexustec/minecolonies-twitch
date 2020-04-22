@@ -1,5 +1,6 @@
 package ch.lexustec.coremod.client.gui;
 
+import ch.lexustec.api.configuration.StreamerConfig;
 import ch.lexustec.coremod.colony.buildings.workerbuildings.BuildingTwitch;
 import ch.lexustec.coremod.network.messages.BuyStreamerMessage;
 import com.ldtteam.blockout.Log;
@@ -7,10 +8,12 @@ import com.ldtteam.blockout.controls.Button;
 import com.ldtteam.blockout.views.ScrollingList;
 import ch.lexustec.api.util.constant.Constants;
 import com.minecolonies.api.colony.IColonyView;
-import com.minecolonies.coremod.Network;
+import ch.lexustec.coremod.Network;
 import com.minecolonies.coremod.client.gui.AbstractWindowBuilding;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Window for the home building.
@@ -103,6 +106,7 @@ public class WindowHutTwitch extends AbstractWindowBuilding<BuildingTwitch.View>
      */
     private void refreshView()
     {
+
         //final Button buttonAssign = findPaneOfTypeByID(BUTTON_ASSIGN, Button.class);
         //
         //final int sparePlaces = building.getBuildingLevel() - building.getResidents().size();
@@ -177,4 +181,5 @@ public class WindowHutTwitch extends AbstractWindowBuilding<BuildingTwitch.View>
     {
         return "blockhuttwitchhut";
     }
+
 }

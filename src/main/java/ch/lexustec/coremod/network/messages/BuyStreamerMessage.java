@@ -1,10 +1,12 @@
 package ch.lexustec.coremod.network.messages;
 
+import com.ldtteam.blockout.Log;
 import com.ldtteam.structurize.util.LanguageHandler;
 import com.minecolonies.api.colony.ICitizenData;
 import com.minecolonies.api.colony.IColony;
 import com.minecolonies.api.colony.IColonyManager;
 import com.minecolonies.api.colony.permissions.Action;
+import com.minecolonies.api.entity.citizen.AbstractEntityCitizen;
 import com.minecolonies.api.network.IMessage;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -14,6 +16,8 @@ import net.minecraftforge.fml.LogicalSide;
 import net.minecraftforge.fml.network.NetworkEvent;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.Optional;
 
 public class BuyStreamerMessage implements IMessage
 {
@@ -124,7 +128,15 @@ public class BuyStreamerMessage implements IMessage
         final BuyStreamerType buyStreamerType = BuyStreamerType.getFromIndex(buyItemIndex);
         final ICitizenData data = colony.getCitizenManager().createAndRegisterNewCitizenData();
         data.getCitizenSkillHandler().init(1000);
+        data.setIsFemale(true);
+        data.setName("Braelynxx");
         LanguageHandler.sendPlayersMessage(colony.getMessagePlayerEntities(), "com.minecolonies.coremod.progress.hireCitizen");
         colony.getCitizenManager().spawnOrCreateCitizen(data, colony.getWorld(), null, true);
+        final Optional<AbstractEntityCitizen> citizen = data.getCitizenEntity();
+        if(citizen != null)
+        {
+            Log.getLogger().info("Got the citizen");
+
+        }
     }
 }
