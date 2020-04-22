@@ -1,11 +1,13 @@
 package ch.lexustec.coremod.client.gui;
 
 import ch.lexustec.coremod.colony.buildings.workerbuildings.BuildingTwitch;
+import ch.lexustec.coremod.network.messages.BuyStreamerMessage;
 import com.ldtteam.blockout.Log;
 import com.ldtteam.blockout.controls.Button;
 import com.ldtteam.blockout.views.ScrollingList;
 import ch.lexustec.api.util.constant.Constants;
-import com.minecolonies.api.colony.buildings.IBuilding;
+import com.minecolonies.api.colony.IColonyView;
+import com.minecolonies.coremod.Network;
 import com.minecolonies.coremod.client.gui.AbstractWindowBuilding;
 import org.jetbrains.annotations.NotNull;
 
@@ -23,12 +25,15 @@ public class WindowHutTwitch extends AbstractWindowBuilding<BuildingTwitch.View>
     /**
      * Id of the hire/fire button in the GUI.
      */
-    private static final String BUTTON_REMOVE = "remove";
-
+    private static final String      BUTTON_REMOVE = "remove";
+    /**
+     * The client side colony data
+     */
+    private final        IColonyView colony;
     /**
      * Suffix describing the window xml.
      */
-    private static final String HOME_BUILDING_RESOURCE_SUFFIX = ":gui/windowhuttwitch.xml";
+    private static final String      HOME_BUILDING_RESOURCE_SUFFIX = ":gui/windowhuttwitch.xml";
 
     /**
      * Id to identify the list of the citizen in the view.
@@ -56,6 +61,12 @@ public class WindowHutTwitch extends AbstractWindowBuilding<BuildingTwitch.View>
         Log.getLogger().info("Tile Entity " + b.getID() +" cust name "+ b.getCustomName() +" SchemName "+ b.getSchematicName());
 
         this.building = b;
+
+        colony = b.getColony();
+        if(colony == null)
+        {
+            Log.getLogger().info("No Colony..... why");
+        }
     }
 
     @Override
@@ -107,7 +118,7 @@ public class WindowHutTwitch extends AbstractWindowBuilding<BuildingTwitch.View>
     private void assignClicked()
     {
         Log.getLogger().info("assignBuilderLevel");
-
+        trySpawnStreamer();
         //if (building.getColony().isManualHousing())
         //{
         //    if (building.getBuildingLevel() == 0)
@@ -123,7 +134,21 @@ public class WindowHutTwitch extends AbstractWindowBuilding<BuildingTwitch.View>
         //    }
         //}
     }
+    /**
+     * Try to spawn a new citizen as child.
+     * Mom / dad entities are required and chosen randomly in this hut.
+     * Childs inherit stats from their parents, avergaged +-2
+     * Childs get assigned to a free housing slot in the colony to be raised there,
+     * if the house has an adult living there the child takes its name and gets raised by it.
+     */
+    public void trySpawnStreamer()
+    {
 
+        Network.getNetwork().sendToServer(new BuyStreamerMessage(BuyStreamerMessage.BuyStreamerType.HAY_BALE, colony.getID(), colony.getDimension()));
+
+
+
+    }
     /**
      * Action when the remove button is clicked.
      *

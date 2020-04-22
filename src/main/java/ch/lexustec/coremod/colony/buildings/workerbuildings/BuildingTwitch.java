@@ -1,7 +1,11 @@
 package ch.lexustec.coremod.colony.buildings.workerbuildings;
 
 import ch.lexustec.coremod.client.gui.WindowHutTwitch;
+import com.ldtteam.blockout.Log;
 import com.ldtteam.blockout.views.Window;
+import com.ldtteam.structurize.util.LanguageHandler;
+import com.minecolonies.api.advancements.AdvancementTriggers;
+import com.minecolonies.api.colony.ICitizenData;
 import com.minecolonies.api.colony.IColony;
 import ch.lexustec.api.colony.buildings.ModBuildings;
 import com.minecolonies.api.colony.IColonyView;
@@ -9,6 +13,8 @@ import com.minecolonies.api.colony.buildings.IBuilding;
 import com.minecolonies.api.colony.buildings.registry.BuildingEntry;
 import com.minecolonies.coremod.colony.buildings.AbstractBuilding;
 import com.minecolonies.coremod.colony.buildings.views.AbstractBuildingView;
+import com.minecolonies.coremod.colony.buildings.workerbuildings.BuildingHome;
+import com.minecolonies.coremod.util.AdvancementUtils;
 import net.minecraft.block.BedBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.nbt.CompoundNBT;
@@ -112,17 +118,7 @@ public class BuildingTwitch extends AbstractBuilding
     {
 
     }
-    /**
-     * Try to spawn a new citizen as child.
-     * Mom / dad entities are required and chosen randomly in this hut.
-     * Childs inherit stats from their parents, avergaged +-2
-     * Childs get assigned to a free housing slot in the colony to be raised there,
-     * if the house has an adult living there the child takes its name and gets raised by it.
-     */
-    public void trySpawnStreamer()
-    {
 
-    }
 
     @Override
     public int getMaxBuildingLevel()
@@ -156,6 +152,17 @@ public class BuildingTwitch extends AbstractBuilding
     {
 
     }
+
+
+
+
+
+
+
+
+
+
+
 
     /**
      * The view of the citizen hut.
