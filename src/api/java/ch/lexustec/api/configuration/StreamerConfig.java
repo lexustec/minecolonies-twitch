@@ -3,16 +3,16 @@ package ch.lexustec.api.configuration;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StreamerConfig
+public final class StreamerConfig
 {
-    public List<String> streamers;
+    public static List<String> streamers;
 
     public StreamerConfig()
     {
         streamers = new ArrayList<>();
     }
 
-    public List<String> getStreamers()
+    public static List<String> getStreamers()
     {
         return streamers;
     }

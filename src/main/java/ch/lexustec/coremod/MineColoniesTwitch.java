@@ -40,7 +40,7 @@ public class MineColoniesTwitch
      * The config instance.
      */
     private static       ConfigTwitch config;
-
+    private static StreamerConfig streamers;
     /**
      * The proxy.
      */
@@ -49,6 +49,7 @@ public class MineColoniesTwitch
     public MineColoniesTwitch() {
         //LanguageHandler.loadLangPath("assets/minecoloniestwitch/lang/%s.json"); // hotfix config comments, it's ugly bcs it's gonna be replaced
         config = new ConfigTwitch();
+        streamers = new StreamerConfig();
         //FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 
         Mod.EventBusSubscriber.Bus.FORGE.bus().get().register(EventHandler.class);
@@ -156,22 +157,21 @@ public class MineColoniesTwitch
             LOGGER.info("File List" + Arrays.toString(directories));
            File[] file2 = new File(Minecraft.getInstance().gameDir + "/" + Constants.MOD_ID + "/streamer").listFiles(File::isDirectory);
             LOGGER.info("File List2" + Arrays.toString(file2));
-
+            List<String> streamersToAdd = new ArrayList<>();
             for (String check: directories)
             {
                 File f = new File(Minecraft.getInstance().gameDir + "/" + Constants.MOD_ID + "/streamer/" + check + "/" + check +".xml");
                 if(f.exists())
                 {
                     LOGGER.info("Datapack "+ check + " seems valid");
-                    
+                    streamersToAdd.add(check);
                 }
                 else
                 {
                     LOGGER.info("Dunno wyd this aint no good -> " + check);
                 }
             }
-
-
+            streamers.setStreamers(streamersToAdd);
 
 
         }catch (Exception e)

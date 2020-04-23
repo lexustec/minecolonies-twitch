@@ -4,7 +4,10 @@ import ch.lexustec.api.configuration.StreamerConfig;
 import ch.lexustec.coremod.colony.buildings.workerbuildings.BuildingTwitch;
 import ch.lexustec.coremod.network.messages.BuyStreamerMessage;
 import com.ldtteam.blockout.Log;
+import com.ldtteam.blockout.Pane;
 import com.ldtteam.blockout.controls.Button;
+import com.ldtteam.blockout.controls.ButtonImage;
+import com.ldtteam.blockout.controls.Label;
 import com.ldtteam.blockout.views.ScrollingList;
 import ch.lexustec.api.util.constant.Constants;
 import com.minecolonies.api.colony.IColonyView;
@@ -12,8 +15,13 @@ import ch.lexustec.coremod.Network;
 import com.minecolonies.coremod.client.gui.AbstractWindowBuilding;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+
+import static com.minecolonies.api.util.constant.WindowConstants.LIST_RESOURCES;
+import static com.minecolonies.api.util.constant.WindowConstants.STOCK_REMOVE;
 
 /**
  * Window for the home building.
@@ -49,8 +57,9 @@ public class WindowHutTwitch extends AbstractWindowBuilding<BuildingTwitch.View>
     /**
      * The list of citizen assigned to this hut.
      */
-    private              ScrollingList     citizen;
+    private              ScrollingList     hireStreamer;
 
+    private List <String> streamerForHire ;
     /**
      * Creates the Window object.
      *
@@ -62,14 +71,19 @@ public class WindowHutTwitch extends AbstractWindowBuilding<BuildingTwitch.View>
 
         registerButton(BUTTON_ASSIGN, this::assignClicked);
         Log.getLogger().info("Tile Entity " + b.getID() +" cust name "+ b.getCustomName() +" SchemName "+ b.getSchematicName());
-
+        hireStreamer = window.findPaneOfTypeByID("assignStreamer", ScrollingList.class);
         this.building = b;
-
+        streamerForHire = StreamerConfig.getStreamers();
         colony = b.getColony();
+        if(building.getBuildingLevel() > 0)
+        {
+            window.findPaneOfTypeByID("build", ButtonImage.class).hide();
+        }
         if(colony == null)
         {
             Log.getLogger().info("No Colony..... why");
         }
+        registerButton("rent", this::trySpawnStreamer);
     }
 
     @Override
@@ -106,7 +120,25 @@ public class WindowHutTwitch extends AbstractWindowBuilding<BuildingTwitch.View>
      */
     private void refreshView()
     {
+        Log.getLogger().info(StreamerConfig.getStreamers().toString());
 
+        hireStreamer.enable();
+        hireStreamer.show();
+
+        hireStreamer.setDataProvider(new ScrollingList.DataProvider() {
+            @Override
+            public int getElementCount()
+            {
+                return streamerForHire.size();
+            }
+
+            @Override
+            public void updateElement(final int i, final Pane pane)
+            {
+                    final Label nameLabel = pane.findPaneOfTypeByID("name", Label.class);
+                    nameLabel.setLabelText(streamerForHire.get(i));
+            }
+        });
         //final Button buttonAssign = findPaneOfTypeByID(BUTTON_ASSIGN, Button.class);
         //
         //final int sparePlaces = building.getBuildingLevel() - building.getResidents().size();
@@ -122,7 +154,7 @@ public class WindowHutTwitch extends AbstractWindowBuilding<BuildingTwitch.View>
     private void assignClicked()
     {
         Log.getLogger().info("assignBuilderLevel");
-        trySpawnStreamer();
+        trySpawnStreamer(null);
         //if (building.getColony().isManualHousing())
         //{
         //    if (building.getBuildingLevel() == 0)
@@ -145,11 +177,18 @@ public class WindowHutTwitch extends AbstractWindowBuilding<BuildingTwitch.View>
      * Childs get assigned to a free housing slot in the colony to be raised there,
      * if the house has an adult living there the child takes its name and gets raised by it.
      */
-    public void trySpawnStreamer()
+    public void trySpawnStreamer(final Button button)
     {
 
-        Network.getNetwork().sendToServer(new BuyStreamerMessage(BuyStreamerMessage.BuyStreamerType.HAY_BALE, colony.getID(), colony.getDimension()));
-
+        if(button == null)
+        {
+            Network.getNetwork().sendToServer(new BuyStreamerMessage("DONNERLORD", colony.getID(), colony.getDimension()));
+        }
+        else
+        {
+            final int row = hireStreamer.getListElementIndexByPane(button);
+            Network.getNetwork().sendToServer(new BuyStreamerMessage(streamerForHire.get(row), colony.getID(), colony.getDimension()));
+        }
 
 
     }

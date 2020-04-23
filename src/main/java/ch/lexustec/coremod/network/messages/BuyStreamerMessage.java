@@ -12,6 +12,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.network.PacketBuffer;
+import net.minecraft.util.math.BlockPos;
 import net.minecraftforge.fml.LogicalSide;
 import net.minecraftforge.fml.network.NetworkEvent;
 import org.jetbrains.annotations.NotNull;
@@ -71,7 +72,7 @@ public class BuyStreamerMessage implements IMessage
     /**
      * Index of the chosen item, sent to the server
      */
-    private int buyItemIndex;
+    private String streamerName;
 
     /**
      * The dimension of the
@@ -80,10 +81,10 @@ public class BuyStreamerMessage implements IMessage
     
     public BuyStreamerMessage(){super();}
 
-    public BuyStreamerMessage(@NotNull final BuyStreamerMessage.BuyStreamerType buyStreamerType, @NotNull final int colonyId, @NotNull final int dimension)
+    public BuyStreamerMessage(@NotNull final String streamerName, @NotNull final int colonyId, @NotNull final int dimension)
     {
         super();
-        this.buyItemIndex = buyStreamerType.getIndex();
+        this.streamerName = streamerName;
         this.colonyId = colonyId;
         this.dimension = dimension;
     }
@@ -94,7 +95,7 @@ public class BuyStreamerMessage implements IMessage
     {
         buf.writeInt(colonyId);
         buf.writeInt(dimension);
-        buf.writeInt(buyItemIndex);
+        buf.writeString(streamerName);
     }
 
     @Override
@@ -102,7 +103,7 @@ public class BuyStreamerMessage implements IMessage
     {
         colonyId = buf.readInt();
         dimension = buf.readInt();
-        buyItemIndex = buf.readInt();
+        streamerName = buf.readString();
     }
 
     @Nullable
@@ -124,14 +125,14 @@ public class BuyStreamerMessage implements IMessage
         final PlayerEntity player = ctxIn.getSender();
 
         //if can hire and space
-
-        final BuyStreamerType buyStreamerType = BuyStreamerType.getFromIndex(buyItemIndex);
+        BlockPos spawnpos = player.getPosition();
+        spawnpos.add(1,1,1);
         final ICitizenData data = colony.getCitizenManager().createAndRegisterNewCitizenData();
-        data.getCitizenSkillHandler().init(1000);
-        data.setIsFemale(true);
-        data.setName("Braelynxx");
+        data.getCitizenSkillHandler().init(1090);
+        data.setIsFemale(false);
+        data.setName(streamerName);
         LanguageHandler.sendPlayersMessage(colony.getMessagePlayerEntities(), "com.minecolonies.coremod.progress.hireCitizen");
-        colony.getCitizenManager().spawnOrCreateCitizen(data, colony.getWorld(), null, true);
+        colony.getCitizenManager().spawnOrCreateCitizen(data, colony.getWorld(), spawnpos, true);
         final Optional<AbstractEntityCitizen> citizen = data.getCitizenEntity();
         if(citizen != null)
         {
