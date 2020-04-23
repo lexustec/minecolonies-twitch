@@ -12,6 +12,8 @@ import com.minecolonies.api.util.Log;
 
 import net.minecraft.block.Blocks;
 import net.minecraft.client.Minecraft;
+import net.minecraft.resources.IResourceManager;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.client.event.TextureStitchEvent;
@@ -20,6 +22,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
+import net.minecraftforge.resource.IResourceType;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
@@ -29,6 +32,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.io.File;
 import java.util.List;
+import java.util.function.Predicate;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(Constants.MOD_ID)
@@ -84,8 +88,10 @@ public class MineColoniesTwitch
         LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
         Arrays.stream(ModBlocks.getHuts());
         StructureLoadingUtils.originFolders.add(Constants.MOD_ID);
+
         getStreamers();
     }
+    
     /**
      * Event handler for forge pre init event.
      *

@@ -13,8 +13,16 @@ import ch.lexustec.api.util.constant.Constants;
 import com.minecolonies.api.colony.IColonyView;
 import ch.lexustec.coremod.Network;
 import com.minecolonies.coremod.client.gui.AbstractWindowBuilding;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.texture.DynamicTexture;
+import net.minecraft.client.renderer.texture.TextureManager;
+import net.minecraft.util.ResourceLocation;
 import org.jetbrains.annotations.NotNull;
+import sun.net.ResourceManager;
 
+import javax.annotation.Resource;
+import java.io.File;
+import java.nio.file.FileSystems;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -111,7 +119,7 @@ public class WindowHutTwitch extends AbstractWindowBuilding<BuildingTwitch.View>
         //        }
         //    }
         //});
-
+        Log.getLogger().info(Minecraft.getInstance().getResourceManager().getResourceNamespaces().toString());
         refreshView();
     }
 
@@ -137,6 +145,28 @@ public class WindowHutTwitch extends AbstractWindowBuilding<BuildingTwitch.View>
             {
                     final Label nameLabel = pane.findPaneOfTypeByID("name", Label.class);
                     nameLabel.setLabelText(streamerForHire.get(i));
+                    final ButtonImage canvas = pane.findPaneOfTypeByID("canvas", ButtonImage.class);
+                    //File f = new File("minecoloniestwitchdata:streamer/" + streamerForHire.get(i) + "/image/canvas.png");
+
+
+
+                 //   String absolutePath = FileSystems.getDefault().getPath("minecoloniestwitchdata:streamer/" + streamerForHire.get(i) + "/image/canvas.png").normalize().toAbsolutePath().toString();
+
+
+                //////File[] file2 = new File(FileSystems.getDefault().getPath(Minecraft.getInstance().gameDir.toString()).normalize().toAbsolutePath().toString() + "/" + Constants.MOD_ID + "/streamer").listFiles(File::isDirectory);
+                //Log.getLogger().info("File List2" + absolutePath);
+                //    if(f.exists())
+                //    {
+                ////
+                ////        DynamicTexture currentCrest = new DynamicTexture(32,32,true);
+                ////
+                ////        ResourceLocation crestLocation = Minecraft.getInstance().getTextureManager().getDynamicTextureLocation(Minecraft.getInstance().gameDir + "/" + Constants.MOD_ID + "/streamer/" + streamerForHire.get(i) + "/image/canvas.png", currentCrest);
+                //        canvas.setImage("minecoloniestwitchdata:streamer/" + streamerForHire.get(i) + "/image/canvas.png");
+                //    }
+                //    else
+                //    {
+                      canvas.setImage(new ResourceLocation("minecoloniestwitchdata","default/defaultcanvas.png"));
+                //    }
             }
         });
         //final Button buttonAssign = findPaneOfTypeByID(BUTTON_ASSIGN, Button.class);
