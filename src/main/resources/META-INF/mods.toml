@@ -58,12 +58,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis lacinia magn
 [[dependencies.minecoloniestwitch]]
     modId="minecolonies"
     mandatory=true
-    versionRange="[0.11.862-ALPHA]"
+    versionRange="[0.11.910-ALPHA]"
     ordering="AFTER"
     side="BOTH"
 [[dependencies.minecoloniestwitch]]
     modId="structurize"
     mandatory=true
-    versionRange="[0.10.304-ALPHA]"
+    versionRange="[0.10.306-ALPHA]"
     ordering="AFTER"
     side="BOTH"

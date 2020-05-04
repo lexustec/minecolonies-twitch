@@ -1,7 +1,11 @@
 package ch.lexustec.coremod.network.messages;
 
+import ch.lexustec.api.client.render.modeltype.TwitchModelType;
+import ch.lexustec.coremod.entity.citizen.citizenhandlers.TwitchJobHandler;
 import com.ldtteam.blockout.Log;
 import com.ldtteam.structurize.util.LanguageHandler;
+import com.minecolonies.api.client.render.modeltype.CitizenModel;
+import com.minecolonies.api.client.render.modeltype.registry.IModelTypeRegistry;
 import com.minecolonies.api.colony.ICitizenData;
 import com.minecolonies.api.colony.IColony;
 import com.minecolonies.api.colony.IColonyManager;
@@ -126,18 +130,29 @@ public class BuyStreamerMessage implements IMessage
 
         //if can hire and space
         BlockPos spawnpos = player.getPosition();
-        spawnpos.add(1,1,1);
+        spawnpos.add(1,1,0);
         final ICitizenData data = colony.getCitizenManager().createAndRegisterNewCitizenData();
         data.getCitizenSkillHandler().init(1090);
         data.setIsFemale(false);
+        data.setIsChild(false);
         data.setName(streamerName);
+
         LanguageHandler.sendPlayersMessage(colony.getMessagePlayerEntities(), "com.minecolonies.coremod.progress.hireCitizen");
         colony.getCitizenManager().spawnOrCreateCitizen(data, colony.getWorld(), spawnpos, true);
         final Optional<AbstractEntityCitizen> citizen = data.getCitizenEntity();
-        if(citizen != null)
+        if(citizen.isPresent())
         {
-            Log.getLogger().info("Got the citizen");
-
+            Log.getLogger().info("Got Citizen");
+            TwitchModelType model = new TwitchModelType();
+            IModelTypeRegistry registry = IModelTypeRegistry.getInstance();
+            registry.register(model,new CitizenModel<>(), new CitizenModel<>());
+            citizen.get().setModelId(model);
+            citizen.get().setCitizenJobHandler(new TwitchJobHandler(citizen.get()));
+            citizen.get().markDirty();
+        }else
+        {
+            Log.getLogger().info("No Citizen");
         }
+
     }
 }

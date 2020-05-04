@@ -165,7 +165,7 @@ public class WindowHutTwitch extends AbstractWindowBuilding<BuildingTwitch.View>
                 //    }
                 //    else
                 //    {
-                      canvas.setImage(new ResourceLocation("minecoloniestwitchdata","default/defaultcanvas.png"));
+                      //canvas.setImage(new ResourceLocation("minecoloniestwitchdata","default/defaultcanvas.png"));
                 //    }
             }
         });
