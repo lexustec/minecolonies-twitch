@@ -16,11 +16,20 @@ public class TwitchModelType implements IModelType
 {
 
     private static final ResourceLocation TEXTURE_STEVE = new ResourceLocation("textures/entity/steve.png");
+    private String streamerName;
     //private GameProfile profile;
+
+    public TwitchModelType (String myName)
+    {
+        super();
+        this.streamerName = myName;
+    }
+
+
     @Override
     public String getName()
     {
-        return this.getName();
+        return this.streamerName;
     }
 
     @Override

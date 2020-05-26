@@ -18,7 +18,7 @@ import net.minecraft.client.renderer.texture.DynamicTexture;
 import net.minecraft.client.renderer.texture.TextureManager;
 import net.minecraft.util.ResourceLocation;
 import org.jetbrains.annotations.NotNull;
-import sun.net.ResourceManager;
+
 
 import javax.annotation.Resource;
 import java.io.File;

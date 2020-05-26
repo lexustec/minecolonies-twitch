@@ -3,6 +3,9 @@ package ch.lexustec.coremod.entity.citizen.citizenhandlers;
 import ch.lexustec.api.client.render.modeltype.TwitchModelType;
 import com.ldtteam.blockout.Log;
 import com.minecolonies.api.client.render.modeltype.BipedModelType;
+import com.minecolonies.api.client.render.modeltype.CitizenModel;
+import com.minecolonies.api.client.render.modeltype.IModelType;
+import com.minecolonies.api.client.render.modeltype.registry.IModelTypeRegistry;
 import com.minecolonies.api.colony.jobs.IJob;
 import com.minecolonies.api.entity.citizen.AbstractEntityCitizen;
 import com.minecolonies.api.entity.citizen.citizenhandlers.ICitizenJobHandler;
@@ -11,6 +14,8 @@ import com.minecolonies.coremod.entity.ai.basic.AbstractEntityAIInteract;
 import net.minecraft.entity.ai.goal.PrioritizedGoal;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.Map;
 
 import static com.minecolonies.api.entity.citizen.AbstractEntityCitizen.DATA_MODEL;
 
@@ -40,6 +45,7 @@ public class TwitchJobHandler implements ICitizenJobHandler
     @Override
     public void setModelDependingOnJob(@Nullable final IJob job)
     {
+        Log.getLogger().info("SETTING JOB IN TWITCHJOBHANDLER");
         if (citizen.isChild())
         {
             citizen.setModelId(BipedModelType.CHILD);
@@ -50,6 +56,7 @@ public class TwitchJobHandler implements ICitizenJobHandler
 
         if (job == null)
         {
+
 //            if (citizen.getCitizenColonyHandler().getHomeBuilding() != null)
 //            {
 //                switch (citizen.getCitizenColonyHandler().getHomeBuilding().getBuildingLevel())
@@ -70,8 +77,27 @@ public class TwitchJobHandler implements ICitizenJobHandler
 //            }
 //            else
 //            {
-            TwitchModelType model = new TwitchModelType();
-                citizen.setModelId(model);
+            IModelTypeRegistry registry = IModelTypeRegistry.getInstance();
+            for (Map.Entry<IModelType, CitizenModel<AbstractEntityCitizen>> entry : registry.getMaleMap().entrySet())
+            {
+                Log.getLogger().info("YaY" + entry.getKey().getName() + " == " + citizen.getName().getString());
+                if (entry.getKey().getName() == citizen.getName().getString())
+                {
+                    Log.getLogger().info("Found It");
+                    citizen.setModelId(entry.getKey());
+                }
+            }
+
+            for (Map.Entry<IModelType, CitizenModel<AbstractEntityCitizen>> entry : registry.getFemaleMap().entrySet())
+            {
+                Log.getLogger().info("YaY " + entry.getKey().getName() + " == " + citizen.getName().getString());
+                if (entry.getKey().getName() == citizen.getName().getString())
+                {
+                    Log.getLogger().info("Found It");
+                    citizen.setModelId(entry.getKey());
+                }
+            }
+
 
 //            }
         }
@@ -79,8 +105,7 @@ public class TwitchJobHandler implements ICitizenJobHandler
         {
             citizen.setModelId(job.getModel());
         }
-        Log.getLogger().info("setDataManger with " +  citizen.getModelType().getName());
-        citizen.getDataManager().set(DATA_MODEL, citizen.getModelType().getName());
+        citizen.getDataManager().set(DATA_MODEL,  citizen.getName().getString());
         citizen.setRenderMetadata("");
     }
 

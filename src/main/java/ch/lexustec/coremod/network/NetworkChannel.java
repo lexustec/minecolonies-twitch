@@ -2,6 +2,7 @@ package ch.lexustec.coremod.network;
 
 import ch.lexustec.api.util.constant.Constants;
 import ch.lexustec.coremod.network.messages.BuyStreamerMessage;
+import ch.lexustec.coremod.network.messages.UpdateModeltypeMessage;
 import com.minecolonies.api.network.IMessage;
 import com.minecolonies.api.util.Log;
 import net.minecraft.entity.Entity;
@@ -48,6 +49,8 @@ public class NetworkChannel
         Log.getLogger().info("REgister Channel");
         int idx = 0;
         registerMessage(++idx, BuyStreamerMessage.class, BuyStreamerMessage::new);
+        registerMessage(++idx, UpdateModeltypeMessage.class, UpdateModeltypeMessage::new);
+
     }
 
     /**

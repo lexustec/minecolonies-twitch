@@ -1,7 +1,6 @@
 package ch.lexustec.coremod.blocks.huts;
 
 import ch.lexustec.api.util.constant.Constants;
-import com.ldtteam.structures.helpers.Structure;
 import com.ldtteam.structurize.management.StructureName;
 import com.ldtteam.structurize.management.Structures;
 import com.ldtteam.structurize.util.StructureLoadingUtils;

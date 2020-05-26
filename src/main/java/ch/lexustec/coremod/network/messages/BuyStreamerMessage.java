@@ -1,9 +1,11 @@
 package ch.lexustec.coremod.network.messages;
 
 import ch.lexustec.api.client.render.modeltype.TwitchModelType;
+import ch.lexustec.coremod.Network;
 import ch.lexustec.coremod.entity.citizen.citizenhandlers.TwitchJobHandler;
 import com.ldtteam.blockout.Log;
 import com.ldtteam.structurize.util.LanguageHandler;
+import com.minecolonies.api.client.render.modeltype.BipedModelType;
 import com.minecolonies.api.client.render.modeltype.CitizenModel;
 import com.minecolonies.api.client.render.modeltype.registry.IModelTypeRegistry;
 import com.minecolonies.api.colony.ICitizenData;
@@ -23,6 +25,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
+import java.util.UUID;
 
 public class BuyStreamerMessage implements IMessage
 {
@@ -143,12 +146,16 @@ public class BuyStreamerMessage implements IMessage
         if(citizen.isPresent())
         {
             Log.getLogger().info("Got Citizen");
-            TwitchModelType model = new TwitchModelType();
+            TwitchModelType model = new TwitchModelType(streamerName);
             IModelTypeRegistry registry = IModelTypeRegistry.getInstance();
             registry.register(model,new CitizenModel<>(), new CitizenModel<>());
             citizen.get().setModelId(model);
             citizen.get().setCitizenJobHandler(new TwitchJobHandler(citizen.get()));
+            citizen.get().getCitizenJobHandler().setModelDependingOnJob(null);
             citizen.get().markDirty();
+            final int myEntityID = citizen.get().getEntityId();
+            // send message to client
+            Network.getNetwork().sendToEveryone(new UpdateModeltypeMessage(streamerName, myEntityID));
         }else
         {
             Log.getLogger().info("No Citizen");
